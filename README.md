@@ -1,2 +1,3 @@
-# EcoLogic_DemoApp
+# EcoLogic DemoApp
+
 Demo App for EcoLogic
