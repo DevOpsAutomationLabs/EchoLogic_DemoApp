@@ -48,11 +48,13 @@ services:
 
 #### Build and Deploy with docker compose
 
-##### Build
+##### Build and run
 
 ```sh
     docker build -t ecologic .
+    docker run -p 8080:8080 ecologic
 ```
+
 
 ```sh
 $ docker compose up -d
