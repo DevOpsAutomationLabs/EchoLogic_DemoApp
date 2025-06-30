@@ -1,0 +1,2 @@
+site_name: "DevOps Loop Demo using EcoLogic App"
+INHERIT: base.yml
