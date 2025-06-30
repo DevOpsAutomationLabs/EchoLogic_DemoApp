@@ -1,0 +1,38 @@
+theme:
+  name: material
+  language: en
+  font: false
+  icon:
+    logo: material/arrow-left
+  favicon: null
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - toc.integrate
+    - content.tabs.link
+    - content.code.copy
+  palette:
+    - primary: light blue
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      primary: light blue
+      accent: light blue
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: indilight bluego
+      accent: light blue
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+extra:
+  generator: false
+  homepage: https://devopsautomationlabs.github.io/Index/
