@@ -74,117 +74,9 @@ To open the board use the Project Board icon ![Board Icon in sidebar](media/Plan
 The initial view is your My Board view which will show worktitems that are assigned to you. As we newly started the board is empty.
 ![myWork Board](media/Plan_ProjectBoard_myBoard.png)
 
-Next to "My Board" is the Tab with all "Work Items" for the active Project. This board will a list of stati (Submitted, Backlog, Active, Resolved and Closed) and the Work Items which are in this state.
+## Create and customize a new Project
 
-![Work items Board](media/Plan_ProjectBoard_WorkItems.png)
-
-To limit the shown Work Items use the Filter bar.
-
-![Filter Bar](media/Plan_ProjectBoard_Filterbar.png)
-
-You can switch between Projects using the Projects Switcher
-
-![Board Project switcher](media/Plan_ProjectBoard_SelectProject.png)
-
-Next Tab is a view on Releases.
-
-![Releases Board](media/Plan_ProjectBoard_Releases.png)
-
-In the Sprint Board View the workitems assigned to the Sprints is shown.
-
-![Sprint Board](media/Plan_ProjectBoard_SprintBoard.png)
-
-And last but not least is the Sprint Backlog view.
-
-![Sprint Backlog Board](media/Plan_ProjectBoard_SprintBacklog.png)
-
-### Project and Releases
-
-In this specific workflow Projects and Releases are used to manage agile software development.
-
-#### Projects
-
-When ths sidebar is minimized you can open the Projects view either by clicking on the Agile button:
-
-![Agile Icon](media/Plan_Sidebar_Agile_icon.png) which opens the selction pupup: ![Select Project from Agile Popup](media/Plan_Sidebar_Agile_Projects.png)
-
-When it is maximized just select directly the Projects entry:
-
-![Projects](media/Plan_Sidebar_Projects.png)
-
-This View will show you a list of available Projects and their Details:
-
-![Project List and Details](media/Plan_Project_List_Details.png)
-
-The Details cover Main informations like Name and Description (as shown in the above screenshot), Releases, Sprints and Components which are related to this Project.
-
-![Project list of Releases](media/Plan_Project_Releaseslist.png)
-
-![Project list of Sprints](media/Plan_Project_Sprintlist.png)
-
-![Project list of Components](media/Plan_Project_Componentlist.png)
-
-In the Configure section you can configure some of the Selection Fields of a Project. In this Workflow "Work item Types", "Priorities", "Story Points", "Severities", "Resolutions", "Tags" and "Release Types" can be configured:
-
-![Project configuration](media/Plan_Project_Configure.png)
-
-You can edit existing data using the Editor Icons:
-
-![Editor Bar](media/Plan_EditorBar.png)
-
-The Edit Icon will set the workitem into edit mode and allows changes of the fields:
-
-![Edit Record](media/Plan_EditRecord.png)
-
-With the Copy Link icon you can copy the URL of this item:
-
-![Copy Link](media/Plan_CopyLink.png)
-
-Use the Refresh icon to refresh the view when you think that the values may have been changed by someone else:
-
-![Refresh](media/Plan_Refresh.png)
-
-The Three Dots menue provides extra functionality for Printing, Exporting to JSON format, Cloning the workitem or deleting it:
-
-![ThreeDots](media/Plan_ThreeDotsmenue.png)
-
-In the Attachments section you can upload files and attach it to this workitem.
-
-![Attachments](media/Plan_ProjectAttachments.png)
-
-The Admin section provides information which user(s) is/are administrators of this item and have the right to change it.
-
-![Project Admin](media/Plan_ProjectAdmins.png)
-
-#### Releases
-
-Now let us have a look at Releases. Let's use the Agile icon again but now select Releases:
-
-![Select Releases from Agile Popup](media/Plan_Sidebar_Agile_Projects.png)
-
-This View list all the available Releases and their Details:
-
-![Releases List and Details](media/Plan_Releases_ListDetails.png)
-
-A Release has a Main section providing a Name, Type, Start/End Dates and a Description (see above screenshot).
-
-The Projects Section lists all Projects to which this Release is related:
-
-![List of Projects](media/Plan_Releases_ProjectList.png)
-
-The Sprint Section lists all Sprints to which this Release is related:
-
-![List of Sprints](media/Plan_Releases_SprintList.png)
-
-The Test Plans Section lists all Test Plans to which this workitem is related:
-
-![List of Test Plans](media/Plan_Releases_TestPlansList.png)
-
-## Create new Workitems
-
-Now it is time to do some work. Let us create a new Project and configure it. Then create new Releases, Sprints and Components and add them to our new Project.
-
-### Create and customize a new Project
+### Create a new Project
 
 To create a new Workitem you have to click on the triangle icon on the NEW button on the top right of your screen:
 
@@ -196,61 +88,99 @@ Select Project from the List. This will create a new Record from type "Project" 
 
 ![New Project Main](media/Plan_New_Project_Main.png)
 
-Provide a name such as "Project"+ your **StudentNumber**. Feel free to add a meaningful description too.
+The name of our project is "EcoLogic", add a meaningful description too.
 
-Next Mandatory information we have to enter (Sections marked with a red star) is the Configure section. Click on Configure section to open the details.
+![Enter Project Name and Description](media/Plan_Project_New_withData.png)
 
-![New Project Configure](media/Plan_New_Project_Configure.png)
+### Add Releases to Project
+
+If you have saved the Project, you need to switch back to edit mode by using the Edit Button ![Switch to Edit mode by using the Edit Button on the top left](media/Plan_Project_EDIT_Button.png)
+
+Switch to Releases Section and press the NEW button right of the Search field:
+
+![Project - Releases Section](media/Plan_Project_Releases_Section.png)
+
+![Project - Releases - New button](media/Plan_Project_Releases_Search.png)
+
+Enter "Release 1" into the Release Name and add a meaningfull description, you can change the Start and End Date if you wish.
+
+![Project - New Release](media/Plan_Project_Releases_New_Release.png)
+
+Press the SAVE button to save the new Release:
+
+![Project - Save Button](media/Plan_Save_Button.png)
+
+Please now repeat the steps to create "Release 2" which starts 1 day after "Release 1" ends and lasts for another 3 months.
+
+In your release section you will now see your new releases:
+
+![Project - releases list](media/Plan_Project_Releaseslist.png)
+
+If the Save button is active for the project, please press it to save your changes!
+
+### Add Sprints to Project
+
+If you have saved the Project, you need to switch back to edit mode by using the Edit Button ![Switch to Edit mode by using the Edit Button on the top left](media/Plan_Project_EDIT_Button.png)
+
+As no Sprints have been created and attached to this Project the Sprint section is empty.
+
+![Sprint List](media/Plan_Project_Sprintlist.png)
+
+If you have saved the Project, you need to switch back to edit mode by using the Edit Button ![Switch to Edit mode by using the Edit Button on the top left](media/Plan_Project_EDIT_Button.png)
+
+![Create new Sprint button](media/Plan_Project_SprintList_New.png)
+
+In the new Dialog/form enter the Sprint name "Sprint 1" and if necessary adjust the Start and End Date:
+
+![Create new Sprint Dialog](media/Plan_Project_Sprint_New_Dialog.png)
+
+Press the Save Button ![Project - Save Button](media/Plan_Save_Button.png) to save this new Sprint. Now the Sprint is visible in the Sprintlist of the Project:
+
+![Sprint List with newly created sprint](media/Plan_Project_SprintList_added.png)
+
+Repeat this steps and create more Sprints and adjust their Start and End Dates accordingly.
+
+Example with two Sprints:
+
+![Sprint list with two sprints](media/Plan_Project_SprintList_moreadded.png)
+
+Please do not forget to save the project changes!
+
+### Configure Project
+
+If you have saved the Project, you need to switch back to edit mode by using the Edit Button ![Switch to Edit mode by using the Edit Button on the top left](media/Plan_Project_EDIT_Button.png)
+
+Click on the sidebar on the "Configure" button/link:
+
+![Project Configure first view](media/Plan_New_Project_Configure.png)
 
 This screen lets you customize your project with different values for Work Item Types, Priorities, Story Points, Severities, Resolutions, Tags and Release Types. New values can be added by clicking in the white space, typing in a value and clicking the Create link that appears below. Existing values can be removed by clicking the X beside the value
 
-Add a tag named Customer Request and remove the Hill and SubHill work item types.
+In the Workitem Types remove the Hill, SubHill and Scenario work item types. You can add or remove other items based on your requirements, the new configuraiton should look like this:
+
+![Project new configuration](media/Plan_Project_Configure.png)
 
 Click the Save button on the lower right of the screen: ![Save Button](media/Plan_Save_Button.png)
 
-#### Create Releases, Sprint and Components
+### Add Components
 
-Create a new release by click the down arrow next to the New button at the top right of the screen and pick Release:
+If you have saved the Project, you need to switch back to edit mode by using the Edit Button ![Switch to Edit mode by using the Edit Button on the top left](media/Plan_Project_EDIT_Button.png)
 
-![Create new release](media/Plan_New_Release.png)
+Click on the sidebar on the "Component" button/link:
 
-Enter the name of the Release as your **StudentNumber**-12 (example 13-12) with start date of 9/23/24 and end date of 12/20/24.
+![Component List](media/Plan_Project_ComponentList.png)
 
-Click Save and Create Another at the bottom right of the screen: ![Save and Create Another](media/Plan_SaveAndCreateAnother.png)
+Click on the "NEW" button to create a new component "EcoDriver":
 
-Add two more releases **StudentNumber**-03 12/23/24 - 3/21/25 and **StudentNumber**-06 3/24/25 – 6/20/25
+![Create a new Component](media/Plan_Project_Component_create.png)
 
-Create a new Sprint by click the down arrow next to the New button at the top right of the screen and pick Sprint.
+Save the component and create another one for "LogicDriver".
 
-Using similar steps to Releases create Sprint **StudentNumber**-1 to **StudentNumber**-4 with start and end dates as follows: 9/23/24-10/11/24, 10/14/24-11/08/24, 11/11/24-11/29/42, 12/2/24-12/20/24
+The new component list should look like this:
 
-Create a new Component by click the down arrow next to the New button at the top right of the screen and pick Component
+![Final Component List](media/Plan_Project_ComponentList_withdata.png)
 
-Using similar steps create these five components and add your **StudentNumber** in Front of the Name: Android App, IOS App, Mid Tier, Database, Mainframe
-
-#### Attach the Releases, Sprints and Components to the Project
-
-Click the Application Items icon on the left side of the screen:
-
-![Application Items](media/Plan_ApplicationItems.png)
-
-Click the Created By Me link ![Created by me](media/Plan_CreatedByMe.png) on the top of the screen.
-
-![List of items created by me](media/Plan_ListCreatedByMe.png)
-
-Scroll down the list on the left and click on your Project to select it (example Project13 created by Student13)
-
-Click the Modify/Edit Record Icon towards the top right of the screen ![Modify](media/Plan_EditRecord.png)
-
-Click on the Releases tab and then click in the box to show the three releases you created.
-
-![Select Releases to attach to project](media/Plan_editprojec_list_releases.png)
-
-Click the checkbox of the three releases to add them to the Project (NOTE: In this example only one Release is visible)
-
-Follow similar steps to add the sprints and components you created. Recently Viewed Items list, type part of the name into the box and it will appear If an item does not show up Recently Viewed Items list, type part of the name into the box and it will appear.
-
-Save the Project.
+Do not forget to save the project to keep the changes!
 
 ## Work with Queries
 
