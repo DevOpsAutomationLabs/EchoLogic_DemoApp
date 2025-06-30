@@ -54,7 +54,6 @@ services:
     docker run -p 8080:8080 ecologic
 ```
 
-
 ```sh
 $ docker compose up -d
 [+] Building 1.1s (16/16) FINISHED

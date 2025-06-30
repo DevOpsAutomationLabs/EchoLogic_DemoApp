@@ -20,4 +20,4 @@ Demo App for EcoLogic
 
 ## Python
 
-The Python version of the App with documentation can be found [here](python/README.md)
+The Python version of the App with documentation can be found in [src/python](python/README.md)
