@@ -17,10 +17,12 @@ and press the Sign In Button.
 
 ### The Home Page
 
-After you have been logged in you will be directed to your homepage:
+After you have been logged in you will be directed to your homepage and it will provide you an overview about metrics from your Loops:
 
 ![Home Page](media/Loop_Home_Page.png)
 
+By clicking on the **Solutions** button on the top the Solutions tiles will be shown:
+![Solutions Tiles](media/Loop_Home_Page_Solutions.png)
 On this page the available capabilities of the platform will be provided for you. By clicking on the "Let's go to ..." button(s) the capability provider will be opened in a new tab of your browser.
 
 Another way to switch between capabilities is to use the central app switcher:
@@ -67,8 +69,8 @@ On the sidebar a view of slected plug-ins is available. By pressing on the Plug-
 
 ## Creation of a Teamspace and Loops
 
-In the case of an empty environment you need to create a new Teamspace and at least one Loop to it. Please follow the [Instructions for creating Teamspace(s) and Loop(s)](teamspace/index.md)
+In the case of an empty environment you need to create a new Teamspace and at least one Loop. Please follow the [Instructions for creating Teamspace(s)](teamspace/index.md) and the [Instructions for creation of a new Loop](loops/index.md)
 
 ## Conclusio
 
-Congratulations! You have now explored the home page of DevOps Automation platform. Please proceed with the next lab.
+Congratulations! You have now explored the home page of DevOps Loop. Please proceed with the next lab.
