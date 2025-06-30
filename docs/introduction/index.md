@@ -65,6 +65,10 @@ On the sidebar a view of slected plug-ins is available. By pressing on the Plug-
 
 ![Sidebar Plugins](media/Loop_Sidebar_plugins.png)
 
+## Creation of a Teamspace and Loops
+
+In the case of an empty environment you need to create a new Teamspace and at least one Loop to it. Please follow the [Instructions for creating Teamspace(s) and Loop(s)](teamspace/index.md)
+
 ## Conclusio
 
 Congratulations! You have now explored the home page of DevOps Automation platform. Please proceed with the next lab.
