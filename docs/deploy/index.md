@@ -1,16 +1,19 @@
 # Deploy Lab
 
+TODO: Flow needs complete rewrite and new screenshots
 _**TODO: update flow, app references from PIZZA to EchoLogic and screenshots**_
+
+## Overview
 
 This lab provides a practical, hands-on experience in deploying an application to a target server.
 
-  ![Deploy Applications Page](media/navigate.png)
-
 Explore the comprehensive dashboard provided by DevOps Deploy, which displays key information about deployment successes and failures
+
+### Deploy Landing Page
 
    ![Deploy Dashboard Page](media/dashboard.png)
 
-Note:
+### Note
 
 1. Agent-Based Installation Support: DevOps Deploy works on agent-based deployments, allowing you to deploy applications across various environments—including On-Premises, IBM Cloud, Microsoft Azure, AWS, Google Cloud Platform (GCP), Mainframes, and more.
 2. Demo Environment: In this demonstration, the deployment agent is running on IBM Cloud. Therefore, the application will be deployed to an IBM Cloud environment.
@@ -43,7 +46,11 @@ Once you import the application, you would be able to see additional application
 
 Now, Click on your application(PizzaApp-XX) > Switch Tab to Components > Click on PizzaApp-Container-XX > Switch tab to Process > Click on "Deploy PizzaApp"
 
+## Processes
+
 It will show you the process designer:
+
+### Process Diagram
 
 ![Deploy Process Diagram Application Page](media/process_diagram.png)
 

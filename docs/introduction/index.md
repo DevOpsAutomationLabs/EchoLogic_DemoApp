@@ -21,9 +21,13 @@ After you have been logged in you will be directed to your homepage and it will 
 
 ![Home Page](media/Loop_Home_Page.png)
 
+#### What would you like to do today?
+
 You can switch directly to the capability/solution by using the button/link
 
 ![What would you like to do today?](media/Loop_whatwouldyouliketodotoday.png)
+
+#### Central Solution/App Switcher
 
 or by using the central app switcher on the top left:
 

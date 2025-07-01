@@ -29,7 +29,11 @@ TODO: Show the board with data and expain what it is good for and how to use it
 
 #### Show Commit
 
+TODO: Show commit link to Control (need screenshot)
+
 #### Use AI in WorkItem
+
+TODO: Use Plan Genie to create description and explorative test information (need screenshots or animated gif)
 
 ### Filter Projects
 

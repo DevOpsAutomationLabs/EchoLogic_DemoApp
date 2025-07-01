@@ -36,9 +36,9 @@
 
 ## [Deploy](deploy/index.md)
 
-1. Use the ‘What would you like to do today’ and select Deploy.
-2. Show the landing page and expalin the metrics
-3. Show process (components, app)
+1. [Use the ‘What would you like to do today’ and select Deploy](introduction/index.md#what-would-you-like-to-do-today).
+2. [Show the landing page and explain the metrics](deploy/index.md#deploy-landing-page)
+3. [Show process (components, app)](deploy/index.md#processes)
 4. Edit process
 5. show a process which executes a TEST with setting quality tag on version.
 6. Run and view results of steps
