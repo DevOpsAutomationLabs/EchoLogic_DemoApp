@@ -836,6 +836,39 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deploy-landing-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deploy Landing Page
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    <span class="md-ellipsis">
+      Note
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#configuration" class="md-nav__link">
     <span class="md-ellipsis">
       Configuration
@@ -850,6 +883,30 @@
       Upload this to DevOps Deploy
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Processes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Diagram
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1843,12 +1900,14 @@
 
 
 <h1 id="deploy-lab">Deploy Lab</h1>
-<p><em><strong>TODO: update flow, app references from PIZZA to EchoLogic and screenshots</strong></em></p>
+<p>TODO: Flow needs complete rewrite and new screenshots
+<em><strong>TODO: update flow, app references from PIZZA to EchoLogic and screenshots</strong></em></p>
+<h2 id="overview">Overview</h2>
 <p>This lab provides a practical, hands-on experience in deploying an application to a target server.</p>
-<p><img alt="Deploy Applications Page" src="media/navigate.png" /></p>
 <p>Explore the comprehensive dashboard provided by DevOps Deploy, which displays key information about deployment successes and failures</p>
+<h3 id="deploy-landing-page">Deploy Landing Page</h3>
 <p><img alt="Deploy Dashboard Page" src="media/dashboard.png" /></p>
-<p>Note:</p>
+<h3 id="note">Note</h3>
 <ol>
 <li>Agent-Based Installation Support: DevOps Deploy works on agent-based deployments, allowing you to deploy applications across various environments—including On-Premises, IBM Cloud, Microsoft Azure, AWS, Google Cloud Platform (GCP), Mainframes, and more.</li>
 <li>Demo Environment: In this demonstration, the deployment agent is running on IBM Cloud. Therefore, the application will be deployed to an IBM Cloud environment.</li>
@@ -1871,7 +1930,9 @@ Application &gt; Environment(DEV, QA, PROD, etc.) &gt; Components</p>
 <p>Once you import the application, you would be able to see additional application listes like:</p>
 <p><img alt="Deploy Updated Application" src="media/updated_application.png" /></p>
 <p>Now, Click on your application(PizzaApp-XX) &gt; Switch Tab to Components &gt; Click on PizzaApp-Container-XX &gt; Switch tab to Process &gt; Click on "Deploy PizzaApp"</p>
+<h2 id="processes">Processes</h2>
 <p>It will show you the process designer:</p>
+<h3 id="process-diagram">Process Diagram</h3>
 <p><img alt="Deploy Process Diagram Application Page" src="media/process_diagram.png" /></p>
 <p>Now click on edit button available on the individual process:</p>
 <p><img alt="Deploy Edit Process Page" src="media/edit_process.png" /></p>
