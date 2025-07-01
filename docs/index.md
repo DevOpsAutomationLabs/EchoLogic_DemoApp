@@ -4,6 +4,8 @@ This Demo script will help you to learn DevOps Loop very easily and how to effic
 
 ## How to use this Demo/Lab - Overview
 
+Please use this [Demo Flow](demoflow.md) for fast demoing DevOps Loop, all necessary steps are linked to the full documents. For learning purposes follow the more detailed guide below.
+
 ### [Introduction](introduction/index.md)
 
 ### [Plan](plan/index.md)

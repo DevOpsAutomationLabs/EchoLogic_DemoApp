@@ -13,12 +13,40 @@ To open the board use the Project Board icon ![Board Icon in sidebar](media/Plan
 The initial view is your My Board view which will show worktitems that are assigned to you. As we newly started the board is empty.
 ![myWork Board](media/Plan_ProjectBoard_myBoard.png)
 
-TODO: add text how to switch to different plan - app (for example PIZZA) and show around the data
+TODO: Show the board with data and expain what it is good for and how to use it
+
+### Work Items
+
+- ![Board workitems](media/Plan_ProjectBoard_WorkItems.png)
+
+#### Select Workitem
+
+- ![Select WorkItem from Board](media/PLAN_Boards_SelectWI.png)
+
+#### Show Workitem Details
+
+- ![Show Workitem Details](media/PLAN_Board_ShowWI_Detail.png)
+
+#### Show Commit
+
+#### Use AI in WorkItem
+
+### Filter Projects
+
+- ![Board Selec Project](media/Plan_ProjectBoard_SelectProject.png)
+
+### Filter Epics
 
 - ![Board filter](media/Plan_ProjectBoard_Filterbar.png)
-- ![Board icon](media/Plan_ProjectBoard_Icon.png)
+
+### Show Releases
+
 - ![Board Releases](media/Plan_ProjectBoard_Releases.png)
-- ![Board Selec Project](media/Plan_ProjectBoard_SelectProject.png)
+
+### Show Sprints
+
 - ![Board Sprint Board](media/Plan_ProjectBoard_SprintBoard.png)
+
+### Show Sprint Backlog
+
 - ![Board Sprint Backlog](media/Plan_ProjectBoard_SprintBacklog.png)
-- ![Board workitems](media/Plan_ProjectBoard_WorkItems.png)
