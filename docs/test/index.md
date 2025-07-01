@@ -1,7 +1,7 @@
 # Test Lab
 
 TODO: update flow, app references and screenshots
-_**TODO: update flow, app references from PIZZA to EcoLogic and screenshots**_
+_**TODO: update flow, app references from PIZZA to EchoLogic and screenshots**_
 
 This lab will provide you with a practical hands-on of our testing capabilities. You can click on the main menu and navigate to the DevOps test.
 

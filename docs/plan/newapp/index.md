@@ -6,7 +6,7 @@ Use the Dots Menue ![Dots Menue](media/PLAN_Tenant_HowToSwitch1.png) to select P
 
 Click on the Tenant Management ![Tenant Management](media/PLAN_Tenant_HowToSwitch2.png) Button/Link to manage your Application for your Tenants.
 
-Select your Tenant EcoLogic and view your Applications:
+Select your Tenant EchoLogic and view your Applications:
 
 ![Tenantlist with Apps](media/PLAN_Tenant_list.png)
 

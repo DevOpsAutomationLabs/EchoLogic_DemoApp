@@ -1,6 +1,6 @@
 # Deploy Lab
 
-_**TODO: update flow, app references from PIZZA to EcoLogic and screenshots**_
+_**TODO: update flow, app references from PIZZA to EchoLogic and screenshots**_
 
 This lab provides a practical, hands-on experience in deploying an application to a target server.
 

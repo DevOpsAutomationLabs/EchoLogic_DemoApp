@@ -1,4 +1,4 @@
-# EcoLogic Demo Application and Demo Script to showcase DevOps Loop
+# EchoLogic Demo Application and Demo Script to showcase DevOps Loop
 
 ## Sourcecode
 

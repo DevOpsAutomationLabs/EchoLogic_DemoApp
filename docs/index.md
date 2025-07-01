@@ -4,6 +4,22 @@ This Demo script will help you to learn DevOps Loop very easily and how to effic
 
 ## How to use this Demo/Lab - Overview
 
-### [00 Introduction](introduction/index.md)
+### [Introduction](introduction/index.md)
 
-### 01 Plan
+### [Plan](plan/index.md)
+
+### [Control](control/index.md)
+
+### [Code](code/index.md)
+
+### [Build](build/index.md)
+
+### [Deploy](deploy/index.md)
+
+### [Test](test/index.md)
+
+### [Secure](secure/index.md)
+
+### [Measure](measure/index.md)
+
+### [Release](release/index.md)

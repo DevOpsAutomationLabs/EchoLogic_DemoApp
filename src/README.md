@@ -1,6 +1,6 @@
-# EcoLogic DemoApp
+# EchoLogic DemoApp
 
-Demo App for EcoLogic
+Demo App for EchoLogic
 
 ## structure
 

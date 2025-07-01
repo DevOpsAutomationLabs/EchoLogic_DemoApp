@@ -1,7 +1,7 @@
 # Code Lab
 
 TODO: update flow, app references and screenshots
-_**TODO: update flow, app references from PIZZA to EcoLogic and screenshots**_
+_**TODO: update flow, app references from PIZZA to EchoLogic and screenshots**_
 
 ## Introduction
 

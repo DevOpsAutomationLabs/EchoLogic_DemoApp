@@ -18,7 +18,7 @@ Select Project from the List. This will create a new Record from type "Project" 
 
 ![New Project Main](media/Plan_New_Project_Main.png)
 
-The name of our project is "EcoLogic", add a meaningful description too.
+The name of our project is "EchoLogic", add a meaningful description too.
 
 ![Enter Project Name and Description](media/Plan_Project_New_withData.png)
 

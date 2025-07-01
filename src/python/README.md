@@ -1,6 +1,6 @@
-# Python Version of EcoLogic App
+# Python Version of EchoLogic App
 
-Demo App for EcoLogic
+Demo App for EchoLogic
 
 ## structure
 
@@ -50,8 +50,8 @@ services:
 ##### Build and run
 
 ```sh
-    docker build -t ecologic .
-    docker run -p 8080:8080 ecologic
+    docker build -t EchoLogic .
+    docker run -p 8080:8080 EchoLogic
 ```
 
 ```sh
