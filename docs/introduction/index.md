@@ -22,12 +22,6 @@ After you have been logged in you will be directed to your homepage and it will 
 
 ![Home Page](media/Loop_Home_Page.png)
 
-By clicking on the **Solutions** button on the top the Solutions tiles will be shown:
-
-![Solutions Tiles](media/Loop_Home_Page_Solutions.png)
-
-On this page the available capabilities of the platform will be provided for you. By clicking on the "Let's go to ..." button(s) the capability provider will be opened in a new tab of your browser.
-
 You can switch directly to the capability/solution by using the button/link
 
 ![What would you like to do today?](media/Loop_whatwouldyouliketodotoday.png)
