@@ -32,10 +32,10 @@
 
 ## [Build](build/index.md)
 
-1. [Use the 9 dot menu to open Build](build/index.md#how-to-switch-to-build-from-home-page)
-    1. Show overview on build runs and results
-    2. Show build process
-    3. Show templates
+1. [Open Build](build/index.md#how-to-switch-to-build-from-home-page)
+    1. [Show overview on build runs and results](build/index.md#build-project-runs)
+    2. [Show build process](build/index.md#build-process-detail)
+    3. [Show templates](build/index.md#templates)
 
 ## [Deploy](deploy/index.md)
 
