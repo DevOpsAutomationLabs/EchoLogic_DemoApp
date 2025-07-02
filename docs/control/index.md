@@ -82,6 +82,10 @@ Press Generate Token and **SAVE your newly created Token**:
 
 ![AccessToken](media/Control_Accesstoken.png)
 
+## Show Activity Report
+
+![Show Last Commit](media/CONTROL_ShowLastCommit.png)
+
 ## Conclusio
 
 Congratulations you have finished Control Lab and have created a new repository and an access token.

@@ -1,9 +1,21 @@
-# Test Lab
+# Test
 
 TODO: update flow, app references and screenshots
 _**TODO: update flow, app references from PIZZA to EchoLogic and screenshots**_
 
 This lab will provide you with a practical hands-on of our testing capabilities. You can click on the main menu and navigate to the DevOps test.
+
+## Overview
+
+### How to switch to Test from Home Page
+
+You can switch to Test by either pressing "Let's go to Test" button on its tile:
+
+![Test Tile lets go](../introduction/media/Loop_switch_to_Test.png)
+
+Or you can always switch using the central app switcher on the top left of your screen:
+
+![Central App Switcher](../introduction/media/Loop_central_app_control.png)
 
 ## Configuration
 

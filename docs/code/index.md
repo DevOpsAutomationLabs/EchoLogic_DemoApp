@@ -19,6 +19,18 @@ Or you can always switch using the central app switcher on the top left of your 
 
 Note: it takes a few seconds till your environment is setup and running, please be patient.
 
+### WatsonX Code Assistant
+
+![Explain code part 2](media/CODE_WCAx_Explain1.png)
+![Explain code part 2](media/CODE_WCAx_Explain2.png)
+
+### Commit Code with WI
+
+![Commit Code with WI](media/CODE_CommitWithWI.png)
+
+---
+<!-- 
+
 ## Using Code
 
 ### First entry view, Toggle bar and Sidebars
@@ -119,3 +131,4 @@ Click on "Yes, terminate it" to shutdown the pod, which will delete all unsaved 
 ## Conclusio
 
 Congratulations you have finished the Code Lab.
+ -->

@@ -9,6 +9,16 @@ This lab provides a practical, hands-on experience in deploying an application t
 
 Explore the comprehensive dashboard provided by DevOps Deploy, which displays key information about deployment successes and failures
 
+### How to switch to Deploy from Home Page
+
+You can switch to Deploy by either pressing "Let's go to Deploy" button on its tile:
+
+![Deploy Tile lets go](../introduction/media/Loop_switch_to_Deploy.png)
+
+Or you can always switch using the central app switcher on the top left of your screen:
+
+![Central App Switcher](../introduction/media/Loop_central_app_control.png)
+
 ### Deploy Landing Page
 
    ![Deploy Dashboard Page](media/dashboard.png)
