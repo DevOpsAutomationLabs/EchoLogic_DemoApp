@@ -863,33 +863,24 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#note" class="md-nav__link">
-    <span class="md-ellipsis">
-      Note
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
+  <a href="#applications" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuration
+      Applications
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#upload-this-to-devops-deploy" class="md-nav__link">
+  <a href="#components" class="md-nav__link">
     <span class="md-ellipsis">
-      Upload this to DevOps Deploy
+      Components
     </span>
   </a>
   
@@ -906,9 +897,37 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#process-diagram" class="md-nav__link">
+  <a href="#types-of-processes" class="md-nav__link">
     <span class="md-ellipsis">
-      Process Diagram
+      Types of Processes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of Processes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generic-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generic Processes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application Processes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component Processes
     </span>
   </a>
   
@@ -918,31 +937,51 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#build-image-and-publish-to-deploy" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-create-a-process" class="md-nav__link">
     <span class="md-ellipsis">
-      Build image and publish to Deploy
+      How to create a Process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to create a Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process-designer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Designer
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#update-the-resource-tree" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#process-designer-sidebar" class="md-nav__link">
     <span class="md-ellipsis">
-      Update the resource Tree
+      Process Designer Sidebar
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#final-steps-for-deployment" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#final-process-diagram" class="md-nav__link">
     <span class="md-ellipsis">
-      Final steps for Deployment
+      Final Process Diagram
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1921,107 +1960,140 @@
 <p><img alt="Central App Switcher" src="../introduction/media/Loop_central_app_control.png" /></p>
 <h3 id="deploy-landing-page">Deploy Landing Page</h3>
 <p><img alt="Deploy Dashboard Page" src="media/dashboard.png" /></p>
-<h3 id="note">Note</h3>
-<ol>
-<li>Agent-Based Installation Support: DevOps Deploy works on agent-based deployments, allowing you to deploy applications across various environments—including On-Premises, IBM Cloud, Microsoft Azure, AWS, Google Cloud Platform (GCP), Mainframes, and more.</li>
-<li>Demo Environment: In this demonstration, the deployment agent is running on IBM Cloud. Therefore, the application will be deployed to an IBM Cloud environment.</li>
-</ol>
-<h2 id="configuration">Configuration</h2>
-<p>DevOps Deploy is a rich tool and provides excellent mechanisms to control the deployment of application. A simple architecture is
-Application &gt; Environment(DEV, QA, PROD, etc.) &gt; Components</p>
-<p><img alt="Deploy Environment Page" src="media/deploy_environment.png" /></p>
-<p><strong><em>Important Note: This is a shared lab environment. To ensure a smooth experience for everyone, please only modify the applications, components, or processes that you create during your lab session. Kindly avoid making changes to any existing applications or configurations visible in DevOps Deploy, as they may be in use by others</em></strong></p>
-<p>In order to deploy application, please download the <a href="../../files/PizzaApp.json">Application file</a> directly (if you are using the repo localy) or from <a href="https://github.com/DevOpsAutomationLabs/End2End/blob/main/files/PizzaApp.json">GitHub Link</a> (if you are using the web) open it on your preferred editor, and update the following in the file.</p>
-<ol>
-<li>Search for <code>"name": "PizzaApp-01"</code> and replace it with your student code (xx appended to your email id. eg., <code>"name": "PizzaApp-02"</code>)</li>
-<li>Search all the occurances for <code>PizzaApp-Container-01</code> and replace it with your student code (xx appended to your email id. eg., <code>PizzaApp-Container-02</code>)</li>
-<li>Search for <code>"commandOptions": "-d -p 3001:8000"</code> and replace the <code>3002</code> with your student code (30xx appended with to email id. eg., <code>"commandOptions": "-d -p 3002:8000"</code>) . Troubleshooting: If you see any issue, try to update the port like 3016,3017, etc...</li>
-<li>Save the file.</li>
-</ol>
-<h2 id="upload-this-to-devops-deploy">Upload this to DevOps Deploy</h2>
-<p>Go to DevOps Deploy &gt; Applications &gt; Import Application &gt; (Scroll down) Choose File &gt; Select your updated file &gt; Submit</p>
-<p><img alt="Deploy Import Application Page" src="media/import_application.png" /></p>
-<p>Once you import the application, you would be able to see additional application listes like:</p>
-<p><img alt="Deploy Updated Application" src="media/updated_application.png" /></p>
-<p>Now, Click on your application(PizzaApp-XX) &gt; Switch Tab to Components &gt; Click on PizzaApp-Container-XX &gt; Switch tab to Process &gt; Click on "Deploy PizzaApp"</p>
+<!-- 
+### Note
+
+1. Agent-Based Installation Support: DevOps Deploy works on agent-based deployments, allowing you to deploy applications across various environments—including On-Premises, IBM Cloud, Microsoft Azure, AWS, Google Cloud Platform (GCP), Mainframes, and more.
+2. Demo Environment: In this demonstration, the deployment agent is running on IBM Cloud. Therefore, the application will be deployed to an IBM Cloud environment.
+
+## Configuration
+
+DevOps Deploy is a rich tool and provides excellent mechanisms to control the deployment of application. A simple architecture is
+Application > Environment(DEV, QA, PROD, etc.) > Components
+
+  ![Deploy Environment Page](media/deploy_environment.png)
+
+ **_Important Note: This is a shared lab environment. To ensure a smooth experience for everyone, please only modify the applications, components, or processes that you create during your lab session. Kindly avoid making changes to any existing applications or configurations visible in DevOps Deploy, as they may be in use by others_**
+
+In order to deploy application, please download the [Application file](../../files/PizzaApp.json) directly (if you are using the repo localy) or from [GitHub Link](https://github.com/DevOpsAutomationLabs/End2End/blob/main/files/PizzaApp.json) (if you are using the web) open it on your preferred editor, and update the following in the file.
+
+1. Search for `"name": "PizzaApp-01"` and replace it with your student code (xx appended to your email id. eg., `"name": "PizzaApp-02"`)
+2. Search all the occurances for `PizzaApp-Container-01` and replace it with your student code (xx appended to your email id. eg., `PizzaApp-Container-02`)
+3. Search for `"commandOptions": "-d -p 3001:8000"` and replace the `3002` with your student code (30xx appended with to email id. eg., `"commandOptions": "-d -p 3002:8000"`) . Troubleshooting: If you see any issue, try to update the port like 3016,3017, etc...
+4. Save the file.
+
+## Upload this to DevOps Deploy
+
+Go to DevOps Deploy > Applications > Import Application > (Scroll down) Choose File > Select your updated file > Submit
+
+  ![Deploy Import Application Page](media/import_application.png)
+
+Once you import the application, you would be able to see additional application listes like:
+
+  ![Deploy Updated Application](media/updated_application.png)
+
+Now, Click on your application(PizzaApp-XX) > Switch Tab to Components > Click on PizzaApp-Container-XX > Switch tab to Process > Click on "Deploy PizzaApp"
+ -->
+
+<h2 id="applications">Applications</h2>
+<p>TODO: talk about applications</p>
+<h2 id="components">Components</h2>
+<p>TODO: talk about components</p>
 <h2 id="processes">Processes</h2>
+<p>TODO: talk about processes</p>
+<h3 id="types-of-processes">Types of Processes</h3>
+<h4 id="generic-processes">Generic Processes</h4>
+<p>TODO: talk about generic processes and for what they are good for</p>
+<h4 id="application-processes">Application Processes</h4>
+<p>TODO: talk about app processes and what is the diff to other</p>
+<h4 id="component-processes">Component Processes</h4>
+<p>TODO: talk about component processes and what is it good fore</p>
+<p><img alt="component processes" src="media/DEPLOY_Component_Processlist.png" /></p>
+<h3 id="how-to-create-a-process">How to create a Process</h3>
+<p>In the Processlist click on the Create Process Button: <img alt="Create Process Button" src="media/DEPLOY_AppComp_CreateProcessButton.png" /></p>
+<h4 id="process-designer">Process Designer</h4>
 <p>It will show you the process designer:</p>
-<h3 id="process-diagram">Process Diagram</h3>
+<p><img alt="Process Designer" src="media/DEPLOY_Component_ProcessEditor.png" /></p>
+<h4 id="process-designer-sidebar">Process Designer Sidebar</h4>
+<p>TODO: talk about sidebar</p>
+<p><img alt="Process Designer Sidebar" src="media/DEPLOY_Component_ProcessEditor_Sidebar.png" /></p>
+<p>Drag Drop a step onto the canvas.</p>
+<p><img alt="Dragged a Step onto the canvas" src="media/DEPLOY_Component_ProcessEditor_StepAdded.png" /></p>
+<h4 id="final-process-diagram">Final Process Diagram</h4>
 <p><img alt="Deploy Process Diagram Application Page" src="media/process_diagram.png" /></p>
-<p>Now click on edit button available on the individual process:</p>
-<p><img alt="Deploy Edit Process Page" src="media/edit_process.png" /></p>
-<p>Now click edit on <code>Stop Docker Container</code> and change the Docker Container edit field from <code>pizzaapp</code> to : pizzaapp-01 (note: 01 should be replaced with you student id) and save it.</p>
-<p>Now Edit <code>Remove Docker Container</code>: pizzaapp-01 (note: 01 should be replaced with you student id) and save it.</p>
-<p>Now edit <code>Run Pizza App Container</code> :</p>
-<ol>
-<li>Update container name to <code>pizzaapp-01</code> (note: 01 should be replaced with you student id) and save it.
-  <img alt="Deploy Run Pizza Container Page" src="media/run_docker_container.png" /></li>
-</ol>
-<p>Now Click on save button on the screen.</p>
-<h2 id="build-image-and-publish-to-deploy">Build image and publish to Deploy</h2>
-<ol>
-<li>Open http://165.192.86.196:8080/</li>
-<li>Click on New Item and fill <code>Enter an item name</code> with : App-01 (01 should be replaced with your student ID as mentioned in your email)</li>
-<li>Choose <code>pipeline</code>, press Ok</li>
-<li>Copy the content available on: https://github.com/DevOpsAutomationLabs/End2End/blob/main/files/Jenkins</li>
-<li>
-<p>Paste it to any editor and update the text as below:</p>
-<ol>
-<li>Search for <code>COMPONENT = "PizzaApp-Container-XX"</code> and Update XX with your student id. Eg. <code>COMPONENT = "PizzaApp-Container-02"</code></li>
-<li>Search for all the occurances of <code>XX</code> and replace it with your student id. Eg. <code>02</code></li>
-<li>Search for <code>&lt;YOUR DEVOPS CONTROL EMAIL&gt;"</code> and replace it with your email id shown in DevOps Control. Eg. <code>student02-labs.com</code>
-    <img alt="Control Email" src="media/control_email.png" /></li>
-</ol>
-</li>
-<li>
-<p>Now, switch back to Jenkins, and scroll down and find the pipeline script textbox.</p>
-</li>
-<li>Copy the upadted content and Paste the copied text in <code>pipeline script</code></li>
-<li>Click Save</li>
-<li>
-<p>Jenkins Credential Setup (Optional): This has been already configured. So skip it. If you face issue while running jenkins build, then follow the below steps} Go to Jenkins Dashboard → Manage Jenkins → Credentials.
+<!-- 
+Now click on edit button available on the individual process:
+
+![Deploy Edit Process Page](media/edit_process.png)
+
+Now click edit on `Stop Docker Container` and change the Docker Container edit field from `pizzaapp` to : pizzaapp-01 (note: 01 should be replaced with you student id) and save it.
+
+Now Edit `Remove Docker Container`: pizzaapp-01 (note: 01 should be replaced with you student id) and save it.
+
+Now edit `Run Pizza App Container` :
+
+ 1. Update container name to `pizzaapp-01` (note: 01 should be replaced with you student id) and save it.
+  ![Deploy Run Pizza Container Page](media/run_docker_container.png)
+
+Now Click on save button on the screen.
+
+## Build image and publish to Deploy
+
+1. Open http://165.192.86.196:8080/
+2. Click on New Item and fill `Enter an item name` with : App-01 (01 should be replaced with your student ID as mentioned in your email)
+3. Choose `pipeline`, press Ok
+4. Copy the content available on: https://github.com/DevOpsAutomationLabs/End2End/blob/main/files/Jenkins
+5. Paste it to any editor and update the text as below:
+     1. Search for `COMPONENT = "PizzaApp-Container-XX"` and Update XX with your student id. Eg. `COMPONENT = "PizzaApp-Container-02"`
+     2. Search for all the occurances of `XX` and replace it with your student id. Eg. `02`
+     3. Search for `<YOUR DEVOPS CONTROL EMAIL>"` and replace it with your email id shown in DevOps Control. Eg. `student02-labs.com`
+        ![Control Email](media/control_email.png)
+
+6. Now, switch back to Jenkins, and scroll down and find the pipeline script textbox.
+7. Copy the upadted content and Paste the copied text in `pipeline script`
+8. Click Save
+9. Jenkins Credential Setup (Optional): This has been already configured. So skip it. If you face issue while running jenkins build, then follow the below steps} Go to Jenkins Dashboard → Manage Jenkins → Credentials.
     Choose the right scope (e.g., "Global").
     Click Add Credentials.
-    Use these settings:</p>
-<ul>
-<li>Kind: Username with password</li>
-<li>Username: your Devops Control email id (Eg. student01-ibm.com)</li>
-<li>Password: the GitHub token (paste it here) (Note: You can get this by opening <code>DevOps Control</code> &gt; Click on <code>Profile</code> &gt; <code>Settings</code> &gt; On left  panel select <code>Access token</code> &gt; Give token name : “labs” &gt; Select all permissions (Read and Write) &gt; <code>Generate Token</code> &gt; Copy and paste in the password field in jenkins credentials)</li>
-<li>ID: github-token-creds-xx (Note: xx is your student id ans should match with pipeline script)</li>
-</ul>
-</li>
-<li>
-<p>Click <code>Build Now</code> on Jenkins and wait until the image link is pushed to DevOps Deploy</p>
-</li>
-<li><code>Troubleshooting</code>: If your jenkins build fails, check if your control has the repository cloned or not. It is important to clone before you start build.</li>
-</ol>
-<p><img alt="Jenkins pipeline Page" src="media/jenkins_pipeline.png" /></p>
-<h2 id="update-the-resource-tree">Update the resource Tree</h2>
-<p>Do not forget to do this important step once you can successfully run the Jenkins command:</p>
-<ol>
-<li>Navigate to DevOps Deploy &gt; Find Resources on the left Pane and click on that &gt; <code>Resource Tree</code> &gt; Click on <code>Main</code> &gt; locate row showing <code>online</code> &gt; Click on 3 dots &gt; <code>Add Component</code> (your component name. Eg. <code>PizzaApp-Container-02</code>)</li>
-<li>Back to Deploy Dashboard.</li>
-</ol>
-<p><img alt="Add Component Page" src="media/add_component.png" /></p>
-<h2 id="final-steps-for-deployment">Final steps for Deployment</h2>
-<ol>
-<li>Click on Application on the left panel</li>
-<li>Click on your application. Eg. <code>PizzApp-02</code></li>
-<li>Switch Tab to Processes &gt; Click on <code>Deploy App</code></li>
-<li>Click on Edit symbol on <code>install Component Install: "PizzaApp-Container-01"</code></li>
-<li>Under Component section, click the dopdown and Select your component. Eg. <code>PizzaApp-Container-02</code></li>
-<li>Click Ok and then Click Save.</li>
-<li>Click on Application on the left panel again.</li>
-<li>Click on your application. Eg. <code>PizzApp-02</code></li>
-<li>Locate DEV  &gt; Request Process &gt; Click <code>"Request Process"</code></li>
-<li>Click <code>"Choose Component Version"</code>
-   <img alt="Run Application pipeline Page" src="media/run_application_process.png" /></li>
-<li>A right panel will open, click on <code>Add</code> , the drop-down<code>"By Version Lookup"</code> Select the first available</li>
-<li>Click on Submit</li>
-<li>Expand the process and check the deployment process. Note: You might see failure in <code>Stop Docker Container</code> and <code>Remove Docker Container</code> those are fine as you are running this process for the first time and you don't have after we have the running container.
-<img alt="Deployment process" src="media/deployment_process.png" /></li>
-<li>Check your running application at: http://165.192.86.196:30XX (Note: XX should be relaced with your student id)</li>
-</ol>
+    Use these settings:
+      * Kind: Username with password
+      * Username: your Devops Control email id (Eg. student01-ibm.com)
+      * Password: the GitHub token (paste it here) (Note: You can get this by opening `DevOps Control` > Click on `Profile` > `Settings` > On left  panel select `Access token` > Give token name : “labs” > Select all permissions (Read and Write) > `Generate Token` > Copy and paste in the password field in jenkins credentials)
+      * ID: github-token-creds-xx (Note: xx is your student id ans should match with pipeline script)
+
+10. Click `Build Now` on Jenkins and wait until the image link is pushed to DevOps Deploy
+11. `Troubleshooting`: If your jenkins build fails, check if your control has the repository cloned or not. It is important to clone before you start build.
+
+  ![Jenkins pipeline Page](media/jenkins_pipeline.png)
+
+## Update the resource Tree
+
+Do not forget to do this important step once you can successfully run the Jenkins command:
+
+1. Navigate to DevOps Deploy > Find Resources on the left Pane and click on that > `Resource Tree` > Click on `Main` > locate row showing `online` > Click on 3 dots > `Add Component` (your component name. Eg. `PizzaApp-Container-02`)
+2. Back to Deploy Dashboard.
+
+  ![Add Component Page](media/add_component.png)
+
+## Final steps for Deployment
+
+1. Click on Application on the left panel
+2. Click on your application. Eg. `PizzApp-02`
+3. Switch Tab to Processes > Click on `Deploy App`
+4. Click on Edit symbol on `install Component Install: "PizzaApp-Container-01"`
+5. Under Component section, click the dopdown and Select your component. Eg. `PizzaApp-Container-02`
+6. Click Ok and then Click Save.
+7. Click on Application on the left panel again.
+8. Click on your application. Eg. `PizzApp-02`
+9. Locate DEV  > Request Process > Click `"Request Process"`
+10. Click `"Choose Component Version"`
+   ![Run Application pipeline Page](media/run_application_process.png)
+11. A right panel will open, click on `Add` , the drop-down`"By Version Lookup"` Select the first available
+12. Click on Submit
+13. Expand the process and check the deployment process. Note: You might see failure in `Stop Docker Container` and `Remove Docker Container` those are fine as you are running this process for the first time and you don't have after we have the running container.
+![Deployment process](media/deployment_process.png)
+14. Check your running application at: http://165.192.86.196:30XX (Note: XX should be relaced with your student id)
+ -->
 
 
 
