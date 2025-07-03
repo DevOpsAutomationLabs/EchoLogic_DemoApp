@@ -22,7 +22,7 @@ Or you can always switch using the central app switcher on the top left of your 
 ### Deploy Landing Page
 
    ![Deploy Dashboard Page](media/dashboard.png)
-
+<!-- 
 ### Note
 
 1. Agent-Based Installation Support: DevOps Deploy works on agent-based deployments, allowing you to deploy applications across various environments—including On-Premises, IBM Cloud, Microsoft Azure, AWS, Google Cloud Platform (GCP), Mainframes, and more.
@@ -55,15 +55,60 @@ Once you import the application, you would be able to see additional application
   ![Deploy Updated Application](media/updated_application.png)
 
 Now, Click on your application(PizzaApp-XX) > Switch Tab to Components > Click on PizzaApp-Container-XX > Switch tab to Process > Click on "Deploy PizzaApp"
+ -->
+
+## Applications
+
+TODO: talk about applications
+
+## Components
+
+TODO: talk about components
 
 ## Processes
 
+TODO: talk about processes
+
+### Types of Processes
+
+#### Generic Processes
+
+TODO: talk about generic processes and for what they are good for
+
+#### Application Processes
+
+TODO: talk about app processes and what is the diff to other
+
+#### Component Processes
+
+TODO: talk about component processes and what is it good fore
+
+![component processes](media/DEPLOY_Component_Processlist.png)
+
+### How to create a Process
+
+In the Processlist click on the Create Process Button: ![Create Process Button](media/DEPLOY_AppComp_CreateProcessButton.png)
+
+#### Process Designer
+
 It will show you the process designer:
 
-### Process Diagram
+![Process Designer](media/DEPLOY_Component_ProcessEditor.png)
+
+#### Process Designer Sidebar
+
+TODO: talk about sidebar
+
+![Process Designer Sidebar](media/DEPLOY_Component_ProcessEditor_Sidebar.png)
+
+Drag Drop a step onto the canvas.
+
+![Dragged a Step onto the canvas](media/DEPLOY_Component_ProcessEditor_StepAdded.png)
+
+#### Final Process Diagram
 
 ![Deploy Process Diagram Application Page](media/process_diagram.png)
-
+<!-- 
 Now click on edit button available on the individual process:
 
 ![Deploy Edit Process Page](media/edit_process.png)
@@ -135,3 +180,4 @@ Do not forget to do this important step once you can successfully run the Jenkin
 13. Expand the process and check the deployment process. Note: You might see failure in `Stop Docker Container` and `Remove Docker Container` those are fine as you are running this process for the first time and you don't have after we have the running container.
 ![Deployment process](media/deployment_process.png)
 14. Check your running application at: http://165.192.86.196:30XX (Note: XX should be relaced with your student id)
+ -->

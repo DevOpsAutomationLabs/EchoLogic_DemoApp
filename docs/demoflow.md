@@ -4,7 +4,7 @@
 
 ## [Loop](introduction/index.md)
 
-1. [Show Home Page](introduction/index.md#the-home-page) 
+1. [Show Home Page](introduction/index.md#the-home-page)
     1. and explain that we have a lot of metrics.
 
 ## [Plan](plan/index.md)
