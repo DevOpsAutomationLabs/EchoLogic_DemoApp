@@ -869,20 +869,26 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#applications" class="md-nav__link">
-    <span class="md-ellipsis">
-      Applications
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#components" class="md-nav__link">
     <span class="md-ellipsis">
       Components
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-new-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create New Component
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -931,21 +937,7 @@
     </span>
   </a>
   
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-to-create-a-process" class="md-nav__link">
-    <span class="md-ellipsis">
-      How to create a Process
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="How to create a Process">
+    <nav class="md-nav" aria-label="Component Processes">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -957,6 +949,11 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+        
           <li class="md-nav__item">
   <a href="#process-designer-sidebar" class="md-nav__link">
     <span class="md-ellipsis">
@@ -964,7 +961,8 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Process Designer Sidebar">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#final-process-diagram" class="md-nav__link">
@@ -975,6 +973,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#adding-version-statuses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Version Statuses
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -982,6 +989,20 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Applications
+    </span>
+  </a>
   
 </li>
       
@@ -1995,10 +2016,23 @@ Once you import the application, you would be able to see additional application
 Now, Click on your application(PizzaApp-XX) > Switch Tab to Components > Click on PizzaApp-Container-XX > Switch tab to Process > Click on "Deploy PizzaApp"
  -->
 
-<h2 id="applications">Applications</h2>
-<p>TODO: talk about applications</p>
 <h2 id="components">Components</h2>
 <p>TODO: talk about components</p>
+<p><img alt="List of components" src="media/DEPLOY_Components_List.png" /></p>
+<h3 id="create-new-component">Create New Component</h3>
+<ul>
+<li>Press Create new Component Button: <img alt="Component - Create new" src="media/DEPLOY_Components_CreateComponentButton.png" /></li>
+<li><img alt="Component - Create Dialog 1" src="media/DEPLOY_Components_CreateDialog1.png" /></li>
+<li><img alt="Component - Create Dialog 2" src="media/DEPLOY_Components_CreateDialog2.png" /></li>
+<li><img alt="Component - Create Dialog 3" src="media/DEPLOY_Components_CreateDialog3.png" /></li>
+<li><img alt="Component - Create Dialog 4" src="media/DEPLOY_Components_CreateDialog4.png" /></li>
+<li>Component successful created, first view is the Versions view</li>
+<li><img alt="Component - Newly Created Comp first view versions " src="media/DEPLOY_Components_NewCreatedComponentVersion.png" /></li>
+<li>have a look at the Components configuration, you can change it here if needed</li>
+<li><img alt="Component - Newly Created Comp configuraiton view" src="media/DEPLOY_Components_NewCreatedComponentConfig.png" /></li>
+<li>have a look at the processes of the component</li>
+<li><img alt="Component - Newly Created Comp Processes view" src="media/DEPLOY_Components_NewCreatedComponentProcesses.png" /></li>
+</ul>
 <h2 id="processes">Processes</h2>
 <p>TODO: talk about processes</p>
 <h3 id="types-of-processes">Types of Processes</h3>
@@ -2008,19 +2042,35 @@ Now, Click on your application(PizzaApp-XX) > Switch Tab to Components > Click o
 <p>TODO: talk about app processes and what is the diff to other</p>
 <h4 id="component-processes">Component Processes</h4>
 <p>TODO: talk about component processes and what is it good fore</p>
+<p>A freshly created component does not have any processes:</p>
 <p><img alt="component processes" src="media/DEPLOY_Component_Processlist.png" /></p>
-<h3 id="how-to-create-a-process">How to create a Process</h3>
-<p>In the Processlist click on the Create Process Button: <img alt="Create Process Button" src="media/DEPLOY_AppComp_CreateProcessButton.png" /></p>
-<h4 id="process-designer">Process Designer</h4>
-<p>It will show you the process designer:</p>
+<p>Every Component needs at least one (1) process. To create one press the Create Process Button<img alt="Create new Process Button" src="media/DEPLOY_Component_CreateProcessButton.png" /></p>
+<p><img alt="Component Process - Dialog" src="media/DEPLOY_Component_CreateProcessDialog.png" /></p>
+<p>TODO: talk about process details</p>
+<h5 id="process-designer">Process Designer</h5>
+<p>It will show you the process designer for a new process:</p>
 <p><img alt="Process Designer" src="media/DEPLOY_Component_ProcessEditor.png" /></p>
 <h4 id="process-designer-sidebar">Process Designer Sidebar</h4>
 <p>TODO: talk about sidebar</p>
 <p><img alt="Process Designer Sidebar" src="media/DEPLOY_Component_ProcessEditor_Sidebar.png" /></p>
 <p>Drag Drop a step onto the canvas.</p>
-<p><img alt="Dragged a Step onto the canvas" src="media/DEPLOY_Component_ProcessEditor_StepAdded.png" /></p>
-<h4 id="final-process-diagram">Final Process Diagram</h4>
-<p><img alt="Deploy Process Diagram Application Page" src="media/process_diagram.png" /></p>
+<p><img alt="Dragged a Step onto the canvas" src="media/DEPLOY_Component_Process_AddStep.png" /></p>
+<p>Configure the step:</p>
+<p><img alt="Step properties 1" src="media/DEPLOY_Component_Process_Step_Properties1.png" />
+<img alt="Step properties 2" src="media/DEPLOY_Component_Process_Step_Properties2.png" /></p>
+<p>In this example the shell step requires to have some script/commands added into the shell script field:</p>
+<p><img alt="Shell Script1" src="media/DEPLOY_Component_Process_Step_ShellScript1.png" />
+<img alt="Shell Script2" src="media/DEPLOY_Component_Process_Step_ShellScript2.png" /></p>
+<h5 id="final-process-diagram">Final Process Diagram</h5>
+<p><img alt="Deploy Process Diagram Application Page" src="media/DEPLOY_Component_Process_Final.png" /></p>
+<h5 id="adding-version-statuses">Adding Version Statuses</h5>
+<p><img alt="Process Designer - sidebar add version status" src="media/DEPLOY_Component_ProcessEditor_SidebarAddStatus.png" />
+<img alt="process designer - step added add version status" src="media/DEPLOY_Component_ProcessEditor_StepAdded_AddStatus.png" />
+<img alt="process designer - add version status properites" src="media/DEPLOY_Component_Process_Step_AddStatusProperties.png" /></p>
+<p>Result in the Versionlist of the component:
+<img alt="Status added to version" src="media/DEPLOY_Component_VersionList_withStatus.png" /></p>
+<h2 id="applications">Applications</h2>
+<p>TODO: talk about applications</p>
 <!-- 
 Now click on edit button available on the individual process:
 
