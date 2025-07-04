@@ -57,13 +57,25 @@ Once you import the application, you would be able to see additional application
 Now, Click on your application(PizzaApp-XX) > Switch Tab to Components > Click on PizzaApp-Container-XX > Switch tab to Process > Click on "Deploy PizzaApp"
  -->
 
-## Applications
-
-TODO: talk about applications
-
 ## Components
 
 TODO: talk about components
+
+![List of components](media/DEPLOY_Components_List.png)
+
+### Create New Component
+
+- Press Create new Component Button: ![Component - Create new](media/DEPLOY_Components_CreateComponentButton.png)
+- ![Component - Create Dialog 1](media/DEPLOY_Components_CreateDialog1.png)
+- ![Component - Create Dialog 2](media/DEPLOY_Components_CreateDialog2.png)
+- ![Component - Create Dialog 3](media/DEPLOY_Components_CreateDialog3.png)
+- ![Component - Create Dialog 4](media/DEPLOY_Components_CreateDialog4.png)
+- Component successful created, first view is the Versions view
+- ![Component - Newly Created Comp first view versions ](media/DEPLOY_Components_NewCreatedComponentVersion.png)
+- have a look at the Components configuration, you can change it here if needed
+- ![Component - Newly Created Comp configuraiton view](media/DEPLOY_Components_NewCreatedComponentConfig.png)
+- have a look at the processes of the component
+- ![Component - Newly Created Comp Processes view](media/DEPLOY_Components_NewCreatedComponentProcesses.png)
 
 ## Processes
 
@@ -83,15 +95,19 @@ TODO: talk about app processes and what is the diff to other
 
 TODO: talk about component processes and what is it good fore
 
+A freshly created component does not have any processes:
+
 ![component processes](media/DEPLOY_Component_Processlist.png)
 
-### How to create a Process
+Every Component needs at least one (1) process. To create one press the Create Process Button![Create new Process Button](media/DEPLOY_Component_CreateProcessButton.png)
 
-In the Processlist click on the Create Process Button: ![Create Process Button](media/DEPLOY_AppComp_CreateProcessButton.png)
+![Component Process - Dialog](media/DEPLOY_Component_CreateProcessDialog.png)
 
-#### Process Designer
+TODO: talk about process details
 
-It will show you the process designer:
+##### Process Designer
+
+It will show you the process designer for a new process:
 
 ![Process Designer](media/DEPLOY_Component_ProcessEditor.png)
 
@@ -103,11 +119,35 @@ TODO: talk about sidebar
 
 Drag Drop a step onto the canvas.
 
-![Dragged a Step onto the canvas](media/DEPLOY_Component_ProcessEditor_StepAdded.png)
+![Dragged a Step onto the canvas](media/DEPLOY_Component_Process_AddStep.png)
 
-#### Final Process Diagram
+Configure the step:
 
-![Deploy Process Diagram Application Page](media/process_diagram.png)
+![Step properties 1](media/DEPLOY_Component_Process_Step_Properties1.png)
+![Step properties 2](media/DEPLOY_Component_Process_Step_Properties2.png)
+
+In this example the shell step requires to have some script/commands added into the shell script field:
+
+![Shell Script1](media/DEPLOY_Component_Process_Step_ShellScript1.png)
+![Shell Script2](media/DEPLOY_Component_Process_Step_ShellScript2.png)
+
+##### Final Process Diagram
+
+![Deploy Process Diagram Application Page](media/DEPLOY_Component_Process_Final.png)
+
+##### Adding Version Statuses
+
+![Process Designer - sidebar add version status](media/DEPLOY_Component_ProcessEditor_SidebarAddStatus.png)
+![process designer - step added add version status](media/DEPLOY_Component_ProcessEditor_StepAdded_AddStatus.png)
+![process designer - add version status properites](media/DEPLOY_Component_Process_Step_AddStatusProperties.png)
+
+Result in the Versionlist of the component:
+![Status added to version](media/DEPLOY_Component_VersionList_withStatus.png)
+
+## Applications
+
+TODO: talk about applications
+
 <!-- 
 Now click on edit button available on the individual process:
 
