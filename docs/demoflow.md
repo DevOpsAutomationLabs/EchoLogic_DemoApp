@@ -39,18 +39,17 @@
 
 ## [Deploy](deploy/index.md)
 
-1. [Open Deploy](deploy/index.md#how-to-switch-to-deploy-from-home-page)
-    1. [Use the ‘What would you like to do today’ and select Deploy](introduction/index.md#what-would-you-like-to-do-today).
-    2. [Show the landing page and explain the metrics](deploy/index.md#deploy-landing-page)
-    3. [Show process (components, app)](deploy/index.md#processes)
-    4. [Edit process](deploy/index.md#process-designer)
-    5. [show a process which executes a TEST with setting quality tag on version.](deploy/index.md#adding-version-statuses)
+1. [Open Deploy](deploy/index.md#how-to-switch-to-deploy-from-home-page) by [Using the ‘What would you like to do today’ and select Deploy](deploy/index.md#what-would-you-like-to-do-today)
+    1. [Show the landing page and explain the metrics](deploy/index.md#deploy-landing-page)
+    2. [Show process (components, app)](deploy/index.md#processes)
+    3. [Edit process](deploy/index.md#process-designer)
+    4. [show a process which executes a TEST with setting quality tag on version.](deploy/index.md#adding-version-statuses)
         1. TODO: add test script step as soon as TEST is ready
-    6. [Run and view results of steps](deploy/index.md#run-a-deployment)
-    7. [Show result (environment and version changes of comp)](deploy/index.md#result-of-run).
-    8. Use Deploy Genie to understand why the deployment failed.
+    5. [Run and view results of steps](deploy/index.md#run-a-deployment)
+    6. [Show result (environment and version changes of comp)](deploy/index.md#result-of-run).
+    7. Use Deploy Genie to understand why the deployment failed.
         1. TODO: update as soon as connected to openai to showcase Deploy Genie
-    9. [Show the plug-ins page and explain how easy it is to integrate with 3rd parties out of the box](deploy/index.md#settings).
+    8. [Show the plug-ins page and explain how easy it is to integrate with 3rd parties out of the box](deploy/index.md#settings).
 
 ## [Test](test/index.md)
 

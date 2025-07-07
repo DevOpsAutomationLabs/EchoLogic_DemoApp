@@ -11,9 +11,19 @@ Explore the comprehensive dashboard provided by DevOps Deploy, which displays ke
 
 ### How to switch to Deploy from Home Page
 
+#### Lets go
+
 You can switch to Deploy by either pressing "Let's go to Deploy" button on its tile:
 
 ![Deploy Tile lets go](../introduction/media/Loop_switch_to_Deploy.png)
+
+#### What would you like to do today?
+
+You can switch directly to Deploy by using the button/link from What would you like to do today section:
+
+![What would you like to do today?](../introduction/media/Loop_whatwouldyouliketodotoday.png)
+
+#### Central App Switcher
 
 Or you can always switch using the central app switcher on the top left of your screen:
 
