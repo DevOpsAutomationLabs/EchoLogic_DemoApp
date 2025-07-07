@@ -77,6 +77,12 @@ This view provides the used record types, fields, transition matrizes and more.
 
 [Please follow these instructions to show how to work with Queries](queries/index.md)
 
+## Integrations
+
+### Control/GIT/SCM
+
+- ![PLAN - Show Control/Git Commit Link](media/PLAN_Show_GitCommit.png)
+
 ## Conclusio
 
 Congratulations! You have finished the Plan lab and have got a short overview of its capabilities.

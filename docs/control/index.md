@@ -82,7 +82,13 @@ Press Generate Token and **SAVE your newly created Token**:
 
 ![AccessToken](media/Control_Accesstoken.png)
 
-## Show Activity Report
+## Explore Control
+
+### Show Git Commit Details
+
+- ![CONTROL - Show Git Commit Details](control/media/CONTROL_ShowGitCommit.png)
+
+### Show Activity Report
 
 ![Show Last Commit](media/CONTROL_ShowLastCommit.png)
 

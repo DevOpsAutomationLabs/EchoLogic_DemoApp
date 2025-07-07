@@ -5,16 +5,26 @@
 ## [Loop](introduction/index.md)
 
 1. [Show Home Page](introduction/index.md#the-home-page)
-    1. and explain that we have a lot of metrics.
+    1. click on Home button in the side bar to switch to the Home Page
+    2. ![Home Page Sidebar](introduction/media/Loop_Home_Page_SideBar.png)
+    3. ![Home Page](introduction/media/Loop_Home_Page.png)
+    4. and explain that we have a lot of metrics.
 
 ## [Plan](plan/index.md)
 
 1. [Open Plan](plan/index.md#how-to-switch-to-plan-from-home-page)
     1. [Show a board](plan/boards/index.md#project-board)
+        1. ![myWork Board](plan/boards/media/Plan_ProjectBoard_myBoard.png)
     2. [Show how to filter out Epics](plan/boards/index.md#filter-epics)
+        1. ![Board filter](plan/boards/media/Plan_ProjectBoard_Filterbar.png)
     3. [Show all work items](plan/boards/index.md#work-items)
+        1. ![Board workitems](plan/boards/media/Plan_ProjectBoard_WorkItems.png)
     4. [Select and Show the details of a work item](plan/boards/index.md#select-workitem)
+        1. ![Select WorkItem from Board](plan/boards/media/PLAN_Boards_SelectWI.png)
+        2. ![Show Workitem Details](plan/boards/media/PLAN_Board_ShowWI_Detail.png)
     5. [Show the link between work item to code and explain how easy it is to have traceability](plan/boards/index.md#show-commit)
+        1. ![PLAN - Show Control/Git Commit Link](plan/media/PLAN_Show_GitCommit.png)
+        2. ![CONTROL - Show Git Commit Details](control/media/CONTROL_ShowGitCommit.png)
     6. [Open a workitem and use AI to create description and exploratory test information](plan/boards/index.md#use-ai-in-workitem)
 
 ## [Code](code/index.md)
