@@ -78,7 +78,7 @@
     8. [Show the plug-ins page and explain how easy it is to integrate with 3rd parties out of the box](deploy/index.md#settings).
         1. Switch to Settings by using the Settings Icon: ![Deploy Settings Icon](deploy/media/DEPLOY_SettingsIcon.png)
         2. ![Automation Plugins](deploy/media/DEPLOY_Settings_AutomationSection.png)
-        3. ![Plugin List](media/DEPLOY_PluginsList.png)
+        3. ![Plugin List](deploy/media/DEPLOY_PluginsList.png)
 
 ## [Test](test/index.md)
 
