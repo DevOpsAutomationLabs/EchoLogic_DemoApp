@@ -105,7 +105,7 @@ Every Component needs at least one (1) process. To create one press the Create P
 
 TODO: talk about process details
 
-##### Process Designer
+### Process Designer
 
 It will show you the process designer for a new process:
 
@@ -131,11 +131,11 @@ In this example the shell step requires to have some script/commands added into 
 ![Shell Script1](media/DEPLOY_Component_Process_Step_ShellScript1.png)
 ![Shell Script2](media/DEPLOY_Component_Process_Step_ShellScript2.png)
 
-##### Final Process Diagram
+#### Final Process Diagram
 
 ![Deploy Process Diagram Application Page](media/DEPLOY_Component_Process_Final.png)
 
-##### Adding Version Statuses
+#### Adding Version Statuses
 
 ![Process Designer - sidebar add version status](media/DEPLOY_Component_ProcessEditor_SidebarAddStatus.png)
 ![process designer - step added add version status](media/DEPLOY_Component_ProcessEditor_StepAdded_AddStatus.png)
@@ -147,6 +147,77 @@ Result in the Versionlist of the component:
 ## Applications
 
 TODO: talk about applications
+
+Open the Applicationslist by clicking on Applications Icon: ![Deploy Applications Button on Sidebar](media/DEPLOY_ApplicationsButton.png)
+
+## Environments
+
+TODO: talk about environments
+
+## Run a deployment
+
+Select your Application by clicking on the link: ![Deploy Application - Ecologic](media/DEPLOY_ApplicationList_ShowEcologic.png)
+
+All Environments of Application will be shown:
+![Deploy Application Environment List](media/DEPLOY_Application_Environmentlist.png)
+
+### Request a Process
+
+click on Request Process Button: ![Request Button](media/DEPLOY_Application_RequestProcess.png)
+
+Go through dialog:
+
+- ![Run Process Dialog - Select Deployment Process](media/DEPLOY_Application_Runappprocessdialog1_SelectDeploymentProcess.png)
+- ![Run Process Dialog - Select Select Version Or Snapshot](media/DEPLOY_Application_Runappprocessdialog2_SelectCompVersionOrSnapshot.png)
+- ![Run Process Dialog - uncheck Deploy Only Changed](media/DEPLOY_Application_Runappprocessdialog3_OnlyChanged.png)
+- ![Run Process Dialog - Choose Versions Button](media/DEPLOY_Application_Runappprocessdialog4_ChooseCompVersionButton.png)
+- ![Run Process Dialog - Select Component Version 1](media/DEPLOY_Application_Runappprocessdialog5_SelectCompVersion.png)
+- ![Run Process Dialog - Select Component Version 2](media/DEPLOY_Application_Runappprocessdialog6_SelectCompVersion.png)
+
+Press the Submit button: ![Submit Button](media/DEPLOY_Application_Runappprocessdialog7_Submit.png) to start the deployment process.
+
+### View of Running Process
+
+The details of the running process are shown:
+![Running Process](media/DEPLOY_RunningProcess1.png)
+
+Click on Expand All ![Expand All](media/DEPLOY_RunningProcess2_ExpandAll.png) so see step details
+
+Click on 3 dots menue of a step ![3 dots menue of step](media/DEPLOY_RunningProcess3_Stepdetails.png)
+View the output of the step ![Output of Step](media/DEPLOY_RunningProcess4_StepDetails.png)
+
+### Result of Run
+
+The deployment run successfully and updated the configuration of the environment with the deployed component versions:
+![Environment with deployed versions of components](media/DEPLOY_Application_EnvironmentResultVersions.png)
+
+### Create a Snapshot
+
+TODO: talk about snapshots and what they are good for
+
+Select the Create Snapshot Icon: ![Create Snapshot](media/DEPLOY_Application_Environment_CreateSnapshot.png)
+
+- ![Create Snapshot dialog](media/DEPLOY_Application_Environment_CreateSnapshot_Dialog.png)
+- ![Create Snapshot Detail step 1](media/DEPLOY_Application_Environment_CreateSnapshot_Detail1.png)
+- ![Create Snapshot Detail step 2](media/DEPLOY_Application_Environment_CreateSnapshot_Detail2.png)
+
+Now the Environment configuration has been updated to indicate that a Snapshot is applied:
+![Snapshot on environment](media/DEPLOY_Application_Environment_SnapshotApplied.png)
+
+## Settings
+
+Switch to Settings by using the Settings Icon: ![Deploy Settings Icon](media/DEPLOY_SettingsIcon.png)
+
+### Plugins
+
+Plugins are listed in the Automation Section of the Settings pages.
+
+- ![Automation Plugins](media/DEPLOY_Settings_AutomationSection.png)
+- ![Plugin List](media/DEPLOY_PluginsList.png)
+
+#### How to install a plugin
+
+click on the 3 dots menue of the plugin you want to install and select install: ![Install plugin](media/DEPLOY_Plugins_Install.png)
 
 <!-- 
 Now click on edit button available on the individual process:
