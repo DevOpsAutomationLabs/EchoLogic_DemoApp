@@ -86,7 +86,7 @@ Press Generate Token and **SAVE your newly created Token**:
 
 ### Show Git Commit Details
 
-- ![CONTROL - Show Git Commit Details](control/media/CONTROL_ShowGitCommit.png)
+- ![CONTROL - Show Git Commit Details](media/CONTROL_ShowGitCommit.png)
 
 ### Show Activity Report
 

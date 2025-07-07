@@ -32,34 +32,53 @@
 1. Explain that we showed the link between a work item and the code in control.
 2. [Now open CODE](code/index.md#how-to-switch-to-code-from-home-page) ( use VScode for now, Switch to DevOps Code later)
     1. [Use WCA to explain code and generate some new code](code/index.md#watsonx-code-assistant).
+        1. ![Explain code part 2](code/media/CODE_WCAx_Explain1.png)
+        2. ![Explain code part 2](code/media/CODE_WCAx_Explain2.png)
     2. [Push code and add comment with work item number](code/index.md#commit-code-with-wi).
+        1. ![Commit Code with WI](code/media/CODE_CommitWithWI.png)
     3. [Open Control and show the update](#control).
 
 ## [Control](control/index.md)
 
 1. [Open Control](control/index.md#how-to-switch-to-control-from-home-page)
     1. [Show the Update](control/index.md#show-activity-report) in the activity report of the repository
+    2. Activity Report: ![Show Last Commit](control/media/CONTROL_ShowLastCommit.png)
+    3. Git Commit Details: ![CONTROL - Show Git Commit Details](control/media/CONTROL_ShowGitCommit.png)
 
 ## [Build](build/index.md)
 
 1. [Open Build](build/index.md#how-to-switch-to-build-from-home-page)
     1. [Show overview on build runs and results](build/index.md#build-project-runs)
+        1. ![Project Build Runs and Results](build/media/BUILD_Process_Runs_results.png)
     2. [Show build process](build/index.md#build-process-detail)
+        1. ![Build Process Detail](build/media/BUILD_Process_Runs_Details.png)
     3. [Show templates](build/index.md#templates)
+        1. ![Templates - Process](build/media/BUILD_Template_Process.png)
 
 ## [Deploy](deploy/index.md)
 
 1. [Open Deploy](deploy/index.md#how-to-switch-to-deploy-from-home-page) by [Using the ‘What would you like to do today’ and select Deploy](deploy/index.md#what-would-you-like-to-do-today)
     1. [Show the landing page and explain the metrics](deploy/index.md#deploy-landing-page)
+        1. ![Deploy Dashboard Page](deploy/media/dashboard.png)
     2. [Show process (components, app)](deploy/index.md#processes)
+        1. Component Process: ![component processes](deploy/media/DEPLOY_Component_Processlist_withentries.png)
     3. [Edit process](deploy/index.md#process-designer)
+        1. ![Process Designer](deploy/media/DEPLOY_Component_ProcessEditor.png)
     4. [show a process which executes a TEST with setting quality tag on version.](deploy/index.md#adding-version-statuses)
-        1. TODO: add test script step as soon as TEST is ready
+        1. ![Deploy Process Diagram Application Page](deploy/media/DEPLOY_Component_Process_Final.png)
+        2. TODO: add test script step as soon as TEST is ready
     5. [Run and view results of steps](deploy/index.md#run-a-deployment)
+        1. ![Deploy Application Environment List](deploy/media/DEPLOY_Application_Environmentlist.png)
+        2. click on Request Process Button: ![Request Button](deploy/media/DEPLOY_Application_RequestProcess.png)
+        3. ![Request Process Detail](deploy/media/DEPLOY_Application_RequestProcess_withcomponents.png)
     6. [Show result (environment and version changes of comp)](deploy/index.md#result-of-run).
+        1. ![Environment with deployed versions of components](deploy/media/DEPLOY_Application_EnvironmentResultVersions.png)
     7. Use Deploy Genie to understand why the deployment failed.
         1. TODO: update as soon as connected to openai to showcase Deploy Genie
     8. [Show the plug-ins page and explain how easy it is to integrate with 3rd parties out of the box](deploy/index.md#settings).
+        1. Switch to Settings by using the Settings Icon: ![Deploy Settings Icon](deploy/media/DEPLOY_SettingsIcon.png)
+        2. ![Automation Plugins](deploy/media/DEPLOY_Settings_AutomationSection.png)
+        3. ![Plugin List](media/DEPLOY_PluginsList.png)
 
 ## [Test](test/index.md)
 
