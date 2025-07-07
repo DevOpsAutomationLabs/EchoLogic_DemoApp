@@ -42,8 +42,10 @@
 
 1. [Open Control](control/index.md#how-to-switch-to-control-from-home-page)
     1. [Show the Update](control/index.md#show-activity-report) in the activity report of the repository
-    2. Activity Report: ![Show Last Commit](control/media/CONTROL_ShowLastCommit.png)
-    3. Git Commit Details: ![CONTROL - Show Git Commit Details](control/media/CONTROL_ShowGitCommit.png)
+    2. Activity Report
+        1. ![Show Last Commit](control/media/CONTROL_ShowLastCommit.png)
+    3. Git Commit Details
+        1. ![CONTROL - Show Git Commit Details](control/media/CONTROL_ShowGitCommit.png)
 
 ## [Build](build/index.md)
 
@@ -70,7 +72,10 @@
     5. [Run and view results of steps](deploy/index.md#run-a-deployment)
         1. ![Deploy Application Environment List](deploy/media/DEPLOY_Application_Environmentlist.png)
         2. click on Request Process Button: ![Request Button](deploy/media/DEPLOY_Application_RequestProcess.png)
-        3. ![Request Process Detail](deploy/media/DEPLOY_Application_RequestProcess_withcomponents.png)
+        3. Request with Component Versions
+            1. ![Request Process Detail](deploy/media/DEPLOY_Application_RequestProcess_withcomponents.png)
+        4. OR Request with Snapshot
+            1. ![Request Process Detail using a Snapshot](deploy/media/DEPLOY_Application_RequestProcess_withsnapshot.png)
     6. [Show result (environment and version changes of comp)](deploy/index.md#result-of-run).
         1. ![Environment with deployed versions of components](deploy/media/DEPLOY_Application_EnvironmentResultVersions.png)
     7. Use Deploy Genie to understand why the deployment failed.
