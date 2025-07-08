@@ -1,6 +1,6 @@
 # EchoLogic DemoApp
 
-Demo App for EchoLogic
+Demo App for EchoLogic. Use it as a base for Echo and Logic components.
 
 ## structure
 

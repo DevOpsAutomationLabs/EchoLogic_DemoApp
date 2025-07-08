@@ -13,7 +13,7 @@
 ## [Plan](plan/index.md)
 
 1. [Open Plan](plan/index.md#how-to-switch-to-plan-from-home-page)
-    1. [Show a board](plan/boards/index.md#project-board)
+    1. [Show My board](plan/boards/index.md#project-board)
         1. ![myWork Board](plan/boards/media/Plan_ProjectBoard_myBoard.png)
     2. [Show how to filter out Epics](plan/boards/index.md#filter-epics)
         1. ![Board filter](plan/boards/media/Plan_ProjectBoard_Filterbar.png)
