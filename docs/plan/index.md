@@ -92,6 +92,8 @@ Congratulations! You have finished the Plan lab and have got a short overview of
 
 ---
 
-[AppPage]: media/Plan_Applications_page.png
+[AppPage]: newapp/media/PLAN_Tenant_AppListFinal.png
 [PlanTile]: ../introduction/media/Loop_switch_to_Plan.png
 [AppSwitcher]: ../introduction/media/Loop_central_app_control.png
+
+ <!-- media/Plan_Applications_page.png -->
