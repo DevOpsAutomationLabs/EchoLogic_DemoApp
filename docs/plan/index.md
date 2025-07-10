@@ -65,6 +65,10 @@ will open a new view to the technical details of the used workflow for the selec
 
 This view provides the used record types, fields, transition matrizes and more.
 
+## Setup Demo Data
+
+Please follow [this document](setup/index.md) to import Demo data into Plan.
+
 ## Work with Boards
 
 [Please follow these instructions to learn more about Boards](boards/index.md).

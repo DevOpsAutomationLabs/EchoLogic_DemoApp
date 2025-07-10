@@ -11,3 +11,7 @@ The sourcecode can be found in the [src](src/README.md) folder with more instruc
 ## Demo Script
 
 The demo script can be found in the [docs](docs/index.md) folder with more instructions and self enablement.
+
+## Additional Files
+
+All additional files needed for the demo (for example sample data) can be found in the [files](files/README.md)
