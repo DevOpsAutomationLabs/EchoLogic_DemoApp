@@ -39,7 +39,7 @@ Back to [Plan Overview](../index.md#how-to-create-a-new-application)
 [FinishButton]: media/PLAN_Tenant_NewApp_Finish.png
 [AppCreationProcess]: media/PLAN_Tenant_NewApp_creation.png
 [Application List]: media/PLAN_Tenant_AppListFinal.png
-[LetsGoButton]: media/PLAN_LetsGoButton.png
+[LetsGoButton]: ../media/PLAN_LetsGoButton.png
 [DotsMenue]: media/PLAN_Tenant_HowToSwitch1.png
 [TenantMngmnt]: media/PLAN_Tenant_HowToSwitch2.png
 [TenantList]: media/PLAN_Tenant_list.png

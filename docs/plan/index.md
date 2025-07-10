@@ -9,13 +9,10 @@ TODO: add here more about Plan
 
 ## How to switch to Plan from Home Page
 
-You can switch to Plan by either pressing "Let's go to Plan" button on its tile:
-
-![Plan Tile lets go](../introduction/media/Loop_switch_to_Plan.png)
-
-Or you can always switch using the central app switcher on the top left of your screen:
-
-![Central App Switcher](../introduction/media/Loop_central_app_control.png)
+| Step | Details                                                                                | Additional Information               |
+|:----:|:---------------------------------------------------------------------------------------|:-------------------------------------|
+|  1   | You can switch to Plan by either pressing "Let's go to Plan" button on its tile        | ![Plan Tile lets go][PlanTile]       |
+|  2   | Or you can always switch using the central app switcher on the top left of your screen | ![Central App Switcher][AppSwitcher] |
 
 ## Demo Data or New Application with Sample Data
 
@@ -33,7 +30,7 @@ If you want to create a new Application and do not want to use the pre-created a
 
 If you have not set your default Plan application you will be provided with a screen with all applications you have access to.
 
-![Plan Applications Page](media/Plan_Applications_page.png)
+![Plan Applications Page][AppPage]
 
 Set the provided app as default and presss "Let's go" to proceed.
 
@@ -92,3 +89,9 @@ This view provides the used record types, fields, transition matrizes and more.
 ## Conclusio
 
 Congratulations! You have finished the Plan lab and have got a short overview of its capabilities.
+
+---
+
+[AppPage]: media/Plan_Applications_page.png
+[PlanTile]: ../introduction/media/Loop_switch_to_Plan.png
+[AppSwitcher]: ../introduction/media/Loop_central_app_control.png
