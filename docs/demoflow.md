@@ -4,11 +4,17 @@
 
 ## [Loop](introduction/index.md)
 
-1. [Show Home Page](introduction/index.md#the-home-page)
-    1. click on Home button in the side bar to switch to the Home Page
-    2. ![Home Page Sidebar](introduction/media/Loop_Home_Page_SideBar.png)
-    3. ![Home Page](introduction/media/Loop_Home_Page.png)
-    4. and explain that we have a lot of metrics.
+| Step | Details                                                                                                       | Additional Information                                                                     |
+|:----:|:--------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------|
+|  1   | After loging in you will be on the [Home Page](introduction/index.md#the-home-page) of Loop                   | ![Home Page](introduction/media/Loop_Home_Page.png)                                        |
+|  2   | If you are not on the Home Page page, click on Home button in the side bar to switch to the Home Page         | ![Home Page Sidebar](introduction/media/Loop_Home_Page_SideBar.png)                        |
+|  3   | The Home Page provides metrics and dashboards over all of my accessible Loops                                 |                                                                                            |
+|  4   | Showing data from Plan - Ratio of Issues created versus closed                                                | ![Plan Metric](introduction/media/LoopHome_Plan_metrics.png)                                            |
+|  5   | Number of Build Jobs failed and successeful finished                                                          | ![Build Metric](introduction/media/LoopHome_Build_Metrics.png)                                          |
+|  6   | Count of Deployments and how many of them were successfull or failed                                          | ![Deploy Metric](introduction/media/LoopHome_Deploy_Metrics.png)                                        |
+|  7   | Top contributors in Control                                                                                   | ![Control Metric](introduction/media/LoopHome_Control_metrics.png)                                      |
+|  8   | Two DORA (DevOps Research and Assessment) metrics for <br> Lead Time (The lead time for changes is the quantity of time it takes a dot to progress from commit to production deployment) <br> and Cycle Time (measures the duration from when work begins on an item (like a task or story) until it's completed)                                | ![Lead Time](introduction/media/LoopHome_LeadTime.png) <br> ![Cycle Time](introduction/media/LoopHome_CycleTime.png) |
+|      | Find out more about [DORA Metrics here](https://www.ibm.com/docs/en/devops-velocity/5.1.0?topic=metrics-dora) |                                                                                            |
 
 ## [Plan](plan/index.md)
 

@@ -21,6 +21,15 @@ After you have been logged in you will be directed to your homepage and it will 
 
 ![Home Page](media/Loop_Home_Page.png)
 
+#### Dashboard and Metrics
+
+![Plan Metric](media/LoopHome_Plan_metrics.png)
+![Build Metric](media/LoopHome_Build_Metrics.png)
+![Deploy Metric](media/LoopHome_Deploy_Metrics.png)
+![Control Metric](media/LoopHome_Control_metrics.png)
+![Lead Time](media/LoopHome_LeadTime.png)
+![Cycle Time](media/LoopHome_CycleTime.png)
+
 #### What would you like to do today?
 
 You can switch directly to the capability/solution by using the button/link
