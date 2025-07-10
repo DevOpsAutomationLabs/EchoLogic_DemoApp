@@ -14,7 +14,7 @@ Please use this [Demo Flow](demoflow.md) for fast demoing DevOps Loop, all neces
 
 ### [Introduction](introduction/index.md)
 
-Short Introduction into Loop.
+Short Introduction into Loop and how to setup a new TeamSpace and Loop.
 
 ### [Plan](plan/index.md)
 

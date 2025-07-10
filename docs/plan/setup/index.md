@@ -16,6 +16,8 @@
 |  9   | Press the close button (bottom right on the screen)                                   | ![Close Button][ImportClose]                             |
 |      |                                                                                       |                                                          |
 
+Back to [Plan Lab](../index.md#setup-demo-data)
+
 ---
 
 [ChooseFileDialog]: media/PLAN_Import_Dialog_ChooseFile.png

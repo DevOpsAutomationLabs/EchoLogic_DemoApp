@@ -35,8 +35,22 @@ or by using the central app switcher on the top left:
 
 ## Creation of a Teamspace and Loops
 
-In the case of an empty environment you need to create a new Teamspace and at least one Loop. Please follow the [Instructions for creating Teamspace(s)](teamspace/index.md) and the [Instructions for creation of a new Loop](loops/index.md)
+In the case of an empty environment you need to create a new Teamspace and at least one Loop.
+
+### Create a TeamSpace
+
+Please follow the [Instructions for creating Teamspace(s)](teamspace/index.md)
+
+When the creation of a TeamSpace is finished you will be forwarded to your empty loops home page for your new TeamSpace.
+
+![Empty Loops Homepage](loops/media/Loop_Teamspace_07_CreateNewLoop_Home.png)
+
+### Create a Loop
+
+You need to create at least one Loop in your TeamSpace, please follow the [Instructions for creation of a new Loop](loops/index.md)
 
 ## Conclusio
 
 If you want to talk more about Loop please have a look at the [About Box, Sidebar and Plug-Ins](intro/index.md) introduction.
+
+Go back to [Lab and Demo Overview](../index.md#introduction)
