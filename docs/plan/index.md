@@ -17,9 +17,15 @@ Or you can always switch using the central app switcher on the top left of your 
 
 ![Central App Switcher](../introduction/media/Loop_central_app_control.png)
 
-## How to create a new Application
+## Demo Data or New Application with Sample Data
 
-Please follow the instructions how to [create a new Application with Sample Data](newapp/index.md).
+### Setup Demo Data
+
+You can use the pre-created Plan application from your Loop and add sampl data to it please follow [this document](setup/index.md) to import Demo data into Plan.
+
+### How to create a new Application
+
+If you want to create a new Application and do not want to use the pre-created application from your Loop please follow the instructions how to [create a new Application with Sample Data](newapp/index.md).
 
 ## Let's go with Plan
 
@@ -64,10 +70,6 @@ will open a new view to the technical details of the used workflow for the selec
 ![Schema Overview](media/Plan_app_view_details.png)
 
 This view provides the used record types, fields, transition matrizes and more.
-
-## Setup Demo Data
-
-Please follow [this document](setup/index.md) to import Demo data into Plan.
 
 ## Work with Boards
 

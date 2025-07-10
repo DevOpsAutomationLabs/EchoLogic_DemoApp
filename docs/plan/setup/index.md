@@ -7,7 +7,7 @@
 |  1   | Use the Import Feature of plan to load sample data                                    | ![Import Icon][ImportIcon]                               |
 |  2   | In the Dialog for importing record data                                               | ![Import Dialog][ImportDialog1]                          |
 |      | click the Choose File Button to select the sample data file to be imported            | ![Choose File Button][ChooseFileDialog]                  |
-|  3   | Select the [EchoLogic Zip File from files section](../../../files/plan/EchoLogic.zip) | ![Select the file][SelectZipFile]                        |
+|  3   | Select the [EchoLogic Zip File from files section][EchoLogicZipFile] | ![Select the file][SelectZipFile]                        |
 |  4   | Now we have the file selected                                                         | ![Import Dialog with selected File][ImportDialog2]       |
 |  5   | Presss the Import Button to start                                                     | ![Press Import Button][ImportButton]                     |
 |  6   | The Import process starts.                                                            | ![Import Process starting][ImportStarts]                 |
@@ -27,3 +27,4 @@
 [ImportStarts]: media/PLAN_Import_started.png
 [ImportRunningWithDetails]: media/PLAN_Import_running.png
 [ImportClose]: media/PLAN_Import_Close_dialog.png
+[EchoLogicZIPFile]: https://github.com/DevOpsAutomationLabs/EchoLogic_DemoApp/raw/main/files/plan/EchoLogic.zip
