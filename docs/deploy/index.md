@@ -15,23 +15,23 @@ Explore the comprehensive dashboard provided by DevOps Deploy, which displays ke
 
 You can switch to Deploy by either pressing "Let's go to Deploy" button on its tile:
 
-![Deploy Tile lets go](../introduction/media/Loop_switch_to_Deploy.png)
+![Deploy Tile lets go][DeployTile]
 
 #### What would you like to do today?
 
 You can switch directly to Deploy by using the button/link from What would you like to do today section:
 
-![What would you like to do today?](../introduction/media/Loop_whatwouldyouliketodotoday.png)
+![What would you like to do today?][WhatWouldYouLikeToDoToday]
 
 #### Central App Switcher
 
 Or you can always switch using the central app switcher on the top left of your screen:
 
-![Central App Switcher](../introduction/media/Loop_central_app_control.png)
+![Central App Switcher][CentralAppSwitcher]
 
 ### Deploy Landing Page
 
-   ![Deploy Dashboard Page](media/dashboard.png)
+   ![Deploy Dashboard Page][DeployDashboard]
 <!-- 
 ### Note
 
@@ -71,21 +71,21 @@ Now, Click on your application(PizzaApp-XX) > Switch Tab to Components > Click o
 
 TODO: talk about components
 
-![List of components](media/DEPLOY_Components_List.png)
+![List of components][DeployComponentList]
 
 ### Create New Component
 
-- Press Create new Component Button: ![Component - Create new](media/DEPLOY_Components_CreateComponentButton.png)
-- ![Component - Create Dialog 1](media/DEPLOY_Components_CreateDialog1.png)
-- ![Component - Create Dialog 2](media/DEPLOY_Components_CreateDialog2.png)
-- ![Component - Create Dialog 3](media/DEPLOY_Components_CreateDialog3.png)
-- ![Component - Create Dialog 4](media/DEPLOY_Components_CreateDialog4.png)
+- Press Create new Component Button: ![Component - Create new][DeployComponentCreateNew]
+- ![Component - Create Dialog 1][DeployComponentCreateNewDialog1]
+- ![Component - Create Dialog 2][DeployComponentCreateNewDialog2]
+- ![Component - Create Dialog 3][DeployComponentCreateNewDialog3]
+- ![Component - Create Dialog 4][DeployComponentCreateNewDialog4]
 - Component successful created, first view is the Versions view
-- ![Component - Newly Created Comp first view versions ](media/DEPLOY_Components_NewCreatedComponentVersion.png)
+- ![Component - Newly Created Comp first view versions ][DeployComponentNewVersionView]
 - have a look at the Components configuration, you can change it here if needed
-- ![Component - Newly Created Comp configuraiton view](media/DEPLOY_Components_NewCreatedComponentConfig.png)
+- ![Component - Newly Created Comp configuraiton view][DeployComponentNewConfigurationView]
 - have a look at the processes of the component
-- ![Component - Newly Created Comp Processes view](media/DEPLOY_Components_NewCreatedComponentProcesses.png)
+- ![Component - Newly Created Comp Processes view][DeployComponentNewProcessesView]
 
 ## Processes
 
@@ -107,11 +107,11 @@ TODO: talk about component processes and what is it good fore
 
 A freshly created component does not have any processes:
 
-![component processes](media/DEPLOY_Component_Processlist.png)
+![component processes][DeployComponentProcessesListEmpty]
 
-Every Component needs at least one (1) process. To create one press the Create Process Button![Create new Process Button](media/DEPLOY_Component_CreateProcessButton.png)
+Every Component needs at least one (1) process. To create one press the Create Process Button ![Create new Process Button][DeployComponentCreateNewProcessButton]
 
-![Component Process - Dialog](media/DEPLOY_Component_CreateProcessDialog.png)
+![Component Process - Dialog][DeployComponentCreateProcessDialog]
 
 TODO: talk about process details
 
@@ -119,46 +119,55 @@ TODO: talk about process details
 
 It will show you the process designer for a new process:
 
-![Process Designer](media/DEPLOY_Component_ProcessEditor.png)
+![Process Designer][DeployProcessDesigner]
 
 #### Process Designer Sidebar
 
 TODO: talk about sidebar
 
-![Process Designer Sidebar](media/DEPLOY_Component_ProcessEditor_Sidebar.png)
+![Process Designer Sidebar][DeployComponentProcessDesignerSidebar]
 
 Drag Drop a step onto the canvas.
 
-![Dragged a Step onto the canvas](media/DEPLOY_Component_Process_AddStep.png)
+![Dragged a Step onto the canvas][DeployProcessDesignerAddStepp]
 
 Configure the step:
 
-![Step properties 1](media/DEPLOY_Component_Process_Step_Properties1.png)
-![Step properties 2](media/DEPLOY_Component_Process_Step_Properties2.png)
+![Step properties 1][DeployProcessDesignerStepProperties1]
+![Step properties 2][DeployProcessDesignerStepProperties2]
 
 In this example the shell step requires to have some script/commands added into the shell script field:
 
-![Shell Script1](media/DEPLOY_Component_Process_Step_ShellScript1.png)
-![Shell Script2](media/DEPLOY_Component_Process_Step_ShellScript2.png)
+![Shell Script1][DeployProcessDesignerStepShellScript1]
+![Shell Script2][DeployProcessDesignerStepShellScript2]
 
 #### Final Process Diagram
 
-![Deploy Process Diagram Application Page](media/DEPLOY_Component_Process_Final.png)
+![Deploy Process Diagram Application Page][DeployComponentFinalProcess]
 
 #### Adding Version Statuses
 
-![Process Designer - sidebar add version status](media/DEPLOY_Component_ProcessEditor_SidebarAddStatus.png)
-![process designer - step added add version status](media/DEPLOY_Component_ProcessEditor_StepAdded_AddStatus.png)
-![process designer - add version status properites](media/DEPLOY_Component_Process_Step_AddStatusProperties.png)
+![Process Designer - sidebar add version status][DeployProcesDesignerSidebarAddVersionStatus]
+![process designer - step added add version status][DeployProcessDesignerAddedVersionStatus]
+![process designer - add version status properites][DeployProcessDesignerAddedVersionStatusProperties]
+
+##### Final Process Diagrams (Passing and Failing tests)
+
+![Process Designer - Final Process with passed Test][DeployComponentProcessPassingTest]
+![Process Designer - Final Process with failing Test][DeployComponentProcessFailingTest]
+
+Now we have additional deployment processes. One for passing a test and one for failing a test. Both processes will set the appropiate version tag about status of test.
+
+![Component with Deployment Process passing and failing][DeployComponentProcessesList]
 
 Result in the Versionlist of the component:
-![Status added to version](media/DEPLOY_Component_VersionList_withStatus.png)
+![Status added to version][DeployComponentFinalProcesWithVersionStatus]
 
 ## Applications
 
 TODO: talk about applications
 
-Open the Applicationslist by clicking on Applications Icon: ![Deploy Applications Button on Sidebar](media/DEPLOY_ApplicationsButton.png)
+Open the Applicationslist by clicking on Applications Icon: ![Deploy Applications Button on Sidebar][DeploySidebarAppIcon]
 
 ## Environments
 
@@ -166,40 +175,41 @@ TODO: talk about environments
 
 ## Run a deployment
 
-Select your Application by clicking on the link: ![Deploy Application - Ecologic](media/DEPLOY_ApplicationList_ShowEcologic.png)
+Select your Application by clicking on the link: ![Deploy Application][DeployShowApp]
 
 All Environments of Application will be shown:
-![Deploy Application Environment List](media/DEPLOY_Application_Environmentlist.png)
+![Deploy Application Environment List][DeployAppEnvList]
 
 ### Request a Process
 
-click on Request Process Button: ![Request Button](media/DEPLOY_Application_RequestProcess.png)
+click on Request Process Button: ![Request Button][DeployAppRequestProcessButton] on the DEV Environment ![Dev Environment][DeployAppDevEnv]
 
 Go through dialog:
 
-- ![Run Process Dialog - Select Deployment Process](media/DEPLOY_Application_Runappprocessdialog1_SelectDeploymentProcess.png)
-- ![Run Process Dialog - Select Select Version Or Snapshot](media/DEPLOY_Application_Runappprocessdialog2_SelectCompVersionOrSnapshot.png)
-- ![Run Process Dialog - uncheck Deploy Only Changed](media/DEPLOY_Application_Runappprocessdialog3_OnlyChanged.png)
-- ![Run Process Dialog - Choose Versions Button](media/DEPLOY_Application_Runappprocessdialog4_ChooseCompVersionButton.png)
-- ![Run Process Dialog - Select Component Version 1](media/DEPLOY_Application_Runappprocessdialog5_SelectCompVersion.png)
-- ![Run Process Dialog - Select Component Version 2](media/DEPLOY_Application_Runappprocessdialog6_SelectCompVersion.png)
+- ![Run Process Dialog - Select Deployment Process][DeployAppProcessRequestSelectProcess]
+- ![Run Process Dialog - Select Select Version Or Snapshot][DeployAppProcessRequestSelectSnapsotOrVersions]
+- ![Run Process Dialog - uncheck Deploy Only Changed][DeployAppProcessRequestOnlyChanged]
+- ![Run Process Dialog - Choose Versions Button][DeployAppPocessRequestChooseCompVersionButton]
+- ![Run Process Dialog - Select Component Version 1][DeployAppPocessRequestSelectCompVersion1]
+- ![Run Process Dialog - Select Component Version 2][DeployAppPocessRequestSelectCompVersion2]
 
-Press the Submit button: ![Submit Button](media/DEPLOY_Application_Runappprocessdialog7_Submit.png) to start the deployment process.
+Press the Submit button: ![Submit Button][DeployAppPocessRequestSubmitButton] to start the deployment process.
 
 ### View of Running Process
 
 The details of the running process are shown:
-![Running Process](media/DEPLOY_RunningProcess1.png)
+![Running Process][DeployProcessRunning]
 
-Click on Expand All ![Expand All](media/DEPLOY_RunningProcess2_ExpandAll.png) so see step details
+Click on Expand All ![Expand All][DeployProcessRunningExpandAllButton] so see step details
 
-Click on 3 dots menue of a step ![3 dots menue of step](media/DEPLOY_RunningProcess3_Stepdetails.png)
-View the output of the step ![Output of Step](media/DEPLOY_RunningProcess4_StepDetails.png)
+Click on 3 dots menue of a step ![3 dots menue of step][DeployProcessRunning3DotsofStep]
+View the output of the step ![Output of Step][DeployProcessRunningStepOutputDetails]
 
 ### Result of Run
 
-The deployment run successfully and updated the configuration of the environment with the deployed component versions:
-![Environment with deployed versions of components](media/DEPLOY_Application_EnvironmentResultVersions.png)
+The deployment run successfully ![Deployment Success][DeployAppProcessRunSuccess]
+and updated the configuration of the environment with the deployed component versions:
+![Environment with deployed versions of components][DeployAppEnvwithDeployedVersions]
 
 ### Create a Snapshot
 
@@ -216,18 +226,24 @@ Now the Environment configuration has been updated to indicate that a Snapshot i
 
 ## Settings
 
-Switch to Settings by using the Settings Icon: ![Deploy Settings Icon](media/DEPLOY_SettingsIcon.png)
+Switch to Settings by using the Settings Icon: ![Deploy Settings Icon][DeploySettingsIcon]
 
 ### Plugins
 
 Plugins are listed in the Automation Section of the Settings pages.
 
-- ![Automation Plugins](media/DEPLOY_Settings_AutomationSection.png)
-- ![Plugin List](media/DEPLOY_PluginsList.png)
+- ![Automation Plugins][DeploySettingsAutomationPlugins]
+- ![Plugin List][DeploySettingsPluginsList]
 
 #### How to install a plugin
 
-click on the 3 dots menue of the plugin you want to install and select install: ![Install plugin](media/DEPLOY_Plugins_Install.png)
+click on the [3 dots menue][DeployPlugin3DotsMenue] of the plugin you want to install and select install: ![Install plugin][DeployInstallPlugin]
+An Installation Confirmation Dialog will pop up, click here on **Confirm** to proceed ![Plugin Installation Confirmation][DeployInstallPluginConfirmation]
+Installation is Successfull Notification ![Plugin Installation Successfull][DeployPluginInstallSuccess]
+
+### How to upgrade a plugin
+
+Same procedure as installing a Plugin. Click on the 3 Dots menue and select **Upgrade**
 
 <!-- 
 Now click on edit button available on the individual process:
@@ -302,3 +318,60 @@ Do not forget to do this important step once you can successfully run the Jenkin
 ![Deployment process](media/deployment_process.png)
 14. Check your running application at: http://165.192.86.196:30XX (Note: XX should be relaced with your student id)
  -->
+
+[DeployTile]: ../introduction/media/Loop_switch_to_Deploy.png
+[WhatWouldYouLikeToDoToday]: ../introduction/media/Loop_whatwouldyouliketodotoday.png
+[CentralAppSwitcher]: ../introduction/media/Loop_central_app_control.png
+[DeployDashboard]: media/dashboard.png
+[DeployComponentList]: media/DEPLOY_Components_List.png
+[DeployComponentCreateNew]: media/DEPLOY_Components_CreateComponentButton.png
+[DeployComponentCreateNewDialog1]: media/DEPLOY_Components_CreateDialog1.png
+[DeployComponentCreateNewDialog2]: media/DEPLOY_Components_CreateDialog2.png
+[DeployComponentCreateNewDialog3]: media/DEPLOY_Components_CreateDialog3.png
+[DeployComponentCreateNewDialog4]: media/DEPLOY_Components_CreateDialog4.png
+[DeployComponentNewVersionView]: media/DEPLOY_Components_NewCreatedComponentVersion.png
+[DeployComponentNewConfigurationView]: media/DEPLOY_Components_NewCreatedComponentConfig.png
+[DeployComponentNewProcessesView]: media/DEPLOY_Components_NewCreatedComponentProcesses.png
+[DeployProcessDesigner]: media/DEPLOY_Component_ProcessEditor.png
+[DeployComponentProcessDesignerSidebar]: media/DEPLOY_Component_ProcessEditor_Sidebar.png
+[DeployProcessDesignerAddStepp]: media/DEPLOY_Component_Process_AddStep.png
+[DeployProcessDesignerStepProperties1]: media/DEPLOY_Component_Process_Step_Properties1.png
+[DeployProcessDesignerStepProperties2]: media/DEPLOY_Component_Process_Step_Properties2.png
+[DeployComponentProcessesListEmpty]: media/DEPLOY_Component_Processlist.png
+[DeployComponentProcessesList]: media/DEPLOY_Component_WithProcesslist.png
+[DeployComponentCreateNewProcessButton]: media/DEPLOY_Component_CreateProcessButton.png
+[DeployComponentCreateProcessDialog]: media/DEPLOY_Component_CreateProcessDialog.png
+[DeployProcessDesignerStepShellScript1]: media/DEPLOY_Component_Process_Step_ShellScript1.png
+[DeployProcessDesignerStepShellScript2]: media/DEPLOY_Component_Process_Step_ShellScript2.png
+[DeployComponentFinalProcess]: media/DEPLOY_Component_Process_Final.png
+[DeployProcesDesignerSidebarAddVersionStatus]: media/DEPLOY_Component_ProcessEditor_SidebarAddStatus.png
+[DeployProcessDesignerAddedVersionStatus]: media/DEPLOY_Component_ProcessEditor_StepAdded_AddStatus.png
+[DeployProcessDesignerAddedVersionStatusProperties]: media/DEPLOY_Component_Process_Step_AddStatusProperties.png
+[DeployComponentFinalProcesWithVersionStatus]: media/DEPLOY_Component_VersionList_withStatus.png
+[DeploySidebarAppIcon]: media/DEPLOY_ApplicationsButton.png
+[DeployShowApp]: media/DEPLOY_ApplicationList_ShowEcologic.png
+[DeployAppEnvList]: media/DEPLOY_Application_Environmentlist.png
+[DeployAppRequestProcessButton]: media/DEPLOY_Application_RequestProcess.png
+[DeployAppProcessRequestSelectProcess]: media/DEPLOY_Application_Runappprocessdialog1_SelectDeploymentProcess.png
+[DeployAppProcessRequestSelectSnapsotOrVersions]: media/DEPLOY_Application_Runappprocessdialog2_SelectCompVersionOrSnapshot.png
+[DeployAppProcessRequestOnlyChanged]: media/DEPLOY_Application_Runappprocessdialog3_OnlyChanged.png
+[DeployAppPocessRequestChooseCompVersionButton]: media/DEPLOY_Application_Runappprocessdialog4_ChooseCompVersionButton.png
+[DeployAppPocessRequestSelectCompVersion1]: media/DEPLOY_Application_Runappprocessdialog5_SelectCompVersion.png
+[DeployAppPocessRequestSelectCompVersion2]: media/DEPLOY_Application_Runappprocessdialog6_SelectCompVersion.png
+[DeployAppPocessRequestSubmitButton]: media/DEPLOY_Application_Runappprocessdialog7_Submit.png
+[DeployComponentProcessPassingTest]: media/DEPLOY_ComponentProcessFinalWithPassingTest.png
+[DeployComponentProcessFailingTest]: media/DEPLOY_ComponentProcessFinalWithFailingTest.png
+[DeployAppDevEnv]: media/DEPLOY_AppEnv_DEV.png
+[DeployProcessRunning]: media/DEPLOY_RunningProcess1.png
+[DeployProcessRunningExpandAllButton]: media/DEPLOY_RunningProcess2_ExpandAll.png
+[DeployProcessRunning3DotsofStep]: media/DEPLOY_RunningProcess3_Stepdetails.png
+[DeployProcessRunningStepOutputDetails]: media/DEPLOY_RunningProcess4_StepDetails.png
+[DeployAppProcessRunSuccess]: media/DEPLOY_AppProcessFinishedSuccess.png
+[DeployAppEnvwithDeployedVersions]: media/DEPLOY_Application_EnvironmentResultVersions.png
+[DeploySettingsIcon]: media/DEPLOY_SettingsIcon.png
+[DeploySettingsAutomationPlugins]: media/DEPLOY_Settings_AutomationSection.png
+[DeploySettingsPluginsList]: media/DEPLOY_PluginsList.png
+[DeployInstallPlugin]: media/DEPLOY_Plugins_Install.png
+[DeployPlugin3DotsMenue]: media/DEPLOY_PluginList_3DotsMenue.png
+[DeployInstallPluginConfirmation]: media/DEPLOY_PluginInstallConfirmation.png
+[DeployPluginInstallSuccess]: media/DEPLOY_PluginInstallSuccess.png

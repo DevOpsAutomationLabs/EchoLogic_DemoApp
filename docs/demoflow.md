@@ -24,7 +24,7 @@
 
 | Step | Details                                                                                                 | Additional Information                                  |
 |:----:|:--------------------------------------------------------------------------------------------------------|:--------------------------------------------------------|
-|  1   | [Open Plan][OpenPlan]                                                                                   |                                                         |
+|  1   | [Open Plan][PLANopen]                                                                                   |                                                         |
 |      | You can switch to Plan by either pressing "Let's go to Plan" button on its tile                         | ![Plan Tile lets go][PlanTile]                          |
 |      | Or you can always switch using the central app switcher on the top left of your screen                  | ![Central App Switcher][AppSwitcher]                    |
 |  2   | [Show My board][ShowMyBoard]                                                                            |                                                         |
@@ -79,52 +79,105 @@
 
 ## [Control](control/index.md)
 
-1. [Open Control](control/index.md#how-to-switch-to-control-from-home-page)
-    1. [Show the Update](control/index.md#show-activity-report) in the activity report of the repository
-    2. Activity Report
-        1. ![Show Last Commit](control/media/CONTROL_ShowLastCommit.png)
-    3. Git Commit Details
-        1. ![CONTROL - Show Git Commit Details][ControlShowCommit]
+| Step | Details                                                                       | Additional Information                                  |
+|:----:|:------------------------------------------------------------------------------|:--------------------------------------------------------|
+|  1   | [Open Control][ControlOPEN]                                                   |                                                         |
+|  2   | [Show the Update][ControlShowUpdate] in the activity report of the repository | ![Show Last Commit][ControlShowLastCommit]              |
+|  3   | Git Commit Details                                                            | ![CONTROL - Show Git Commit Details][ControlShowCommit] |
 
 ## [Build](build/index.md)
 
-1. [Open Build](build/index.md#how-to-switch-to-build-from-home-page)
-    1. [Show overview on build runs and results](build/index.md#build-project-runs)
-        1. ![Project Build Runs and Results](build/media/BUILD_Process_Runs_results.png)
-    2. [Show build process](build/index.md#build-process-detail)
-        1. ![Build Process Detail](build/media/BUILD_Process_Runs_Details.png)
-    3. [Show templates](build/index.md#templates)
-        1. ![Templates - Process](build/media/BUILD_Template_Process.png)
+| Step | Details                                                             | Additional Information                                             |
+|:----:|:--------------------------------------------------------------------|:-------------------------------------------------------------------|
+|      | [Open Build][BuildOpen]                                             |                                                                    |
+|      | [Show overview on build runs and results][BuildOverviewRunsResults] | ![Project Build Runs and Results][BuildProjectRunsResults]         |
+|      | [Show build process][BuildShowBuildProcess]                         | ![Build Process Detail][BuildProcessDetail]                        |
+|      | [Show Templates][BuildShowTemplates]                                | ![Templates - Process][BuildProcessTemplates]                      |
+|      | [Show Build Template Detail][BuildShowTemplateDetail]               | ![Templates - Process Details][BuildProcessTemplatesDetail]        |
+|      | [Show Build Template Definition][BuildShowTemplateDefinition]       | ![Templates - Process Definition][BuildProcessTemplatesDefinition] |
+|      |                                                                     |                                                                    |
 
 ## [Deploy](deploy/index.md)
 
-1. [Open Deploy](deploy/index.md#how-to-switch-to-deploy-from-home-page) by [Using the ‘What would you like to do today’ and select Deploy](deploy/index.md#what-would-you-like-to-do-today)
-    1. [Show the landing page and explain the metrics](deploy/index.md#deploy-landing-page)
-        1. ![Deploy Dashboard Page](deploy/media/dashboard.png)
-    2. [Show process (components, app)](deploy/index.md#processes)
-        1. Component Process: ![component processes](deploy/media/DEPLOY_Component_Processlist_withentries.png)
-    3. [Edit process](deploy/index.md#process-designer)
-        1. ![Process Designer](deploy/media/DEPLOY_Component_ProcessEditor.png)
-    4. [show a process which executes a TEST with setting quality tag on version.](deploy/index.md#adding-version-statuses)
-        1. ![Deploy Process Diagram Application Page](deploy/media/DEPLOY_Component_Process_Final.png)
-        2. TODO: add test script step as soon as TEST is ready
-    5. [Run and view results of steps](deploy/index.md#run-a-deployment)
-        1. ![Deploy Application Environment List](deploy/media/DEPLOY_Application_Environmentlist.png)
-        2. click on Request Process Button: ![Request Button](deploy/media/DEPLOY_Application_RequestProcess.png)
-        3. Request with Component Versions
-            1. ![Request Process Detail](deploy/media/DEPLOY_Application_RequestProcess_withcomponents.png)
-        4. OR Request with Snapshot
-            1. ![Request Process Detail using a Snapshot](deploy/media/DEPLOY_Application_RequestProcess_withsnapshot.png)
-    6. [Show result (environment and version changes of comp)](deploy/index.md#result-of-run).
-        1. ![Environment with deployed versions of components](deploy/media/DEPLOY_Application_EnvironmentResultVersions.png)
-    7. Use Deploy Genie to understand why the deployment failed.
-        1. TODO: update as soon as connected to openai to showcase Deploy Genie
-    8. [Show the plug-ins page and explain how easy it is to integrate with 3rd parties out of the box](deploy/index.md#settings).
-        1. Switch to Settings by using the Settings Icon: ![Deploy Settings Icon](deploy/media/DEPLOY_SettingsIcon.png)
-        2. ![Automation Plugins](deploy/media/DEPLOY_Settings_AutomationSection.png)
-        3. ![Plugin List](deploy/media/DEPLOY_PluginsList.png)
+### Deploy Overview
+
+| Step | Details                                                                                                    | Additional Information                                                                        |
+|:----:|:-----------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------|
+|      | [Open Deploy][DeployOpen] by [Using the ‘What would you like to do today’ and select Deploy][DeployWWYLTT] | ![What would you like to do today?][WhatWouldYouLikeToDoToday]                                |
+|      | [Show the landing page and explain the metrics][DeployShowLandingPage]                                     | <img src="deploy/media/dashboard.png" alt="Deploy Home Page" style="width:50%; height:auto;"> |
+|      | [Show process (components, app)][DeployShowProcesses]                                                      |                                                                                               |
+|      | Component Process                                                                                          | ![component processes][DeployComponentWithProcesses]                                          |
+|      | You can either create a [new process][DeployShowProcessDesigner] by pressing Create Process Button         | ![Create new Process Button][DeployComponentCreateNewProcessButton]                           |
+|      | - It will show you the process designer for a new process                                                  | ![Process Designer][DeployProcessDesigner]                                                    |
+|      | Or click on existing Process to view and edit the given Process                                            | ![select one of the processes][DeployComponentProcessesList]                                  |
+|      | - [show a process which executes a TEST with setting quality tag on version][DeployShowProcessWithTest]    |                                                                                               |
+|      | -- Deploy with Test Passed                                                                                 | ![Process Designer - Final Process with passed Test][DeployComponentProcessPassingTest]       |
+|      | -- Deploy with Test Failed                                                                                 | ![Process Designer - Final Process with failing Test][DeployComponentProcessFailingTest]      |
+
+### Run a Deplyoment
+
+| Step | Details                                                                                                    | Additional Information                                                                        |
+|:----:|:-----------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------|
+|      | [Run a Process and view results of steps][DeployRunaDeployment]                                            |                                                                                               |
+|      | Open the Applicationslist by clicking on Applications Icon                                                 | ![Deploy Applications Button on Sidebar][DeploySidebarAppIcon]                                |
+|      | Select your Application by clicking on the link in the Applications List                                   | ![Deploy Application][DeployShowApp]                                                          |
+|      | All Environments of Application will be shown                                                              | ![Deploy Application Environment List][DeployAppEnvList]                                      |
+|      | [Run a Deployment in an Environment][DeployRequestAprocess]                                                |                                                                                               |
+|      | On the DEV environment click on Request Process Button: ![Request Button][DeployAppRequestProcessButton]   | ![Dev Environment][DeployAppDevEnv]                                                           |
+|      | Select **Deploy with Test Passed**                                                                         | ![Run Process Dialog - Select Deployment Process][DeployAppProcessRequestSelectProcess]       |
+|      | Uncheck **Deploy Only Changed** to deploy same versions again                                              | ![Run Process Dialog - uncheck Deploy Only Changed][DeployAppProcessRequestOnlyChanged]       |
+|      | click on **Choose Component Versions** button                                                              | ![Run Process Dialog - Choose Versions Button][DeployAppPocessRequestChooseCompVersionButton] |
+|      | Select the Versions of the Components for deployment                                                       |                                                                                               |
+|      |                                                                                                            | ![Run Process Dialog - Select Component Version 1][DeployAppPocessRequestSelectCompVersion1]  |
+|      |                                                                                                            | ![Run Process Dialog - Select Component Version 2][DeployAppPocessRequestSelectCompVersion2]  |
+|      | Press the Submit button to start the deployment process                                                    | ![Submit Button][DeployAppPocessRequestSubmitButton]                                          |
+|      | The Deployment Process is started and you can [View the running Process][DeployViewRunningProcess]   |  ![Running Process][DeployProcessRunning]        |
+|      | In this View the details of the executed steps are shown by clicking on **Expand All** | ![Expand All][DeployProcessRunningExpandAllButton] |
+|      | To view the detailed output of a step click on **3 dots menue** of the step  | ![3 dots menue of step][DeployProcessRunning3DotsofStep]  |
+|      | View the output of the step   | ![Output of Step][DeployProcessRunningStepOutputDetails]   |
+|      | When the deplyoment finishes the [Result][DeployResultofRun] will be shown  |                                                                                               |
+|      | The deployment run successfully     | ![Deployment Success][DeployAppProcessRunSuccess] |
+| | [Show Environment and its new configuration][DeployResultofRun] | |
+|      | Switch to the Environment View of the Application and view the updated configuration | ![Environment with deployed versions of components][DeployAppEnvwithDeployedVersions]  |
+|      | By clicking on the Component **Echo** in this view the set Status in the Versionlist of the component will be shown   | ![Status added to version][DeployComponentFinalProcesWithVersionStatus] |
+|      |                                                                                                            |                                                                                               |
+|      |                                                                                                            |                                                                                               |
+
+### Use the Deployment Genie
+
+| Step | Details                                                                                                    | Additional Information                                                                        |
+|:----:|:-----------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------|
+|      | Use Deploy Genie to understand why the deployment failed  | TODO: update as soon as connected to openai to showcase Deploy Genie |
+|      |                                                                                                            |                                                                                               |
+|      |                                                                                                            |                                                                                               |
+|      |                                                                                                            |                                                                                               |
+
+### Show the Plug-Ins Page
+
+| Step | Details                                                                                                    | Additional Information                                                                        |
+|:----:|:-----------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------|
+|      | [Show the plug-ins page and explain how easy it is to integrate with 3rd parties out of the box][DeployShowPluginsPage] | |
+|      | Switch to Settings by using the Settings Icon | ![Deploy Settings Icon][DeploySettingsIcon] |
+|      | In the Settings View there is a [Section Automation to View installed and available Plugins][DeploySettingsAutomationSection]      |  ![Automation Plugins][DeploySettingsAutomationPlugins]  |
+|      | By clicking on **Available Plugins** a list of all available Plug-Ins is shown    | ![Plugin List][DeploySettingsPluginsList] |
+|      | [Install a new Plugin][DeployShowHowToInstallPlugin] by clicking on the **3 Dots Menue** [3 dots menue][DeployPlugin3DotsMenue] of a Plugin| ![Install plugin][DeployInstallPlugin] |
+|      | An Installation Confirmation Dialog will pop up, click here on **Confirm** to proceed | ![Plugin Installation Confirmation][DeployInstallPluginConfirmation] |
+|      | Installation is Successfull Notification | ![Plugin Installation Successfull][DeployPluginInstallSuccess] |
 
 ## [Test](test/index.md)
+
+| Step | Details | Additional Information |
+|:----:|:--------|:-----------------------|
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
 
 1. [Open Test](test/index.md#how-to-switch-to-test-from-home-page)
     1. Explain that you are now playing the role of a tester
@@ -143,6 +196,19 @@
 
 ## [Measure](measure/index.md)
 
+| Step | Details | Additional Information |
+|:----:|:--------|:-----------------------|
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
+
 1. [Open Measure](measure/index.md#how-to-switch-to-measure-from-home-page)
     1. Explain that we have built, deployed and tested so now we need to coordinate releases.
     2. Show and talk about pipeline(s) with environments and Gates
@@ -155,6 +221,19 @@
     5. So how do we ensure everyone understands the state of our project.  Well we can generate a release readiness report. – Generate the report.
 
 ## Genie
+
+| Step | Details | Additional Information |
+|:----:|:--------|:-----------------------|
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
+|      |         |                        |
 
 Explain that we have covered a lot of roles and used a mixture of AI and automation but we can bring it all together with what we call our Loop Genie
 
@@ -173,7 +252,7 @@ Explain that we have covered a lot of roles and used a mixture of AI and automat
 [ControlMetric]: introduction/media/LoopHome_Control_metrics.png
 [LeadTime]: introduction/media/LoopHome_LeadTime.png
 [CycleTime]: introduction/media/LoopHome_CycleTime.png
-[OpenPlan]: plan/index.md#how-to-switch-to-plan-from-home-page
+[PLANopen]: plan/index.md#how-to-switch-to-plan-from-home-page
 [PlanTile]: introduction/media/Loop_switch_to_Plan.png
 [AppSwitcher]: introduction/media/Loop_central_app_control.png
 [ShowMyBoard]: plan/boards/index.md#project-board
@@ -219,3 +298,63 @@ Explain that we have covered a lot of roles and used a mixture of AI and automat
 [WcaXexplain2]: code/media/CODE_WCAx_Explain2.png
 [CODEcommitWI]: code/index.md#commit-code-with-wi
 [CodeWithWIcommit]: code/media/CODE_CommitWithWI.png
+[ControlOPEN]: control/index.md#how-to-switch-to-control-from-home-page
+[ControlShowUpdate]: control/index.md#show-activity-report
+[ControlShowLastCommit]: control/media/CONTROL_ShowLastCommit.png
+[BuildProcessDetail]: build/media/BUILD_Process_Runs_Details.png
+[BuildProcessTemplates]: build/media/BUILD_Template_Process.png
+[BuildShowBuildProcess]: build/index.md#build-process-detail
+[BuildOpen]: build/index.md#how-to-switch-to-build-from-home-page
+[BuildOverviewRunsResults]: build/index.md#build-project-runs
+[BuildProjectRunsResults]: build/media/BUILD_Process_Runs_results.png
+[BuildProcessTemplatesDetail]: media/BUILD_Templates_Process_Detail.png
+[BuildProcessTemplatesDefinition]: media/BUILD_Templates_Process_Def.png
+[BuildShowTemplates]: build/index.md#templates
+[BuildShowTemplateDetail]: build/index.md#process-template-detail
+[BuildShowTemplateDefinition]: build/index.md#media/BUILD_Templates_Process_Def.png
+
+[DeployOpen]: deploy/index.md#how-to-switch-to-deploy-from-home-page
+[DeployWWYLTT]: deploy/index.md#what-would-you-like-to-do-today
+[WhatWouldYouLikeToDoToday]: introduction/media/Loop_whatwouldyouliketodotoday.png
+[DeployShowLandingPage]: deploy/index.md#deploy-landing-page
+[DeployShowProcesses]: deploy/index.md#processes
+[DeployComponentWithProcesses]: deploy/media/DEPLOY_Component_Processlist_withentries.png
+[DeployShowProcessDesigner]: deploy/index.md#process-designer
+[DeployProcessDesigner]: deploy/media/DEPLOY_Component_ProcessEditor.png
+[DeployShowProcessWithTest]: deploy/index.md#adding-version-statuses
+[DeployComponentProcessPassingTest]: deploy/media/DEPLOY_ComponentProcessFinalWithPassingTest.png
+[DeployComponentProcessFailingTest]: deploy/media/DEPLOY_ComponentProcessFinalWithFailingTest.png
+[DeployComponentFinalProcesWithVersionStatus]: deploy/media/DEPLOY_Component_VersionList_withStatus.png
+[DeployComponentProcessesList]: deploy/media/DEPLOY_Component_WithProcesslist.png
+[DeployComponentCreateNewProcessButton]: deploy/media/DEPLOY_Component_CreateProcessButton.png
+[DeployShowApp]: deploy/media/DEPLOY_ApplicationList_ShowEcologic.png
+[DeploySidebarAppIcon]: deploy/media/DEPLOY_ApplicationsButton.png
+[DeployAppEnvList]: deploy/media/DEPLOY_Application_Environmentlist.png
+[DeployAppRequestProcessButton]: deploy/media/DEPLOY_Application_RequestProcess.png
+[DeployAppProcessRequestSelectProcess]: deploy/media/DEPLOY_Application_Runappprocessdialog1_SelectDeploymentProcess.png
+[DeployAppProcessRequestOnlyChanged]: deploy/media/DEPLOY_Application_Runappprocessdialog3_OnlyChanged.png
+[DeployAppPocessRequestChooseCompVersionButton]: deploy/media/DEPLOY_Application_Runappprocessdialog4_ChooseCompVersionButton.png
+[DeployAppPocessRequestSelectCompVersion1]: deploy/media/DEPLOY_Application_Runappprocessdialog5_SelectCompVersion.png
+[DeployAppPocessRequestSelectCompVersion2]: deploy/media/DEPLOY_Application_Runappprocessdialog6_SelectCompVersion.png
+[DeployAppPocessRequestSubmitButton]: deploy/media/DEPLOY_Application_Runappprocessdialog7_Submit.png
+[DeployRunaDeployment]: deploy/index.md#run-a-deployment
+[DeployRequestAprocess]: deploy/index.md#request-a-process
+[DeployAppDevEnv]: deploy/media/DEPLOY_AppEnv_DEV.png
+[DeployProcessRunning]: deploy/media/DEPLOY_RunningProcess1.png
+[DeployProcessRunningExpandAllButton]: deploy/media/DEPLOY_RunningProcess2_ExpandAll.png
+[DeployProcessRunning3DotsofStep]: deploy/media/DEPLOY_RunningProcess3_Stepdetails.png
+[DeployProcessRunningStepOutputDetails]: deploy/media/DEPLOY_RunningProcess4_StepDetails.png
+[DeployViewRunningProcess]: deploy/index.md#view-of-running-process
+[DeployAppProcessRunSuccess]: deploy/media/DEPLOY_AppProcessFinishedSuccess.png
+[DeployAppEnvwithDeployedVersions]: deploy/media/DEPLOY_Application_EnvironmentResultVersions.png
+[DeployResultofRun]: deploy/index.md#result-of-run
+[DeployShowPluginsPage]: deploy/index.md#settings
+[DeploySettingsIcon]: deploy/media/DEPLOY_SettingsIcon.png
+[DeploySettingsAutomationPlugins]: deploy/media/DEPLOY_Settings_AutomationSection.png
+[DeploySettingsPluginsList]: deploy/media/DEPLOY_PluginsList.png
+[DeploySettingsAutomationSection]: deploy/index.md#plugins
+[DeployInstallPlugin]: media/DEPLOY_Plugins_Install.png
+[DeployPlugin3DotsMenue]: media/DEPLOY_PluginList_3DotsMenue.png
+[DeployShowHowToInstallPlugin]: deploy/index.md#how-to-install-a-plugin
+[DeployInstallPluginConfirmation]: deploy/media/DEPLOY_PluginInstallConfirmation.png
+[DeployPluginInstallSuccess]: deploy/media/DEPLOY_PluginInstallSuccess.png
