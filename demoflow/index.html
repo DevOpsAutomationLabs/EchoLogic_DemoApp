@@ -570,6 +570,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plan-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Plan Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-plan-ai-assistant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Plan AI Assistant
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1994,8 +2018,18 @@
 </tr>
 <tr>
 <td style="text-align: center;">8</td>
-<td style="text-align: left;">Two DORA (DevOps Research and Assessment) metrics for <br> Lead Time (The lead time for changes is the quantity of time it takes a dot to progress from commit to production deployment) <br> and Cycle Time (measures the duration from when work begins on an item (like a task or story) until it's completed)</td>
-<td style="text-align: left;"><img alt="Lead Time" src="../introduction/media/LoopHome_LeadTime.png" /> <br> <img alt="Cycle Time" src="../introduction/media/LoopHome_CycleTime.png" /></td>
+<td style="text-align: left;">Two DORA (DevOps Research and Assessment) metrics for</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">Lead Time: In general, lead-time reflects the time from the start of a project until its final disposition</td>
+<td style="text-align: left;"><img alt="Lead Time" src="../introduction/media/LoopHome_LeadTime.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">Cycle Time: In general, cycle-time reflects the time project elements take to resolve or complete</td>
+<td style="text-align: left;"><img alt="Cycle Time" src="../introduction/media/LoopHome_CycleTime.png" /></td>
 </tr>
 <tr>
 <td style="text-align: center;"></td>
@@ -2005,34 +2039,192 @@
 </tbody>
 </table>
 <h2 id="plan"><a href="../plan/">Plan</a></h2>
-<ol>
-<li><a href="../plan/#how-to-switch-to-plan-from-home-page">Open Plan</a><ol>
-<li><a href="../plan/boards/#project-board">Show My board</a><ol>
-<li><img alt="myWork Board" src="../plan/boards/media/Plan_ProjectBoard_myBoard.png" /></li>
-</ol>
-</li>
-<li><a href="../plan/boards/#filter-epics">Show how to filter out Epics</a><ol>
-<li><img alt="Board filter" src="../plan/boards/media/Plan_ProjectBoard_Filterbar.png" /></li>
-</ol>
-</li>
-<li><a href="../plan/boards/#work-items">Show all work items</a><ol>
-<li><img alt="Board workitems" src="../plan/boards/media/Plan_ProjectBoard_WorkItems.png" /></li>
-</ol>
-</li>
-<li><a href="../plan/boards/#select-workitem">Select and Show the details of a work item</a><ol>
-<li><img alt="Select WorkItem from Board" src="../plan/boards/media/PLAN_Boards_SelectWI.png" /></li>
-<li><img alt="Show Workitem Details" src="../plan/boards/media/PLAN_Board_ShowWI_Detail.png" /></li>
-</ol>
-</li>
-<li><a href="../plan/boards/#show-commit">Show the link between work item to code and explain how easy it is to have traceability</a><ol>
-<li><img alt="PLAN - Show Control/Git Commit Link" src="../plan/media/PLAN_Show_GitCommit.png" /></li>
-<li><img alt="CONTROL - Show Git Commit Details" src="../control/media/CONTROL_ShowGitCommit.png" /></li>
-</ol>
-</li>
-<li><a href="../plan/boards/#use-ai-in-workitem">Open a workitem and use AI to create description and exploratory test information</a></li>
-</ol>
-</li>
-</ol>
+<h3 id="plan-overview">Plan Overview</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Step</th>
+<th style="text-align: left;">Details</th>
+<th style="text-align: left;">Additional Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../plan/#how-to-switch-to-plan-from-home-page">Open Plan</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">You can switch to Plan by either pressing "Let's go to Plan" button on its tile</td>
+<td style="text-align: left;"><img alt="Plan Tile lets go" src="../introduction/media/Loop_switch_to_Plan.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">Or you can always switch using the central app switcher on the top left of your screen</td>
+<td style="text-align: left;"><img alt="Central App Switcher" src="../introduction/media/Loop_central_app_control.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../plan/boards/#project-board">Show My board</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">To open the board use the Project Board icon <img alt="Board Icon in sidebar" src="../plan/boards/media/Plan_ProjectBoard_Icon.png" /> on the sidebar</td>
+<td style="text-align: left;"><img alt="sidebar" src="../plan/media/Plan_Sidebar_ProjectBoards.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">The initial view is your My Board view which will show worktitems that are assigned to you</td>
+<td style="text-align: left;"><img alt="myWork Board" src="../plan/boards/media/Plan_ProjectBoard_myBoard.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;"><a href="../plan/boards/#filter-epics">Show how to filter out Epics</a></td>
+<td style="text-align: left;"><img alt="Board filter" src="../plan/boards/media/Plan_ProjectBoard_Filterbar.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;"><a href="../plan/boards/#work-items">Show all work items</a></td>
+<td style="text-align: left;"><img alt="Board workitems" src="../plan/boards/media/Plan_ProjectBoard_WorkItems.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;"><a href="../plan/boards/#select-workitem">Select and Show the details of a work item</a></td>
+<td style="text-align: left;"><img alt="Select WorkItem from Board" src="../plan/boards/media/PLAN_Boards_SelectWI.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><img alt="Show Workitem Details" src="../plan/boards/media/PLAN_Board_ShowWI_Detail.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;"><a href="../plan/boards/#show-commit">Show the link between work item to code and explain how easy it is to have traceability</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><img alt="PLAN - Show Control/Git Commit Link" src="../plan/media/PLAN_Show_GitCommit.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><img alt="CONTROL - Show Git Commit Details" src="../control/media/CONTROL_ShowGitCommit.png" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="use-plan-ai-assistant">Use Plan AI Assistant</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Step</th>
+<th style="text-align: left;">Details</th>
+<th style="text-align: left;">Additional Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../plan/#ai-assistant">Use the AI Assistant</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">Select the AI Assistant Icon <img alt="AI Assistant Icon" src="../plan/media/PLAN_AI_assistant_Icon.png" /> from the Sidebar</td>
+<td style="text-align: left;"><img alt="Sidebar" src="../plan/media/PLAN_Sidebar.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">Accept the Terms of Service</td>
+<td style="text-align: left;"><img alt="Accept Terms" src="../plan/media/PLAN_AI_accept_Terms.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">The AI Assistant Chat Dialog opens</td>
+<td style="text-align: left;"><img alt="AI Assistant Dialog" src="../plan/media/PLAN_AI_Dialog1.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;">Enter Now a prompt, you can use the example prompts or use the following one <br> Provide the necessary steps to implement a Keycloak solution in our enterprise application</td>
+<td style="text-align: left;"><img alt="Enter Prompt" src="../plan/media/PLAN_AI_enter_prompt.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;">Click on the <strong>Next</strong> Button to proceed</td>
+<td style="text-align: left;"><img alt="Next Button" src="../plan/media/PLAN_AI_NextButton.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: left;">The Applying Prompts page is shown with several types</td>
+<td style="text-align: left;"><img alt="Applying Prompts" src="../plan/media/PLAN_AI_UserInputType.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">8</td>
+<td style="text-align: left;">Select <strong>Generate Action Items</strong> (click into the circle with the check mark)</td>
+<td style="text-align: left;"><img alt="Generate Action Items" src="../plan/media/PLAN_AI_Generate_Action_Items.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">9</td>
+<td style="text-align: left;">This will generate a set of responses</td>
+<td style="text-align: left;"><img alt="AI Responses" src="../plan/media/PLAN_AI_to_create_Items.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">10</td>
+<td style="text-align: left;">Click the <strong>Select</strong> Button and select <strong>Break Down into Titles</strong></td>
+<td style="text-align: left;"><img alt="Select Button" src="../plan/media/PLAN_AI_SelectButton_List.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">11</td>
+<td style="text-align: left;">This will convert the list of responses to a list with checkboxes</td>
+<td style="text-align: left;"><img alt="AI Responses with Checkboxes" src="../plan/media/PLAN_AI_select_items.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">12</td>
+<td style="text-align: left;">Select a few you like from the list</td>
+<td style="text-align: left;"><img alt="AI Responses selected" src="../plan/media/PLAN_AI_select_items2.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">13</td>
+<td style="text-align: left;">Click the <strong>Select Record Type</strong> Button</td>
+<td style="text-align: left;"><img alt="Select Record Type" src="../plan/media/PLAN_AI_select_record_type.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">14</td>
+<td style="text-align: left;">to select <strong>Workitem</strong> from the list</td>
+<td style="text-align: left;"><img alt="Select Workitem" src="../plan/media/PLAN_AI_recordtype_workitem.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">15</td>
+<td style="text-align: left;">In the next Dialog  select the right <strong>Project</strong> and <strong>Workitem Type</strong></td>
+<td style="text-align: left;"><img alt="Record Creation Dialog1" src="../plan/media/PLAN_AI_recordtype_Dialog1.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">16</td>
+<td style="text-align: left;">for example <strong>Project</strong>: Echologic and <strong>Type</strong>: Epic</td>
+<td style="text-align: left;"><img alt="Record Creation Dialog2" src="../plan/media/PLAN_AI_recordtype_Dialog2.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">17</td>
+<td style="text-align: left;">Press the <strong>Create Records</strong> Button to get the <strong>Epics</strong> created.</td>
+<td style="text-align: left;"><img alt="Create Records Button" src="../plan/media/PLAN_AI_create_records_button.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">18</td>
+<td style="text-align: left;">A few seconds later all newly created records are now created</td>
+<td style="text-align: left;"><img alt="Newly created Records" src="../plan/media/PLAN_AI_records_created.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">19</td>
+<td style="text-align: left;">Press <strong>Done</strong>  to finish using the AI Assistant</td>
+<td style="text-align: left;"><img alt="Done Button" src="../plan/media/PLAN_AI_done.png" /></td>
+</tr>
+</tbody>
+</table>
+<!-- [Open a workitem and use AI to create description and exploratory test information](plan/boards/index.md#use-ai-in-workitem) -->
+
 <h2 id="code"><a href="../code/">Code</a></h2>
 <ol>
 <li>Explain that we showed the link between a work item and the code in control.</li>
@@ -2177,6 +2369,7 @@
 <li>Ask xyz question.</li>
 <li>Explain that we are back to the start and that this has been a quick end to end demo.</li>
 </ol>
+<hr />
 
 
 
