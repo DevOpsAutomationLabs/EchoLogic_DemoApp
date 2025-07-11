@@ -1012,6 +1012,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Adding Version Statuses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#final-process-diagrams-passing-and-failing-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Process Diagrams (Passing and Failing tests)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1124,6 +1139,15 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-upgrade-a-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to upgrade a plugin
+    </span>
+  </a>
   
 </li>
         
@@ -2247,7 +2271,7 @@ Now, Click on your application(PizzaApp-XX) > Switch Tab to Components > Click o
 <p>TODO: talk about component processes and what is it good fore</p>
 <p>A freshly created component does not have any processes:</p>
 <p><img alt="component processes" src="media/DEPLOY_Component_Processlist.png" /></p>
-<p>Every Component needs at least one (1) process. To create one press the Create Process Button<img alt="Create new Process Button" src="media/DEPLOY_Component_CreateProcessButton.png" /></p>
+<p>Every Component needs at least one (1) process. To create one press the Create Process Button <img alt="Create new Process Button" src="media/DEPLOY_Component_CreateProcessButton.png" /></p>
 <p><img alt="Component Process - Dialog" src="media/DEPLOY_Component_CreateProcessDialog.png" /></p>
 <p>TODO: talk about process details</p>
 <h3 id="process-designer">Process Designer</h3>
@@ -2270,6 +2294,11 @@ Now, Click on your application(PizzaApp-XX) > Switch Tab to Components > Click o
 <p><img alt="Process Designer - sidebar add version status" src="media/DEPLOY_Component_ProcessEditor_SidebarAddStatus.png" />
 <img alt="process designer - step added add version status" src="media/DEPLOY_Component_ProcessEditor_StepAdded_AddStatus.png" />
 <img alt="process designer - add version status properites" src="media/DEPLOY_Component_Process_Step_AddStatusProperties.png" /></p>
+<h5 id="final-process-diagrams-passing-and-failing-tests">Final Process Diagrams (Passing and Failing tests)</h5>
+<p><img alt="Process Designer - Final Process with passed Test" src="media/DEPLOY_ComponentProcessFinalWithPassingTest.png" />
+<img alt="Process Designer - Final Process with failing Test" src="media/DEPLOY_ComponentProcessFinalWithFailingTest.png" /></p>
+<p>Now we have additional deployment processes. One for passing a test and one for failing a test. Both processes will set the appropiate version tag about status of test.</p>
+<p><img alt="Component with Deployment Process passing and failing" src="media/DEPLOY_Component_WithProcesslist.png" /></p>
 <p>Result in the Versionlist of the component:
 <img alt="Status added to version" src="media/DEPLOY_Component_VersionList_withStatus.png" /></p>
 <h2 id="applications">Applications</h2>
@@ -2278,11 +2307,11 @@ Now, Click on your application(PizzaApp-XX) > Switch Tab to Components > Click o
 <h2 id="environments">Environments</h2>
 <p>TODO: talk about environments</p>
 <h2 id="run-a-deployment">Run a deployment</h2>
-<p>Select your Application by clicking on the link: <img alt="Deploy Application - Ecologic" src="media/DEPLOY_ApplicationList_ShowEcologic.png" /></p>
+<p>Select your Application by clicking on the link: <img alt="Deploy Application" src="media/DEPLOY_ApplicationList_ShowEcologic.png" /></p>
 <p>All Environments of Application will be shown:
 <img alt="Deploy Application Environment List" src="media/DEPLOY_Application_Environmentlist.png" /></p>
 <h3 id="request-a-process">Request a Process</h3>
-<p>click on Request Process Button: <img alt="Request Button" src="media/DEPLOY_Application_RequestProcess.png" /></p>
+<p>click on Request Process Button: <img alt="Request Button" src="media/DEPLOY_Application_RequestProcess.png" /> on the DEV Environment <img alt="Dev Environment" src="media/DEPLOY_AppEnv_DEV.png" /></p>
 <p>Go through dialog:</p>
 <ul>
 <li><img alt="Run Process Dialog - Select Deployment Process" src="media/DEPLOY_Application_Runappprocessdialog1_SelectDeploymentProcess.png" /></li>
@@ -2300,7 +2329,8 @@ Now, Click on your application(PizzaApp-XX) > Switch Tab to Components > Click o
 <p>Click on 3 dots menue of a step <img alt="3 dots menue of step" src="media/DEPLOY_RunningProcess3_Stepdetails.png" />
 View the output of the step <img alt="Output of Step" src="media/DEPLOY_RunningProcess4_StepDetails.png" /></p>
 <h3 id="result-of-run">Result of Run</h3>
-<p>The deployment run successfully and updated the configuration of the environment with the deployed component versions:
+<p>The deployment run successfully <img alt="Deployment Success" src="media/DEPLOY_AppProcessFinishedSuccess.png" />
+and updated the configuration of the environment with the deployed component versions:
 <img alt="Environment with deployed versions of components" src="media/DEPLOY_Application_EnvironmentResultVersions.png" /></p>
 <h3 id="create-a-snapshot">Create a Snapshot</h3>
 <p>TODO: talk about snapshots and what they are good for</p>
@@ -2321,7 +2351,11 @@ View the output of the step <img alt="Output of Step" src="media/DEPLOY_RunningP
 <li><img alt="Plugin List" src="media/DEPLOY_PluginsList.png" /></li>
 </ul>
 <h4 id="how-to-install-a-plugin">How to install a plugin</h4>
-<p>click on the 3 dots menue of the plugin you want to install and select install: <img alt="Install plugin" src="media/DEPLOY_Plugins_Install.png" /></p>
+<p>click on the <a href="media/DEPLOY_PluginList_3DotsMenue.png">3 dots menue</a> of the plugin you want to install and select install: <img alt="Install plugin" src="media/DEPLOY_Plugins_Install.png" />
+An Installation Confirmation Dialog will pop up, click here on <strong>Confirm</strong> to proceed <img alt="Plugin Installation Confirmation" src="media/DEPLOY_PluginInstallConfirmation.png" />
+Installation is Successfull Notification <img alt="Plugin Installation Successfull" src="media/DEPLOY_PluginInstallSuccess.png" /></p>
+<h3 id="how-to-upgrade-a-plugin">How to upgrade a plugin</h3>
+<p>Same procedure as installing a Plugin. Click on the 3 Dots menue and select <strong>Upgrade</strong></p>
 <!-- 
 Now click on edit button available on the individual process:
 
