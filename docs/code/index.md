@@ -19,6 +19,12 @@ Or you can always switch using the central app switcher on the top left of your 
 
 Note: it takes a few seconds till your environment is setup and running, please be patient.
 
+## VSCode
+
+<blockquote>
+<p>NOTE: To showcase WCAx you need to use external VSCode as DevOps CODE in actual version does not have WCAx available. Will be provided in next releases.</p>
+</blockquote>
+
 ### WatsonX Code Assistant
 
 ![Explain code part 2](media/CODE_WCAx_Explain1.png)

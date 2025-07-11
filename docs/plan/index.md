@@ -74,11 +74,15 @@ Select the AI Assistant Icon ![AI Assistant Icon][PlanAIIcon] from the Sidebar !
 
 Accept the terms of service ![Accept Terms][AcceptTerms]
 
+### AI Assistant Chat Dialog
+
 The AI Assistant Chat Dialog opens ![AI Assistant Dialog][AIAssistantDialog]
 
 Enter Now a prompt, you can use the example prompts, or enter your prompt ![Enter Prompt][AIEnterPrompt]
 
 Click on the Next Button ![Next Button][AINextButton]
+
+### AI Assistant Type of Output
 
 Now select the type of Output you want. We will select **Generate Action Items** ![Generate Action Items][AIGenerateActionItems] from the Applying Prompts page ![Applying Prompts][AIApplyingPromptsType]
 
@@ -89,6 +93,8 @@ Click the **Select** Button ![Select Button][AISelectButtonBreakDownintoTitles] 
 This will convert the list of responses to a list with checkboxes: ![AI Responses with Checkboxes][AIResponsesWithCheckboxes]
 
 Select a few you like from the list ![AI Responses selected][AISelectedResponses]
+
+### AI Assistant Create Records from Responses
 
 Click the **Select Record Type** Button ![Select Record Type][AISelectRecordTypeButton] to select **Workitem** from the list ![Select Workitem][AISelectWorkitemRecordtype]
 

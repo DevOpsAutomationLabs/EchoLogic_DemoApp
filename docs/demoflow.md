@@ -22,58 +22,60 @@
 
 ### Plan Overview
 
-| Step | Details                                                                                                                                                                      | Additional Information                                     |
-|:----:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------|
-|  1   | [Open Plan][OpenPlan]                                                                                                                                                        |                                                            |
-|      | You can switch to Plan by either pressing "Let's go to Plan" button on its tile                                                                                              | ![Plan Tile lets go][PlanTile]                             |
-|      | Or you can always switch using the central app switcher on the top left of your screen                                                                                       | ![Central App Switcher][AppSwitcher]                       |
-|  2   | [Show My board][ShowMyBoard]                                                                                                                                                 |                                                            |
-|      | To open the board use the Project Board icon ![Board Icon in sidebar][ProjectBoardsIcon] on the sidebar                                                                      | ![sidebar][SidebarBoardIcon]                               |
-|      | The initial view is your My Board view which will show worktitems that are assigned to you                                                                                   | ![myWork Board][MyWorkBoard]                               |
-|  3   | [Show how to filter out Epics][HowToFilter]                                                                                                                                  | ![Board filter][FilterBar]                                 |
-|  4   | [Show all work items][WorkItems]                                                                                                                                             | ![Board workitems][ProjectBoardWorkItems]                  |
-|  5   | [Select and Show the details of a work item][SelectWorkItem]                                                                                                                 | ![Select WorkItem from Board][BoardSelectWorkItem]         |
-|      |                                                                                                                                                                              | ![Show Workitem Details][BoardShowWorkItemDetail]          |
-|  6   | [Show the link between work item to code and explain how easy it is to have traceability][ShowCommit]                                                                        |                                                            |
-|      |                                                                                                                                                                              | ![PLAN - Show Control/Git Commit Link][PlanShowCommit]     |
-|      |                                                                                                                                                                              | ![CONTROL - Show Git Commit Details][ControlShowCommit]    |
+| Step | Details                                                                                                 | Additional Information                                  |
+|:----:|:--------------------------------------------------------------------------------------------------------|:--------------------------------------------------------|
+|  1   | [Open Plan][OpenPlan]                                                                                   |                                                         |
+|      | You can switch to Plan by either pressing "Let's go to Plan" button on its tile                         | ![Plan Tile lets go][PlanTile]                          |
+|      | Or you can always switch using the central app switcher on the top left of your screen                  | ![Central App Switcher][AppSwitcher]                    |
+|  2   | [Show My board][ShowMyBoard]                                                                            |                                                         |
+|      | To open the board use the Project Board icon ![Board Icon in sidebar][ProjectBoardsIcon] on the sidebar | ![sidebar][SidebarBoardIcon]                            |
+|      | The initial view is your My Board view which will show worktitems that are assigned to you              | ![myWork Board][MyWorkBoard]                            |
+|  3   | [Show how to filter out Epics][HowToFilter]                                                             | ![Board filter][FilterBar]                              |
+|  4   | [Show all work items][WorkItems]                                                                        | ![Board workitems][ProjectBoardWorkItems]               |
+|  5   | [Select and Show the details of a work item][SelectWorkItem]                                            | ![Select WorkItem from Board][BoardSelectWorkItem]      |
+|      |                                                                                                         | ![Show Workitem Details][BoardShowWorkItemDetail]       |
+|  6   | [Show the link between work item to code and explain how easy it is to have traceability][ShowCommit]   |                                                         |
+|      |                                                                                                         | ![PLAN - Show Control/Git Commit Link][PlanShowCommit]  |
+|      |                                                                                                         | ![CONTROL - Show Git Commit Details][ControlShowCommit] |
 
 ### Use Plan AI Assistant
 
-| Step | Details                                                                                                                                                                      | Additional Information                                     |
-|:----:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------|
-|  1   | [Use the AI Assistant][PlanAI]                                                                                                                                               |                                                            |
-|  2   | Select the AI Assistant Icon ![AI Assistant Icon][PlanAIIcon] from the Sidebar                                                                                               | ![Sidebar][PlanSidebar]                                    |
-|  3   | Accept the Terms of Service                                                                                                                                                  | ![Accept Terms][AcceptTerms]                               |
-|  4  | The AI Assistant Chat Dialog opens                                                                                                                                           | ![AI Assistant Dialog][AIAssistantDialog]                  |
-|  5  | Enter Now a prompt, you can use the example prompts or use the following one <br> Provide the necessary steps to implement a Keycloak solution in our enterprise application | ![Enter Prompt][AIEnterPrompt]                             |
-|  6  | Click on the **Next** Button to proceed                                                                                                                                      | ![Next Button][AINextButton]                               |
-|  7  | The Applying Prompts page is shown with several types                                                                                                                        | ![Applying Prompts][AIApplyingPromptsType]                 |
-|  8  | Select **Generate Action Items** (click into the circle with the check mark)                                                                                                 | ![Generate Action Items][AIGenerateActionItems]            |
-|  9  | This will generate a set of responses                                                                                                                                        | ![AI Responses][AIResponses]                               |
-|  10  | Click the **Select** Button and select **Break Down into Titles**                                                                                                            | ![Select Button][AISelectButtonBreakDownintoTitles]        |
-|  11  | This will convert the list of responses to a list with checkboxes                                                                                                            | ![AI Responses with Checkboxes][AIResponsesWithCheckboxes] |
-|  12  | Select a few you like from the list                                                                                                                                          | ![AI Responses selected][AISelectedResponses]              |
-|  13  | Click the **Select Record Type** Button                                                                                                                                      | ![Select Record Type][AISelectRecordTypeButton]            |
-|  14  | to select **Workitem** from the list                                                                                                                                         | ![Select Workitem][AISelectWorkitemRecordtype]             |
-|  15  | In the next Dialog  select the right **Project** and **Workitem Type**                                                                                                       | ![Record Creation Dialog1][AIRecordCreationDialogEmpty]    |
-|  16  | for example **Project**: Echologic and **Type**: Epic                                                                                                                        | ![Record Creation Dialog2][AIRecordCreationDialogFilled]   |
-|  17  | Press the **Create Records** Button to get the **Epics** created.                                                                                                            | ![Create Records Button][AICreateRecordsButton]            |
-|  18  | A few seconds later all newly created records are now created                                                                                                                | ![Newly created Records][AINewlyCreatedRecords]            |
-|  19  | Press **Done**  to finish using the AI Assistant                                                                                                                             | ![Done Button][AIDoneButton]                               |
+| Step | Details                                                                                    | Additional Information                                     |
+|:----:|:-------------------------------------------------------------------------------------------|:-----------------------------------------------------------|
+|  1   | [Use the AI Assistant][PlanAI]                                                             |                                                            |
+|  2   | Select the AI Assistant Icon ![AI Assistant Icon][PlanAIIcon] from the Sidebar             | ![Sidebar][PlanSidebar]                                    |
+|  3   | Accept the Terms of Service                                                                | ![Accept Terms][AcceptTerms]                               |
+|  4   | [The AI Assistant Chat Dialog opens][AIChatDialog]                                         | ![AI Assistant Dialog][AIAssistantDialog]                  |
+|  5   | Enter Now a prompt, you can use the example prompts or use the following one:              | ![Enter Prompt][AIEnterPrompt]                             |
+|      | Provide the necessary steps to implement a Keycloak solution in our enterprise application |                                                            |
+|  6   | Click on the **Next** Button to proceed                                                    | ![Next Button][AINextButton]                               |
+|  7   | [The Applying Prompts page is shown with several types][AIPagewithPrompttypes]             | ![Applying Prompts][AIApplyingPromptsType]                 |
+|  8   | Select **Generate Action Items** (click into the circle with the check mark)               | ![Generate Action Items][AIGenerateActionItems]            |
+|  9   | This will generate a set of responses                                                      | ![AI Responses][AIResponses]                               |
+|  10  | Click the **Select** Button and select **Break Down into Titles**                          | ![Select Button][AISelectButtonBreakDownintoTitles]        |
+|  11  | This will convert the list of responses to a list with checkboxes                          | ![AI Responses with Checkboxes][AIResponsesWithCheckboxes] |
+|  12  | Select a few you like from the list                                                        | ![AI Responses selected][AISelectedResponses]              |
+|  14  | [Create Records from Responses][PlanAICreateRecords]                                       |                                                            |
+|  15  | Click the **Select Record Type** Button                                                    | ![Select Record Type][AISelectRecordTypeButton]            |
+|  16  | to select **Workitem** from the list                                                       | ![Select Workitem][AISelectWorkitemRecordtype]             |
+|  17  | In the next Dialog  select the right **Project** and **Workitem Type**                     | ![Record Creation Dialog1][AIRecordCreationDialogEmpty]    |
+|  18  | for example **Project**: Echologic and **Type**: Epic                                      | ![Record Creation Dialog2][AIRecordCreationDialogFilled]   |
+|  19  | Press the **Create Records** Button to get the **Epics** created.                          | ![Create Records Button][AICreateRecordsButton]            |
+|  20  | A few seconds later all newly created records are now created                              | ![Newly created Records][AINewlyCreatedRecords]            |
+|  21  | Press **Done**  to finish using the AI Assistant                                           | ![Done Button][AIDoneButton]                               |
 
 <!-- [Open a workitem and use AI to create description and exploratory test information](plan/boards/index.md#use-ai-in-workitem) -->
 
 ## [Code](code/index.md)
 
-1. Explain that we showed the link between a work item and the code in control.
-2. [Now open CODE](code/index.md#how-to-switch-to-code-from-home-page) ( use VScode for now, Switch to DevOps Code later)
-    1. [Use WCA to explain code and generate some new code](code/index.md#watsonx-code-assistant).
-        1. ![Explain code part 2](code/media/CODE_WCAx_Explain1.png)
-        2. ![Explain code part 2](code/media/CODE_WCAx_Explain2.png)
-    2. [Push code and add comment with work item number](code/index.md#commit-code-with-wi).
-        1. ![Commit Code with WI](code/media/CODE_CommitWithWI.png)
-    3. [Open Control and show the update](#control).
+| Step | Details                                                                     | Additional Information                             |
+|:----:|:----------------------------------------------------------------------------|:---------------------------------------------------|
+|  1   | Explain that we showed the link between a work item and the code in control |                                                    |
+|  2   | [Now open CODE][CODEopen]                                                   | ( use VScode for now, Switch to DevOps Code later) |
+|  3   | [Use WCA to explain code and generate some new code][CODEWcaX]              | ![Explain code part 1][WcaXexplain1]               |
+|      |                                                                             | ![Explain code part 2][WcaXexplain2]               |
+|  4   | [Push code and add comment with work item number][CODEcommitWI]             | ![Commit Code with WI][CodeWithWIcommit]           |
+|  5   | [Open Control and show the update](#control)                                |                                                    |
 
 ## [Control](control/index.md)
 
@@ -208,3 +210,12 @@ Explain that we have covered a lot of roles and used a mixture of AI and automat
 [AICreateRecordsButton]: plan/media/PLAN_AI_create_records_button.png
 [AINewlyCreatedRecords]: plan/media/PLAN_AI_records_created.png
 [AIDoneButton]: plan/media/PLAN_AI_done.png
+[AIChatDialog]: plan/index.md#ai-assistant-chat-dialog
+[AIPagewithPrompttypes]: plan/index.md#ai-assistant-type-of-output
+[PlanAICreateRecords]: plan/index.md#ai-assistant-create-records-from-responses
+[CODEopen]: code/index.md#how-to-switch-to-code-from-home-page
+[CODEWcaX]: code/index.md#watsonx-code-assistant
+[WcaXexplain1]: code/media/CODE_WCAx_Explain1.png
+[WcaXexplain2]: code/media/CODE_WCAx_Explain2.png
+[CODEcommitWI]: code/index.md#commit-code-with-wi
+[CodeWithWIcommit]: code/media/CODE_CommitWithWI.png
