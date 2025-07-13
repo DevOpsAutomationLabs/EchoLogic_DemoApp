@@ -6,7 +6,7 @@
 
 | Step | Details                                                                                                       | Additional Information                |
 |:----:|:--------------------------------------------------------------------------------------------------------------|:--------------------------------------|
-|  1   | After loging in you will be on the [Home Page][LoopHomePage] of Loop                   | ![Home Page][HomePage]                |
+|  1   | After loging in you will be on the [Home Page][LoopHomePage] of Loop                                          | ![Home Page][HomePage]                |
 |  2   | If you are not on the Home Page page, click on Home button in the side bar to switch to the Home Page         | ![Home Page Sidebar][HomePageSideBar] |
 |  3   | The Home Page provides metrics and dashboards over all of my accessible Loops                                 |                                       |
 |  4   | Showing data from Plan - Ratio of Issues created versus closed                                                | ![Plan Metric][PlanMetric]            |
@@ -204,18 +204,18 @@
 
 Explain that we have covered a lot of roles and used a mixture of AI and automation but we can bring it all together with what we call our Loop Genie
 
-| Step | Details | Additional Information |
-|:----:|:--------|:-----------------------|
-|      | [How to use Loop Genie](introduction/index.md#how-to-use-loop-genie) |                        |
-|      |  [Open Home Page][HomePage] |                        |
-|      | Open Loop Genie by clicking on its Icon on the right side of the Dashboard|![Loop Genie Icon on Home Page][LoopHomeLoopGenieIcon]|
-|      | Loop Genie Dialog opens |![Loop Genie Dialog][LoopGenieDialog]|
-|      |Ask xyz question.|                        |
-|      | |                        |
-|      |         |                        |
-|      |         |                        |
-|      |         |                        |
-|      |         |                        |
+| Step | Details                                                                    | Additional Information                                 |
+|:----:|:---------------------------------------------------------------------------|:-------------------------------------------------------|
+|      | [How to use Loop Genie](introduction/index.md#how-to-use-loop-genie)       |                                                        |
+|      | [Open Home Page][HomePage]                                                 |                                                        |
+|      | Open Loop Genie by clicking on its Icon on the right side of the Dashboard | ![Loop Genie Icon on Home Page][LoopHomeLoopGenieIcon] |
+|      | Loop Genie Dialog opens                                                    | ![Loop Genie Dialog][LoopGenieDialog]                  |
+|      | Ask xyz question.                                                          |                                                        |
+|      |                                                                            |                                                        |
+|      |                                                                            |                                                        |
+|      |                                                                            |                                                        |
+|      |                                                                            |                                                        |
+|      |                                                                            |                                                        |
 
 Explain that we are back to the start and that this has been a quick end to end demo
 
