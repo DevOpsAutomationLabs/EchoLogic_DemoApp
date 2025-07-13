@@ -24,4 +24,4 @@ Demo App for EchoLogic. Use it as a base for Echo and Logic components.
 
 #### Python
 
-The Python version of the App with documentation can be found in [src/python](../src/python/README.md)
+The Python version of the App with documentation can be found in [python](python.md) the sources in [src/python]([../src/python](https://github.com/DevOpsAutomationLabs/EchoLogic_DemoApp/tree/main/src/python))
