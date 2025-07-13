@@ -1,2 +1,2 @@
-site_name: "DevOps Loop Demo using EchoLogic App"
+site_name: "Demo EchoLogic App"
 INHERIT: base.yml
