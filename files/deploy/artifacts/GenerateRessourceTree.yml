@@ -1,0 +1,383 @@
+---
+name: "GenerateRessourceTree"
+description: "Creates Ressource Tree for EchoLogic"
+rootActivity:
+  edges:
+  - to: "Create Top Level"
+    from: "Delete Resource"
+    type: "SUCCESS"
+    value: ""
+  - to: "bc09e9690290d0c8827aee79ecdc33"
+    from: "Map Component Tag to DEV"
+    type: "SUCCESS"
+    value: ""
+  - to: "bc09e9690290d0c8827aee79ecdc33"
+    from: "Create PROD"
+    type: "SUCCESS"
+    value: ""
+  - to: "Delete Resource"
+    from: "Check If Resource Exists"
+    type: "SUCCESS"
+    value: ""
+  - to: "Map Component Tag to QA"
+    from: "Add demo pool QA"
+    type: "SUCCESS"
+    value: ""
+  - to: "Add demo pool"
+    from: "Create DEV"
+    type: "SUCCESS"
+    value: ""
+  - to: "Create QA"
+    from: "Create Top Level"
+    type: "SUCCESS"
+    value: ""
+  - to: "bc09e9690290d0c8827aee79ecdc33"
+    from: "Map Component Tag to QA"
+    type: "SUCCESS"
+    value: ""
+  - to: "Add demo pool QA"
+    from: "Create QA"
+    type: "SUCCESS"
+    value: ""
+  - to: "Check If Resource Exists"
+    type: "ALWAYS"
+    value: ""
+  - to: "Create DEV"
+    from: "Create Top Level"
+    type: "SUCCESS"
+    value: ""
+  - to: "Create Top Level"
+    from: "Check If Resource Exists"
+    type: "FAILURE"
+    value: ""
+  - to: "Map Component Tag to DEV"
+    from: "Add demo pool"
+    type: "SUCCESS"
+    value: ""
+  - to: "Create PROD"
+    from: "Create Top Level"
+    type: "SUCCESS"
+    value: ""
+  offsets:
+  - name: "Add demo pool QA"
+    x: -250.7716049382716
+    "y": 610
+    h: 70
+    w: 250
+  - name: "bc09e9690290d0c8827aee79ecdc33"
+    x: 231.7283950617284
+    "y": 850
+    h: 80
+    w: 120
+  - name: "Create Top Level"
+    x: -33.271604938271594
+    "y": 370
+    h: 70
+    w: 250
+  - name: "Create PROD"
+    x: 271.7283950617284
+    "y": 490
+    h: 70
+    w: 250
+  - name: "Check If Resource Exists"
+    x: -95
+    "y": 130
+    h: 70
+    w: 300
+  - name: "Delete Resource"
+    x: 6.728395061728406
+    "y": 250
+    h: 70
+    w: 250
+  - name: "Create DEV"
+    x: -8.271604938271594
+    "y": 490
+    h: 70
+    w: 250
+  - name: "Add demo pool"
+    x: 79.2283950617284
+    "y": 610
+    h: 70
+    w: 250
+  - name: "Map Component Tag to DEV"
+    x: 116.7283950617284
+    "y": 730
+    h: 70
+    w: 350
+  - name: "Create QA"
+    x: -288.2716049382716
+    "y": 490
+    h: 70
+    w: 250
+  - name: "Map Component Tag to QA"
+    x: -263.2716049382716
+    "y": 730
+    h: 70
+    w: 350
+  layoutMode: "auto"
+  type: "graph"
+  name: "16912ea2-d0ce-4d3d-93d0-224566e49308"
+  children:
+  - type: "finish"
+    name: "bc09e9690290d0c8827aee79ecdc33"
+    children: []
+  - allowFailure: false
+    useImpersonation: false
+    showHidden: false
+    impersonationUseSudo: false
+    pluginVersion: 86
+    commandName: "Create Resource"
+    pluginName: "UrbanCode Deploy Resources"
+    pluginId: "com.urbancode.air.plugin.uDeployResource"
+    authTokenRestriction: "20000001-0001-0001-0001-000000000000"
+    properties:
+      name: "${GRTToplevel}"
+      parent: ""
+      agent: ""
+      agentPool: ""
+      role: ""
+    cachedAuthTokenRestriction:
+      name: "System Default"
+      description: "Used by default for any plugin steps without a specified token\
+        \ restriction"
+      restrictions:
+      - verb: "ALL"
+        url: "/*"
+    type: "plugin"
+    name: "Create Top Level"
+    children: []
+  - allowFailure: false
+    useImpersonation: false
+    showHidden: false
+    impersonationUseSudo: false
+    pluginVersion: 86
+    commandName: "Check If Resource Exists"
+    pluginName: "UrbanCode Deploy Resources"
+    pluginId: "com.urbancode.air.plugin.uDeployResource"
+    authTokenRestriction: "20000001-0001-0001-0001-000000000000"
+    properties:
+      resource: "/${GRTToplevel}"
+    cachedAuthTokenRestriction:
+      name: "System Default"
+      description: "Used by default for any plugin steps without a specified token\
+        \ restriction"
+      restrictions:
+      - verb: "ALL"
+        url: "/*"
+    type: "plugin"
+    name: "Check If Resource Exists"
+    children: []
+  - allowFailure: false
+    useImpersonation: false
+    showHidden: false
+    impersonationUseSudo: false
+    pluginVersion: 86
+    commandName: "Delete Resource"
+    pluginName: "UrbanCode Deploy Resources"
+    pluginId: "com.urbancode.air.plugin.uDeployResource"
+    authTokenRestriction: "20000001-0001-0001-0001-000000000000"
+    properties:
+      resource: "/${GRTToplevel}"
+    cachedAuthTokenRestriction:
+      name: "System Default"
+      description: "Used by default for any plugin steps without a specified token\
+        \ restriction"
+      restrictions:
+      - verb: "ALL"
+        url: "/*"
+    type: "plugin"
+    name: "Delete Resource"
+    children: []
+  - allowFailure: false
+    useImpersonation: false
+    showHidden: false
+    impersonationUseSudo: false
+    pluginVersion: 86
+    commandName: "Create Resource"
+    pluginName: "UrbanCode Deploy Resources"
+    pluginId: "com.urbancode.air.plugin.uDeployResource"
+    authTokenRestriction: "20000001-0001-0001-0001-000000000000"
+    properties:
+      name: "DEV"
+      parent: "/${GRTToplevel}"
+      agent: ""
+      agentPool: ""
+      role: ""
+    cachedAuthTokenRestriction:
+      name: "System Default"
+      description: "Used by default for any plugin steps without a specified token\
+        \ restriction"
+      restrictions:
+      - verb: "ALL"
+        url: "/*"
+    type: "plugin"
+    name: "Create DEV"
+    children: []
+  - allowFailure: false
+    useImpersonation: false
+    showHidden: false
+    impersonationUseSudo: false
+    pluginVersion: 86
+    commandName: "Create Resource"
+    pluginName: "UrbanCode Deploy Resources"
+    pluginId: "com.urbancode.air.plugin.uDeployResource"
+    authTokenRestriction: "20000001-0001-0001-0001-000000000000"
+    properties:
+      name: "demo"
+      parent: "/${GRTToplevel}/DEV"
+      agent: ""
+      agentPool: "demo"
+      role: ""
+    cachedAuthTokenRestriction:
+      name: "System Default"
+      description: "Used by default for any plugin steps without a specified token\
+        \ restriction"
+      restrictions:
+      - verb: "ALL"
+        url: "/*"
+    type: "plugin"
+    name: "Add demo pool"
+    children: []
+  - allowFailure: false
+    useImpersonation: false
+    showHidden: false
+    impersonationUseSudo: false
+    pluginVersion: 86
+    commandName: "Create Resource"
+    pluginName: "UrbanCode Deploy Resources"
+    pluginId: "com.urbancode.air.plugin.uDeployResource"
+    authTokenRestriction: "20000001-0001-0001-0001-000000000000"
+    properties:
+      name: "QA"
+      parent: "/${GRTToplevel}"
+      agent: ""
+      agentPool: ""
+      role: ""
+    cachedAuthTokenRestriction:
+      name: "System Default"
+      description: "Used by default for any plugin steps without a specified token\
+        \ restriction"
+      restrictions:
+      - verb: "ALL"
+        url: "/*"
+    type: "plugin"
+    name: "Create QA"
+    children: []
+  - allowFailure: false
+    useImpersonation: false
+    showHidden: false
+    impersonationUseSudo: false
+    pluginVersion: 86
+    commandName: "Create Resource"
+    pluginName: "UrbanCode Deploy Resources"
+    pluginId: "com.urbancode.air.plugin.uDeployResource"
+    authTokenRestriction: "20000001-0001-0001-0001-000000000000"
+    properties:
+      name: "demo"
+      parent: "/${GRTToplevel}/QA"
+      agent: ""
+      agentPool: "demo"
+      role: ""
+    cachedAuthTokenRestriction:
+      name: "System Default"
+      description: "Used by default for any plugin steps without a specified token\
+        \ restriction"
+      restrictions:
+      - verb: "ALL"
+        url: "/*"
+    type: "plugin"
+    name: "Add demo pool QA"
+    children: []
+  - allowFailure: false
+    useImpersonation: false
+    showHidden: false
+    impersonationUseSudo: false
+    pluginVersion: 86
+    commandName: "Create Resource"
+    pluginName: "UrbanCode Deploy Resources"
+    pluginId: "com.urbancode.air.plugin.uDeployResource"
+    authTokenRestriction: "20000001-0001-0001-0001-000000000000"
+    properties:
+      name: "PROD"
+      parent: "/${GRTToplevel}"
+      agent: ""
+      agentPool: ""
+      role: ""
+    cachedAuthTokenRestriction:
+      name: "System Default"
+      description: "Used by default for any plugin steps without a specified token\
+        \ restriction"
+      restrictions:
+      - verb: "ALL"
+        url: "/*"
+    type: "plugin"
+    name: "Create PROD"
+    children: []
+  - allowFailure: false
+    useImpersonation: false
+    showHidden: false
+    impersonationUseSudo: false
+    pluginVersion: 86
+    commandName: "Map Component Tag to Resource"
+    pluginName: "UrbanCode Deploy Resources"
+    pluginId: "com.urbancode.air.plugin.uDeployResource"
+    authTokenRestriction: "20000001-0001-0001-0001-000000000000"
+    properties:
+      name: "EchoLogicComponents"
+      componentTag: "EchoLogicComponents"
+      parent: "/${GRTToplevel}/DEV/demo"
+    cachedAuthTokenRestriction:
+      name: "System Default"
+      description: "Used by default for any plugin steps without a specified token\
+        \ restriction"
+      restrictions:
+      - verb: "ALL"
+        url: "/*"
+    type: "plugin"
+    name: "Map Component Tag to DEV"
+    children: []
+  - allowFailure: false
+    useImpersonation: false
+    showHidden: false
+    impersonationUseSudo: false
+    pluginVersion: 86
+    commandName: "Map Component Tag to Resource"
+    pluginName: "UrbanCode Deploy Resources"
+    pluginId: "com.urbancode.air.plugin.uDeployResource"
+    authTokenRestriction: "20000001-0001-0001-0001-000000000000"
+    properties:
+      name: "EchoLogicComponents"
+      componentTag: "EchoLogicComponents"
+      parent: "/${GRTToplevel}/QA/demo"
+    cachedAuthTokenRestriction:
+      name: "System Default"
+      description: "Used by default for any plugin steps without a specified token\
+        \ restriction"
+      restrictions:
+      - verb: "ALL"
+        url: "/*"
+    type: "plugin"
+    name: "Map Component Tag to QA"
+    children: []
+properties:
+- name: "workingDir"
+  value: "${p:resource/work.dir}/${p:process.name}"
+  description: ""
+  secure: false
+- name: "defaultResourceId"
+  value: "197d4d1f-4c59-2be4-7808-168d1c8c94f1"
+  description: ""
+  secure: false
+propDefs:
+- name: "GRTToplevel"
+  label: "Toplevel"
+  pattern: ""
+  type: "TEXT"
+  isHidden: false
+  value: "EchoLogic"
+  required: true
+  description: "Name of the Toplevel Ressource"
+  placeholder: ""
+teamMappings: []
+linkedProcesses: []
+webhooks: []

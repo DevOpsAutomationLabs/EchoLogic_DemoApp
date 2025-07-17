@@ -1,0 +1,378 @@
+{   "loop": {
+        "name": "EchoLogic",
+        "teamSpace": "Demo"
+    },
+    "name": "Logic",
+    "description": "Component for Logic System",
+    "created": 1751557690808,
+    "componentType": "STANDARD",
+    "ignoreQualifiers": 0,
+    "importAutomatically": false,
+    "useVfs": true,
+    "active": true,
+    "deleted": false,
+    "defaultVersionType": "FULL",
+    "cleanupDaysToKeep": 0,
+    "cleanupCountToKeep": 0,
+    "sourceConfigPluginName": "DevOps Control",
+    "envPropDefs": [],
+    "resPropDefs": [],
+    "versionPropDefs": [],
+    "propSheetGroup": {
+        "propSheets": [
+            {
+                "name": "DevOpsControlComponentProperties",
+                "properties": [
+                    {
+                        "name": "branch",
+                        "value": "main",
+                        "description": "",
+                        "secure": false
+                    },
+                    {
+                        "name": "username",
+                        "value": "demo@devops.loop",
+                        "description": "",
+                        "secure": false
+                    },
+                    {
+                        "name": "password",
+                        "value": "",
+                        "description": "",
+                        "secure": true
+                    },
+                    {
+                        "name": "watchTags",
+                        "value": "false",
+                        "description": "",
+                        "secure": false
+                    },
+                    {
+                        "name": "recursive",
+                        "value": "false",
+                        "description": "",
+                        "secure": false
+                    },
+                    {
+                        "name": "trustAllCerts",
+                        "value": "false",
+                        "description": "",
+                        "secure": false
+                    },
+                    {
+                        "name": "sparse",
+                        "value": "false",
+                        "description": "",
+                        "secure": false
+                    },
+                    {
+                        "name": "sparsePaths",
+                        "description": "",
+                        "secure": false
+                    },
+                    {
+                        "name": "includes",
+                        "value": "**\/*",
+                        "description": "",
+                        "secure": false
+                    },
+                    {
+                        "name": "excludes",
+                        "description": "",
+                        "secure": false
+                    },
+                    {
+                        "name": "gitPath",
+                        "value": "git",
+                        "description": "",
+                        "secure": false
+                    },
+                    {
+                        "name": "saveFileExecuteBits",
+                        "value": "false",
+                        "description": "",
+                        "secure": false
+                    },
+                    {
+                        "name": "extensions",
+                        "description": "",
+                        "secure": false
+                    },
+                    {
+                        "name": "repoUrl",
+                        "value": "https:\/\/devops.automation.techzone.ibm.com\/control\/Demo\/EchoLogic.git",
+                        "description": "",
+                        "secure": false
+                    }
+                ]
+            },
+            {
+                "name": "template",
+                "properties": []
+            },
+            {
+                "name": "custom",
+                "properties": []
+            }
+        ]
+    },
+    "processes": [{
+        "name": "Deploy",
+        "description": "Deploy the Logic Component",
+        "defaultWorkingDir": "${p:resource\/work.dir}\/${p:component.name}",
+        "takesVersion": true,
+        "inventoryActionType": "ADD",
+        "status": "Active",
+        "configActionType": "ADD",
+        "active": true,
+        "path": "components\/197d0f95-5b87-155e-387c-6c307f8d2b29\/processes\/197d0f95-5fe1-9ae3-5c6b-0e51272144da",
+        "deleted": false,
+        "propDefs": [],
+        "rootActivity": {
+            "edges": [
+                {
+                    "to": "Prep A Step 2",
+                    "from": "Download Artifacts",
+                    "type": "SUCCESS",
+                    "value": ""
+                },
+                {
+                    "to": "80355a6a61cd3b8c0819a461fa0781",
+                    "from": "Prep A Step 2",
+                    "type": "SUCCESS",
+                    "value": ""
+                },
+                {
+                    "to": "80355a6a61cd3b8c0819a461fa0781",
+                    "from": "Prep A Step 1",
+                    "type": "SUCCESS",
+                    "value": ""
+                },
+                {
+                    "to": "Remove old content",
+                    "type": "ALWAYS",
+                    "value": ""
+                },
+                {
+                    "to": "Download Artifacts",
+                    "from": "Remove old content",
+                    "type": "SUCCESS",
+                    "value": ""
+                },
+                {
+                    "to": "Prep A Step 1",
+                    "from": "Download Artifacts",
+                    "type": "SUCCESS",
+                    "value": ""
+                },
+                {
+                    "to": "2192eda4604be71338b26ffa54a6c2",
+                    "from": "80355a6a61cd3b8c0819a461fa0781",
+                    "type": "SUCCESS",
+                    "value": ""
+                }
+            ],
+            "offsets": [
+                {
+                    "name": "Prep A Step 2",
+                    "x": 70,
+                    "y": 370,
+                    "h": 70,
+                    "w": 190
+                },
+                {
+                    "name": "Remove old content",
+                    "x": -55,
+                    "y": 130,
+                    "h": 70,
+                    "w": 220
+                },
+                {
+                    "name": "Download Artifacts",
+                    "x": -75,
+                    "y": 250,
+                    "h": 70,
+                    "w": 260
+                },
+                {
+                    "name": "2192eda4604be71338b26ffa54a6c2",
+                    "x": -5,
+                    "y": 590,
+                    "h": 80,
+                    "w": 120
+                },
+                {
+                    "name": "Prep A Step 1",
+                    "x": -150,
+                    "y": 370,
+                    "h": 70,
+                    "w": 190
+                },
+                {
+                    "name": "80355a6a61cd3b8c0819a461fa0781",
+                    "x": -5,
+                    "y": 490,
+                    "h": 50,
+                    "w": 120
+                }
+            ],
+            "layoutMode": "auto",
+            "type": "graph",
+            "name": "67d6f3f7-c51b-4980-8f80-81392aa634ad",
+            "children": [
+                {
+                    "type": "finish",
+                    "name": "2192eda4604be71338b26ffa54a6c2",
+                    "children": []
+                },
+                {
+                    "allowFailure": false,
+                    "useImpersonation": false,
+                    "showHidden": false,
+                    "impersonationUseSudo": false,
+                    "pluginVersion": 21,
+                    "commandName": "Shell",
+                    "pluginName": "Shell",
+                    "pluginId": "com.urbancode.air.plugin.Shell",
+                    "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                    "properties": {
+                        "directoryOffset": ".",
+                        "shellInterpreter": "",
+                        "scriptBody": "rm -rf *",
+                        "runAsDaemon": "false",
+                        "outputFile": "",
+                        "tempDirectory": "${p?:agent\/temporaryDirectory}"
+                    },
+                    "cachedAuthTokenRestriction": {
+                        "name": "System Default",
+                        "description": "Used by default for any plugin steps without a specified token restriction",
+                        "restrictions": [{
+                            "verb": "ALL",
+                            "url": "\/*"
+                        }]
+                    },
+                    "type": "plugin",
+                    "name": "Remove old content",
+                    "children": []
+                },
+                {
+                    "allowFailure": false,
+                    "useImpersonation": false,
+                    "showHidden": false,
+                    "impersonationUseSudo": false,
+                    "pluginVersion": 48,
+                    "commandName": "Download Artifacts",
+                    "pluginName": "UrbanCode Deploy Versioned File Storage",
+                    "pluginId": "com.urbancode.plugin.VFS",
+                    "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                    "properties": {
+                        "directoryOffset": ".",
+                        "artifactSetBaseDir": "",
+                        "fileIncludePatterns": "**\/*",
+                        "fileExcludePatterns": "",
+                        "syncMode": "true",
+                        "handleIncrementalVersions": "false",
+                        "fullVerification": "true",
+                        "setFileExecuteBits": "false",
+                        "verifyFileIntegrity": "false",
+                        "charset": "",
+                        "versionId": "${p:version.id}",
+                        "versionType": "${p:version.type}",
+                        "serverUrl": "${p:server.url}",
+                        "compId": "${p:component.id}",
+                        "resId": "${p:resource.id}",
+                        "envId": "${p:environment.id}",
+                        "maxMemory": "1G",
+                        "label": ""
+                    },
+                    "cachedAuthTokenRestriction": {
+                        "name": "System Default",
+                        "description": "Used by default for any plugin steps without a specified token restriction",
+                        "restrictions": [{
+                            "verb": "ALL",
+                            "url": "\/*"
+                        }]
+                    },
+                    "type": "plugin",
+                    "name": "Download Artifacts",
+                    "children": []
+                },
+                {
+                    "allowFailure": false,
+                    "useImpersonation": false,
+                    "showHidden": false,
+                    "impersonationUseSudo": false,
+                    "pluginVersion": 21,
+                    "commandName": "Shell",
+                    "pluginName": "Shell",
+                    "pluginId": "com.urbancode.air.plugin.Shell",
+                    "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                    "properties": {
+                        "directoryOffset": ".",
+                        "shellInterpreter": "",
+                        "scriptBody": "echo \"prep a step 1\"",
+                        "runAsDaemon": "false",
+                        "outputFile": "",
+                        "tempDirectory": "${p?:agent\/temporaryDirectory}"
+                    },
+                    "cachedAuthTokenRestriction": {
+                        "name": "System Default",
+                        "description": "Used by default for any plugin steps without a specified token restriction",
+                        "restrictions": [{
+                            "verb": "ALL",
+                            "url": "\/*"
+                        }]
+                    },
+                    "type": "plugin",
+                    "name": "Prep A Step 1",
+                    "children": []
+                },
+                {
+                    "allowFailure": false,
+                    "useImpersonation": false,
+                    "showHidden": false,
+                    "impersonationUseSudo": false,
+                    "pluginVersion": 21,
+                    "commandName": "Shell",
+                    "pluginName": "Shell",
+                    "pluginId": "com.urbancode.air.plugin.Shell",
+                    "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                    "properties": {
+                        "directoryOffset": ".",
+                        "shellInterpreter": "",
+                        "scriptBody": "echo \"Prep a step 2\"",
+                        "runAsDaemon": "false",
+                        "outputFile": "",
+                        "tempDirectory": "${p?:agent\/temporaryDirectory}"
+                    },
+                    "cachedAuthTokenRestriction": {
+                        "name": "System Default",
+                        "description": "Used by default for any plugin steps without a specified token restriction",
+                        "restrictions": [{
+                            "verb": "ALL",
+                            "url": "\/*"
+                        }]
+                    },
+                    "type": "plugin",
+                    "name": "Prep A Step 2",
+                    "children": []
+                },
+                {
+                    "type": "join",
+                    "name": "80355a6a61cd3b8c0819a461fa0781",
+                    "children": []
+                }
+            ]
+        }
+    }],
+    "configTemplates": [],
+    "genericProcesses": [],
+    "teamMappings": [],
+    "tags": [{
+        "id": "1981835c-89ff-e0db-83b7-3a744f17e227",
+        "name": "EchoLogicComponents",
+        "color": "#00648D",
+        "description": "",
+        "objectType": "Component"
+    }]
+}

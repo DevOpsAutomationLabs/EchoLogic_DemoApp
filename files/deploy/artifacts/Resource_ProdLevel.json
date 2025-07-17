@@ -1,0 +1,5 @@
+{
+  "name": "PROD",
+  "description": "PROD Level Resource for EchoLogic",
+  "parent": "\/EchoLogic"
+}
