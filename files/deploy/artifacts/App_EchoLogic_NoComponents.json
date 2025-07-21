@@ -1,0 +1,1856 @@
+{
+    "loop": {
+        "name": "EchoLogic",
+        "teamSpace": "Demo"
+    },
+    "name": "EchoLogic",
+    "enforceCompleteSnapshots": false,
+    "onlyChangedVersions": true,
+    "useWizard": false,
+    "propSheet": {
+        "properties": []
+    },
+    "templatePropSheet": {
+        "name": "template",
+        "properties": []
+    },
+    "components": [
+       
+    ],
+    "environments": [
+        {
+            "loop": {
+                "name": "EchoLogic",
+                "teamSpace": "Demo"
+            },
+            "name": "DEV",
+            "description": "",
+            "color": "#17AF4A",
+            "requireApprovals": false,
+            "noSelfApprovals": false,
+            "exemptProcesses": [],
+            "lockSnapshots": false,
+            "requireSnapshots": false,
+            "snapshotDaysToKeep": 0,
+            "cleanupDaysToKeep": 0,
+            "cleanupCountToKeep": 0,
+            "enableProcessHistoryCleanup": true,
+            "useSystemDefaultDays": true,
+            "showCompliancyOnLoad": false,
+            "historyCleanupDaysToKeep": 0,
+            "enableProcessLogCleanup": true,
+            "useSystemDefaultLogDays": true,
+            "logDaysToKeep": 0,
+            "order": 0,
+            "active": true,
+            "propSheet": {
+                "properties": []
+            },
+            "templatePropSheet": {
+                "name": "template",
+                "properties": []
+            },
+            "baseResources": [{
+                "basePath": "\/EchoLogic",
+                "tree": {
+                    "name": "DEV",
+                    "path": "\/EchoLogic\/DEV",
+                    "parentName": "EchoLogic",
+                    "inheritTeam": true,
+                    "propSheet": {
+                        "name": "custom",
+                        "properties": []
+                    },
+                    "tags": [],
+                    "teamMappings": [
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "000d303f-fc67-48ce-aa26-68849798786c",
+                            "teamLabel": "DemoOZ~EchoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
+                            "teamLabel": "Platform Commons"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "33498c27-e28f-45b4-94d6-a5854f94027a",
+                            "teamLabel": "SUNILTS"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "480b3828-4396-4bce-b59a-b6842e40a69c",
+                            "teamLabel": "DemoOZ"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "569c0e51-7592-4937-8eda-ebadfb1ca080",
+                            "teamLabel": "Demo~EchoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "6c270ea5-60ed-4acf-991f-d648481853d9",
+                            "teamLabel": "LoopOZ"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "77329db2-0fc1-4b3c-9840-1d207997d4ee",
+                            "teamLabel": "JamesTeamspace"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "7f620431-b662-405a-8896-8cce38bbaeaf",
+                            "teamLabel": "EcoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "8cdf74b4-2d18-4cdd-8a54-ff0742fdcdca",
+                            "teamLabel": "JamesTeamspace~JLOOP"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "8d2197a2-c15f-4871-9c63-1c5fe79d6586",
+                            "teamLabel": "LoopOZ~EcoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "a383da77-248a-48c6-b1b8-ce6fc7b9dc4c",
+                            "teamLabel": "EchoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "a4b776b2-778e-4570-b15f-930d256a245c",
+                            "teamLabel": "EcoLogic~HartFord"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "bfa0962c-7954-4ac8-8091-fb752f66c91e",
+                            "teamLabel": "EcoLogic~EcoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "e2e011db-04ac-401d-a0ea-1edce69257e9",
+                            "teamLabel": "Demo"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "ef512de1-da45-4413-bf78-da3174ac538d",
+                            "teamLabel": "EchoLogic~Echo2"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "fd21ed9f-b91f-431f-901b-48c7eb3e99a8",
+                            "teamLabel": "EchoLogic~EchoLogic_Loop"
+                        }
+                    ],
+                    "impersonationUseSudo": false,
+                    "impersonationForce": false,
+                    "prototype": false
+                }
+            }],
+            "baseResourcesFull": [{
+                "basePath": "\/EchoLogic",
+                "tree": {
+                    "name": "DEV",
+                    "path": "\/EchoLogic\/DEV",
+                    "parentName": "EchoLogic",
+                    "inheritTeam": true,
+                    "propSheet": {
+                        "name": "custom",
+                        "properties": []
+                    },
+                    "tags": [],
+                    "teamMappings": [
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "000d303f-fc67-48ce-aa26-68849798786c",
+                            "teamLabel": "DemoOZ~EchoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
+                            "teamLabel": "Platform Commons"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "33498c27-e28f-45b4-94d6-a5854f94027a",
+                            "teamLabel": "SUNILTS"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "480b3828-4396-4bce-b59a-b6842e40a69c",
+                            "teamLabel": "DemoOZ"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "569c0e51-7592-4937-8eda-ebadfb1ca080",
+                            "teamLabel": "Demo~EchoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "6c270ea5-60ed-4acf-991f-d648481853d9",
+                            "teamLabel": "LoopOZ"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "77329db2-0fc1-4b3c-9840-1d207997d4ee",
+                            "teamLabel": "JamesTeamspace"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "7f620431-b662-405a-8896-8cce38bbaeaf",
+                            "teamLabel": "EcoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "8cdf74b4-2d18-4cdd-8a54-ff0742fdcdca",
+                            "teamLabel": "JamesTeamspace~JLOOP"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "8d2197a2-c15f-4871-9c63-1c5fe79d6586",
+                            "teamLabel": "LoopOZ~EcoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "a383da77-248a-48c6-b1b8-ce6fc7b9dc4c",
+                            "teamLabel": "EchoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "a4b776b2-778e-4570-b15f-930d256a245c",
+                            "teamLabel": "EcoLogic~HartFord"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "bfa0962c-7954-4ac8-8091-fb752f66c91e",
+                            "teamLabel": "EcoLogic~EcoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "e2e011db-04ac-401d-a0ea-1edce69257e9",
+                            "teamLabel": "Demo"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "ef512de1-da45-4413-bf78-da3174ac538d",
+                            "teamLabel": "EchoLogic~Echo2"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "fd21ed9f-b91f-431f-901b-48c7eb3e99a8",
+                            "teamLabel": "EchoLogic~EchoLogic_Loop"
+                        }
+                    ],
+                    "impersonationUseSudo": false,
+                    "impersonationForce": false,
+                    "prototype": false,
+                    "children": [{
+                        "name": "demo",
+                        "path": "\/EchoLogic\/DEV\/demo",
+                        "parentName": "DEV",
+                        "inheritTeam": true,
+                        "type": "agentPool",
+                        "typeName": "demo",
+                        "propSheet": {
+                            "name": "custom",
+                            "properties": []
+                        },
+                        "tags": [],
+                        "teamMappings": [
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "000d303f-fc67-48ce-aa26-68849798786c",
+                                "teamLabel": "DemoOZ~EchoLogic"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
+                                "teamLabel": "Platform Commons"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "33498c27-e28f-45b4-94d6-a5854f94027a",
+                                "teamLabel": "SUNILTS"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "480b3828-4396-4bce-b59a-b6842e40a69c",
+                                "teamLabel": "DemoOZ"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "569c0e51-7592-4937-8eda-ebadfb1ca080",
+                                "teamLabel": "Demo~EchoLogic"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "6c270ea5-60ed-4acf-991f-d648481853d9",
+                                "teamLabel": "LoopOZ"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "77329db2-0fc1-4b3c-9840-1d207997d4ee",
+                                "teamLabel": "JamesTeamspace"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "7f620431-b662-405a-8896-8cce38bbaeaf",
+                                "teamLabel": "EcoLogic"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "8cdf74b4-2d18-4cdd-8a54-ff0742fdcdca",
+                                "teamLabel": "JamesTeamspace~JLOOP"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "8d2197a2-c15f-4871-9c63-1c5fe79d6586",
+                                "teamLabel": "LoopOZ~EcoLogic"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "a383da77-248a-48c6-b1b8-ce6fc7b9dc4c",
+                                "teamLabel": "EchoLogic"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "a4b776b2-778e-4570-b15f-930d256a245c",
+                                "teamLabel": "EcoLogic~HartFord"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "bfa0962c-7954-4ac8-8091-fb752f66c91e",
+                                "teamLabel": "EcoLogic~EcoLogic"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "e2e011db-04ac-401d-a0ea-1edce69257e9",
+                                "teamLabel": "Demo"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "ef512de1-da45-4413-bf78-da3174ac538d",
+                                "teamLabel": "EchoLogic~Echo2"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "fd21ed9f-b91f-431f-901b-48c7eb3e99a8",
+                                "teamLabel": "EchoLogic~EchoLogic_Loop"
+                            }
+                        ],
+                        "impersonationUseSudo": false,
+                        "impersonationForce": false,
+                        "prototype": false,
+                        "children": [{
+                            "name": "EchoLogicComponents",
+                            "componentTag": {
+                                "objectType": "Component",
+                                "name": "EchoLogicComponents",
+                                "description": "",
+                                "color": "#00648D"
+                            },
+                            "path": "\/EchoLogic\/DEV\/demo\/EchoLogicComponents",
+                            "parentName": "demo",
+                            "inheritTeam": true,
+                            "propSheet": {
+                                "name": "custom",
+                                "properties": []
+                            },
+                            "tags": [],
+                            "teamMappings": [
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "000d303f-fc67-48ce-aa26-68849798786c",
+                                    "teamLabel": "DemoOZ~EchoLogic"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
+                                    "teamLabel": "Platform Commons"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "33498c27-e28f-45b4-94d6-a5854f94027a",
+                                    "teamLabel": "SUNILTS"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "480b3828-4396-4bce-b59a-b6842e40a69c",
+                                    "teamLabel": "DemoOZ"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "569c0e51-7592-4937-8eda-ebadfb1ca080",
+                                    "teamLabel": "Demo~EchoLogic"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "6c270ea5-60ed-4acf-991f-d648481853d9",
+                                    "teamLabel": "LoopOZ"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "77329db2-0fc1-4b3c-9840-1d207997d4ee",
+                                    "teamLabel": "JamesTeamspace"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "7f620431-b662-405a-8896-8cce38bbaeaf",
+                                    "teamLabel": "EcoLogic"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "8cdf74b4-2d18-4cdd-8a54-ff0742fdcdca",
+                                    "teamLabel": "JamesTeamspace~JLOOP"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "8d2197a2-c15f-4871-9c63-1c5fe79d6586",
+                                    "teamLabel": "LoopOZ~EcoLogic"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "a383da77-248a-48c6-b1b8-ce6fc7b9dc4c",
+                                    "teamLabel": "EchoLogic"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "a4b776b2-778e-4570-b15f-930d256a245c",
+                                    "teamLabel": "EcoLogic~HartFord"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "bfa0962c-7954-4ac8-8091-fb752f66c91e",
+                                    "teamLabel": "EcoLogic~EcoLogic"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "e2e011db-04ac-401d-a0ea-1edce69257e9",
+                                    "teamLabel": "Demo"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "ef512de1-da45-4413-bf78-da3174ac538d",
+                                    "teamLabel": "EchoLogic~Echo2"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "fd21ed9f-b91f-431f-901b-48c7eb3e99a8",
+                                    "teamLabel": "EchoLogic~EchoLogic_Loop"
+                                }
+                            ],
+                            "impersonationUseSudo": false,
+                            "impersonationForce": false,
+                            "prototype": false,
+                            "children": []
+                        }]
+                    }]
+                }
+            }],
+            "componentPropSheets": [
+                {
+                    "properties": [],
+                    "componentName": "Demo~EchoLogic:Echo"
+                },
+                {
+                    "properties": [],
+                    "componentName": "Demo~EchoLogic:Logic"
+                }
+            ],
+            "teamMappings": [{
+                "resourceTypeId": "20000000000000000000000000000103",
+                "resourceTypeName": "Environment",
+                "teamId": "569c0e51-7592-4937-8eda-ebadfb1ca080",
+                "teamLabel": "Demo~EchoLogic"
+            }],
+            "deploymentTriggers": []
+        },
+        {
+            "loop": {
+                "name": "EchoLogic",
+                "teamSpace": "Demo"
+            },
+            "name": "QA",
+            "description": "",
+            "color": "#7F1C7D",
+            "requireApprovals": false,
+            "noSelfApprovals": false,
+            "exemptProcesses": [],
+            "lockSnapshots": false,
+            "requireSnapshots": false,
+            "snapshotDaysToKeep": 0,
+            "cleanupDaysToKeep": 0,
+            "cleanupCountToKeep": 0,
+            "enableProcessHistoryCleanup": true,
+            "useSystemDefaultDays": true,
+            "showCompliancyOnLoad": false,
+            "historyCleanupDaysToKeep": 0,
+            "enableProcessLogCleanup": true,
+            "useSystemDefaultLogDays": true,
+            "logDaysToKeep": 0,
+            "order": 1,
+            "active": true,
+            "propSheet": {
+                "properties": []
+            },
+            "templatePropSheet": {
+                "name": "template",
+                "properties": []
+            },
+            "baseResources": [{
+                "basePath": "\/EchoLogic",
+                "tree": {
+                    "name": "QA",
+                    "path": "\/EchoLogic\/QA",
+                    "parentName": "EchoLogic",
+                    "inheritTeam": true,
+                    "propSheet": {
+                        "name": "custom",
+                        "properties": []
+                    },
+                    "tags": [],
+                    "teamMappings": [
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "000d303f-fc67-48ce-aa26-68849798786c",
+                            "teamLabel": "DemoOZ~EchoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
+                            "teamLabel": "Platform Commons"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "33498c27-e28f-45b4-94d6-a5854f94027a",
+                            "teamLabel": "SUNILTS"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "480b3828-4396-4bce-b59a-b6842e40a69c",
+                            "teamLabel": "DemoOZ"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "569c0e51-7592-4937-8eda-ebadfb1ca080",
+                            "teamLabel": "Demo~EchoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "6c270ea5-60ed-4acf-991f-d648481853d9",
+                            "teamLabel": "LoopOZ"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "77329db2-0fc1-4b3c-9840-1d207997d4ee",
+                            "teamLabel": "JamesTeamspace"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "7f620431-b662-405a-8896-8cce38bbaeaf",
+                            "teamLabel": "EcoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "8cdf74b4-2d18-4cdd-8a54-ff0742fdcdca",
+                            "teamLabel": "JamesTeamspace~JLOOP"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "8d2197a2-c15f-4871-9c63-1c5fe79d6586",
+                            "teamLabel": "LoopOZ~EcoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "a383da77-248a-48c6-b1b8-ce6fc7b9dc4c",
+                            "teamLabel": "EchoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "a4b776b2-778e-4570-b15f-930d256a245c",
+                            "teamLabel": "EcoLogic~HartFord"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "bfa0962c-7954-4ac8-8091-fb752f66c91e",
+                            "teamLabel": "EcoLogic~EcoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "e2e011db-04ac-401d-a0ea-1edce69257e9",
+                            "teamLabel": "Demo"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "ef512de1-da45-4413-bf78-da3174ac538d",
+                            "teamLabel": "EchoLogic~Echo2"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "fd21ed9f-b91f-431f-901b-48c7eb3e99a8",
+                            "teamLabel": "EchoLogic~EchoLogic_Loop"
+                        }
+                    ],
+                    "impersonationUseSudo": false,
+                    "impersonationForce": false,
+                    "prototype": false
+                }
+            }],
+            "baseResourcesFull": [{
+                "basePath": "\/EchoLogic",
+                "tree": {
+                    "name": "QA",
+                    "path": "\/EchoLogic\/QA",
+                    "parentName": "EchoLogic",
+                    "inheritTeam": true,
+                    "propSheet": {
+                        "name": "custom",
+                        "properties": []
+                    },
+                    "tags": [],
+                    "teamMappings": [
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "000d303f-fc67-48ce-aa26-68849798786c",
+                            "teamLabel": "DemoOZ~EchoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
+                            "teamLabel": "Platform Commons"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "33498c27-e28f-45b4-94d6-a5854f94027a",
+                            "teamLabel": "SUNILTS"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "480b3828-4396-4bce-b59a-b6842e40a69c",
+                            "teamLabel": "DemoOZ"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "569c0e51-7592-4937-8eda-ebadfb1ca080",
+                            "teamLabel": "Demo~EchoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "6c270ea5-60ed-4acf-991f-d648481853d9",
+                            "teamLabel": "LoopOZ"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "77329db2-0fc1-4b3c-9840-1d207997d4ee",
+                            "teamLabel": "JamesTeamspace"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "7f620431-b662-405a-8896-8cce38bbaeaf",
+                            "teamLabel": "EcoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "8cdf74b4-2d18-4cdd-8a54-ff0742fdcdca",
+                            "teamLabel": "JamesTeamspace~JLOOP"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "8d2197a2-c15f-4871-9c63-1c5fe79d6586",
+                            "teamLabel": "LoopOZ~EcoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "a383da77-248a-48c6-b1b8-ce6fc7b9dc4c",
+                            "teamLabel": "EchoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "a4b776b2-778e-4570-b15f-930d256a245c",
+                            "teamLabel": "EcoLogic~HartFord"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "bfa0962c-7954-4ac8-8091-fb752f66c91e",
+                            "teamLabel": "EcoLogic~EcoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "e2e011db-04ac-401d-a0ea-1edce69257e9",
+                            "teamLabel": "Demo"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "ef512de1-da45-4413-bf78-da3174ac538d",
+                            "teamLabel": "EchoLogic~Echo2"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "fd21ed9f-b91f-431f-901b-48c7eb3e99a8",
+                            "teamLabel": "EchoLogic~EchoLogic_Loop"
+                        }
+                    ],
+                    "impersonationUseSudo": false,
+                    "impersonationForce": false,
+                    "prototype": false,
+                    "children": [{
+                        "name": "demo",
+                        "path": "\/EchoLogic\/QA\/demo",
+                        "parentName": "QA",
+                        "inheritTeam": true,
+                        "type": "agentPool",
+                        "typeName": "demo",
+                        "propSheet": {
+                            "name": "custom",
+                            "properties": []
+                        },
+                        "tags": [],
+                        "teamMappings": [
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "000d303f-fc67-48ce-aa26-68849798786c",
+                                "teamLabel": "DemoOZ~EchoLogic"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
+                                "teamLabel": "Platform Commons"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "33498c27-e28f-45b4-94d6-a5854f94027a",
+                                "teamLabel": "SUNILTS"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "480b3828-4396-4bce-b59a-b6842e40a69c",
+                                "teamLabel": "DemoOZ"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "569c0e51-7592-4937-8eda-ebadfb1ca080",
+                                "teamLabel": "Demo~EchoLogic"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "6c270ea5-60ed-4acf-991f-d648481853d9",
+                                "teamLabel": "LoopOZ"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "77329db2-0fc1-4b3c-9840-1d207997d4ee",
+                                "teamLabel": "JamesTeamspace"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "7f620431-b662-405a-8896-8cce38bbaeaf",
+                                "teamLabel": "EcoLogic"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "8cdf74b4-2d18-4cdd-8a54-ff0742fdcdca",
+                                "teamLabel": "JamesTeamspace~JLOOP"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "8d2197a2-c15f-4871-9c63-1c5fe79d6586",
+                                "teamLabel": "LoopOZ~EcoLogic"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "a383da77-248a-48c6-b1b8-ce6fc7b9dc4c",
+                                "teamLabel": "EchoLogic"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "a4b776b2-778e-4570-b15f-930d256a245c",
+                                "teamLabel": "EcoLogic~HartFord"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "bfa0962c-7954-4ac8-8091-fb752f66c91e",
+                                "teamLabel": "EcoLogic~EcoLogic"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "e2e011db-04ac-401d-a0ea-1edce69257e9",
+                                "teamLabel": "Demo"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "ef512de1-da45-4413-bf78-da3174ac538d",
+                                "teamLabel": "EchoLogic~Echo2"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "fd21ed9f-b91f-431f-901b-48c7eb3e99a8",
+                                "teamLabel": "EchoLogic~EchoLogic_Loop"
+                            }
+                        ],
+                        "impersonationUseSudo": false,
+                        "impersonationForce": false,
+                        "prototype": false,
+                        "children": [{
+                            "name": "EchoLogicComponents",
+                            "componentTag": {
+                                "objectType": "Component",
+                                "name": "EchoLogicComponents",
+                                "description": "",
+                                "color": "#00648D"
+                            },
+                            "path": "\/EchoLogic\/QA\/demo\/EchoLogicComponents",
+                            "parentName": "demo",
+                            "inheritTeam": true,
+                            "propSheet": {
+                                "name": "custom",
+                                "properties": []
+                            },
+                            "tags": [],
+                            "teamMappings": [
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "000d303f-fc67-48ce-aa26-68849798786c",
+                                    "teamLabel": "DemoOZ~EchoLogic"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
+                                    "teamLabel": "Platform Commons"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "33498c27-e28f-45b4-94d6-a5854f94027a",
+                                    "teamLabel": "SUNILTS"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "480b3828-4396-4bce-b59a-b6842e40a69c",
+                                    "teamLabel": "DemoOZ"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "569c0e51-7592-4937-8eda-ebadfb1ca080",
+                                    "teamLabel": "Demo~EchoLogic"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "6c270ea5-60ed-4acf-991f-d648481853d9",
+                                    "teamLabel": "LoopOZ"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "77329db2-0fc1-4b3c-9840-1d207997d4ee",
+                                    "teamLabel": "JamesTeamspace"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "7f620431-b662-405a-8896-8cce38bbaeaf",
+                                    "teamLabel": "EcoLogic"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "8cdf74b4-2d18-4cdd-8a54-ff0742fdcdca",
+                                    "teamLabel": "JamesTeamspace~JLOOP"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "8d2197a2-c15f-4871-9c63-1c5fe79d6586",
+                                    "teamLabel": "LoopOZ~EcoLogic"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "a383da77-248a-48c6-b1b8-ce6fc7b9dc4c",
+                                    "teamLabel": "EchoLogic"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "a4b776b2-778e-4570-b15f-930d256a245c",
+                                    "teamLabel": "EcoLogic~HartFord"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "bfa0962c-7954-4ac8-8091-fb752f66c91e",
+                                    "teamLabel": "EcoLogic~EcoLogic"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "e2e011db-04ac-401d-a0ea-1edce69257e9",
+                                    "teamLabel": "Demo"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "ef512de1-da45-4413-bf78-da3174ac538d",
+                                    "teamLabel": "EchoLogic~Echo2"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "fd21ed9f-b91f-431f-901b-48c7eb3e99a8",
+                                    "teamLabel": "EchoLogic~EchoLogic_Loop"
+                                }
+                            ],
+                            "impersonationUseSudo": false,
+                            "impersonationForce": false,
+                            "prototype": false,
+                            "children": []
+                        }]
+                    }]
+                }
+            }],
+            "componentPropSheets": [
+                {
+                    "properties": [],
+                    "componentName": "Demo~EchoLogic:Echo"
+                },
+                {
+                    "properties": [],
+                    "componentName": "Demo~EchoLogic:Logic"
+                }
+            ],
+            "teamMappings": [{
+                "resourceTypeId": "20000000000000000000000000000103",
+                "resourceTypeName": "Environment",
+                "teamId": "569c0e51-7592-4937-8eda-ebadfb1ca080",
+                "teamLabel": "Demo~EchoLogic"
+            }],
+            "deploymentTriggers": []
+        },
+        {
+            "loop": {
+                "name": "EchoLogic",
+                "teamSpace": "Demo"
+            },
+            "name": "PROD",
+            "description": "",
+            "color": "#A91024",
+            "requireApprovals": false,
+            "noSelfApprovals": false,
+            "exemptProcesses": [],
+            "lockSnapshots": false,
+            "requireSnapshots": false,
+            "snapshotDaysToKeep": 0,
+            "cleanupDaysToKeep": 0,
+            "cleanupCountToKeep": 0,
+            "enableProcessHistoryCleanup": true,
+            "useSystemDefaultDays": true,
+            "showCompliancyOnLoad": false,
+            "historyCleanupDaysToKeep": 0,
+            "enableProcessLogCleanup": true,
+            "useSystemDefaultLogDays": true,
+            "logDaysToKeep": 0,
+            "order": 2,
+            "active": true,
+            "propSheet": {
+                "properties": []
+            },
+            "templatePropSheet": {
+                "name": "template",
+                "properties": []
+            },
+            "baseResources": [{
+                "basePath": "\/EchoLogic",
+                "tree": {
+                    "name": "PROD",
+                    "path": "\/EchoLogic\/PROD",
+                    "parentName": "EchoLogic",
+                    "inheritTeam": true,
+                    "propSheet": {
+                        "name": "custom",
+                        "properties": []
+                    },
+                    "tags": [],
+                    "teamMappings": [
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "000d303f-fc67-48ce-aa26-68849798786c",
+                            "teamLabel": "DemoOZ~EchoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
+                            "teamLabel": "Platform Commons"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "33498c27-e28f-45b4-94d6-a5854f94027a",
+                            "teamLabel": "SUNILTS"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "480b3828-4396-4bce-b59a-b6842e40a69c",
+                            "teamLabel": "DemoOZ"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "569c0e51-7592-4937-8eda-ebadfb1ca080",
+                            "teamLabel": "Demo~EchoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "6c270ea5-60ed-4acf-991f-d648481853d9",
+                            "teamLabel": "LoopOZ"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "77329db2-0fc1-4b3c-9840-1d207997d4ee",
+                            "teamLabel": "JamesTeamspace"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "7f620431-b662-405a-8896-8cce38bbaeaf",
+                            "teamLabel": "EcoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "8cdf74b4-2d18-4cdd-8a54-ff0742fdcdca",
+                            "teamLabel": "JamesTeamspace~JLOOP"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "8d2197a2-c15f-4871-9c63-1c5fe79d6586",
+                            "teamLabel": "LoopOZ~EcoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "a383da77-248a-48c6-b1b8-ce6fc7b9dc4c",
+                            "teamLabel": "EchoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "a4b776b2-778e-4570-b15f-930d256a245c",
+                            "teamLabel": "EcoLogic~HartFord"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "bfa0962c-7954-4ac8-8091-fb752f66c91e",
+                            "teamLabel": "EcoLogic~EcoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "e2e011db-04ac-401d-a0ea-1edce69257e9",
+                            "teamLabel": "Demo"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "ef512de1-da45-4413-bf78-da3174ac538d",
+                            "teamLabel": "EchoLogic~Echo2"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "fd21ed9f-b91f-431f-901b-48c7eb3e99a8",
+                            "teamLabel": "EchoLogic~EchoLogic_Loop"
+                        }
+                    ],
+                    "impersonationUseSudo": false,
+                    "impersonationForce": false,
+                    "prototype": false
+                }
+            }],
+            "baseResourcesFull": [{
+                "basePath": "\/EchoLogic",
+                "tree": {
+                    "name": "PROD",
+                    "path": "\/EchoLogic\/PROD",
+                    "parentName": "EchoLogic",
+                    "inheritTeam": true,
+                    "propSheet": {
+                        "name": "custom",
+                        "properties": []
+                    },
+                    "tags": [],
+                    "teamMappings": [
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "000d303f-fc67-48ce-aa26-68849798786c",
+                            "teamLabel": "DemoOZ~EchoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
+                            "teamLabel": "Platform Commons"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "33498c27-e28f-45b4-94d6-a5854f94027a",
+                            "teamLabel": "SUNILTS"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "480b3828-4396-4bce-b59a-b6842e40a69c",
+                            "teamLabel": "DemoOZ"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "569c0e51-7592-4937-8eda-ebadfb1ca080",
+                            "teamLabel": "Demo~EchoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "6c270ea5-60ed-4acf-991f-d648481853d9",
+                            "teamLabel": "LoopOZ"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "77329db2-0fc1-4b3c-9840-1d207997d4ee",
+                            "teamLabel": "JamesTeamspace"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "7f620431-b662-405a-8896-8cce38bbaeaf",
+                            "teamLabel": "EcoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "8cdf74b4-2d18-4cdd-8a54-ff0742fdcdca",
+                            "teamLabel": "JamesTeamspace~JLOOP"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "8d2197a2-c15f-4871-9c63-1c5fe79d6586",
+                            "teamLabel": "LoopOZ~EcoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "a383da77-248a-48c6-b1b8-ce6fc7b9dc4c",
+                            "teamLabel": "EchoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "a4b776b2-778e-4570-b15f-930d256a245c",
+                            "teamLabel": "EcoLogic~HartFord"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "bfa0962c-7954-4ac8-8091-fb752f66c91e",
+                            "teamLabel": "EcoLogic~EcoLogic"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "e2e011db-04ac-401d-a0ea-1edce69257e9",
+                            "teamLabel": "Demo"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "ef512de1-da45-4413-bf78-da3174ac538d",
+                            "teamLabel": "EchoLogic~Echo2"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "fd21ed9f-b91f-431f-901b-48c7eb3e99a8",
+                            "teamLabel": "EchoLogic~EchoLogic_Loop"
+                        }
+                    ],
+                    "impersonationUseSudo": false,
+                    "impersonationForce": false,
+                    "prototype": false,
+                    "children": []
+                }
+            }],
+            "componentPropSheets": [
+                {
+                    "properties": [],
+                    "componentName": "Demo~EchoLogic:Echo"
+                },
+                {
+                    "properties": [],
+                    "componentName": "Demo~EchoLogic:Logic"
+                }
+            ],
+            "teamMappings": [{
+                "resourceTypeId": "20000000000000000000000000000103",
+                "resourceTypeName": "Environment",
+                "teamId": "569c0e51-7592-4937-8eda-ebadfb1ca080",
+                "teamLabel": "Demo~EchoLogic"
+            }],
+            "deploymentTriggers": []
+        }
+    ],
+    "processes": [
+        {
+            "name": "Deploy with Passed Test",
+            "description": "",
+            "inventoryManagementType": "AUTOMATIC",
+            "offlineAgentHandling": "PRE_EXECUTION_CHECK",
+            "disableSnapshots": false,
+            "rootActivity": {
+                "edges": [
+                    {
+                        "to": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "from": "16197d70e51378e41a7af13e74acbe",
+                        "type": "SUCCESS",
+                        "value": ""
+                    },
+                    {
+                        "to": "dba1ff5fc37d05c133da3d3e2ed257",
+                        "from": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "type": "SUCCESS",
+                        "value": ""
+                    },
+                    {
+                        "to": "16197d70e51378e41a7af13e74acbe",
+                        "type": "ALWAYS",
+                        "value": ""
+                    }
+                ],
+                "offsets": [
+                    {
+                        "name": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "x": -35,
+                        "y": 350,
+                        "h": 70,
+                        "w": 310
+                    },
+                    {
+                        "name": "16197d70e51378e41a7af13e74acbe",
+                        "x": -40,
+                        "y": 180,
+                        "h": 70,
+                        "w": 190
+                    },
+                    {
+                        "name": "dba1ff5fc37d05c133da3d3e2ed257",
+                        "x": -5,
+                        "y": 520,
+                        "h": 80,
+                        "w": 120
+                    }
+                ],
+                "layoutMode": "auto",
+                "type": "graph",
+                "name": "5db59025-8d7b-4d8f-bdcf-144b0ab147d9",
+                "children": [
+                    {
+                        "type": "finish",
+                        "name": "dba1ff5fc37d05c133da3d3e2ed257",
+                        "children": []
+                    },
+                    {
+                        "componentName": "Logic",
+                        "componentLoop": {
+                            "name": "EchoLogic",
+                            "teamSpace": "Demo"
+                        },
+                        "properties": [
+                            {
+                                "name": "maxIteration",
+                                "value": "-1"
+                            },
+                            {
+                                "name": "isIgnoreChildWarnings",
+                                "value": "false"
+                            },
+                            {
+                                "name": "runOnlyOnFirst",
+                                "value": "false"
+                            },
+                            {
+                                "name": "failFast",
+                                "value": "false"
+                            }
+                        ],
+                        "type": "componentEnvironmentIterator",
+                        "name": "16197d70e51378e41a7af13e74acbe",
+                        "children": [{
+                            "componentLoop": {
+                                "name": "EchoLogic",
+                                "teamSpace": "Demo"
+                            },
+                            "componentName": "Logic",
+                            "status": "Active",
+                            "type": "inventoryVersionDiff",
+                            "name": "99db2a0a-e407-4d95-b574-5b49a5253d2b",
+                            "children": [{
+                                "componentProcessName": "Deploy",
+                                "componentLoop": {
+                                    "name": "EchoLogic",
+                                    "teamSpace": "Demo"
+                                },
+                                "componentName": "Logic",
+                                "allowFailure": false,
+                                "properties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "draftProperties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "type": "componentProcess",
+                                "name": "Install: \"Logic\"",
+                                "children": []
+                            }]
+                        }]
+                    },
+                    {
+                        "componentName": "Echo",
+                        "componentLoop": {
+                            "name": "EchoLogic",
+                            "teamSpace": "Demo"
+                        },
+                        "properties": [
+                            {
+                                "name": "maxIteration",
+                                "value": "-1"
+                            },
+                            {
+                                "name": "isIgnoreChildWarnings",
+                                "value": "false"
+                            },
+                            {
+                                "name": "failFast",
+                                "value": "false"
+                            }
+                        ],
+                        "type": "componentEnvironmentIterator",
+                        "name": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "children": [{
+                            "componentLoop": {
+                                "name": "EchoLogic",
+                                "teamSpace": "Demo"
+                            },
+                            "componentName": "Echo",
+                            "status": "Active",
+                            "type": "inventoryVersionDiff",
+                            "name": "d4978c39-1cec-438a-93bf-db218351d2d9",
+                            "children": [{
+                                "componentProcessName": "Deploy with Test Passed",
+                                "componentLoop": {
+                                    "name": "EchoLogic",
+                                    "teamSpace": "Demo"
+                                },
+                                "componentName": "Echo",
+                                "allowFailure": false,
+                                "properties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "draftProperties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "type": "componentProcess",
+                                "name": "Install: \"Echo\"",
+                                "children": []
+                            }]
+                        }]
+                    }
+                ]
+            },
+            "propDefs": [],
+            "versionPresets": []
+        },
+        {
+            "name": "Deploy",
+            "description": "",
+            "inventoryManagementType": "AUTOMATIC",
+            "offlineAgentHandling": "PRE_EXECUTION_CHECK",
+            "disableSnapshots": false,
+            "rootActivity": {
+                "edges": [
+                    {
+                        "to": "dba1ff5fc37d05c133da3d3e2ed257",
+                        "from": "16197d70e51378e41a7af13e74acbe",
+                        "type": "SUCCESS",
+                        "value": ""
+                    },
+                    {
+                        "to": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "type": "ALWAYS",
+                        "value": ""
+                    },
+                    {
+                        "to": "16197d70e51378e41a7af13e74acbe",
+                        "type": "ALWAYS",
+                        "value": ""
+                    },
+                    {
+                        "to": "dba1ff5fc37d05c133da3d3e2ed257",
+                        "from": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "type": "SUCCESS",
+                        "value": ""
+                    }
+                ],
+                "offsets": [
+                    {
+                        "name": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "x": 72.5,
+                        "y": 155,
+                        "h": 70,
+                        "w": 180
+                    },
+                    {
+                        "name": "16197d70e51378e41a7af13e74acbe",
+                        "x": -147.5,
+                        "y": 155,
+                        "h": 70,
+                        "w": 190
+                    },
+                    {
+                        "name": "dba1ff5fc37d05c133da3d3e2ed257",
+                        "x": -5,
+                        "y": 300,
+                        "h": 80,
+                        "w": 120
+                    }
+                ],
+                "layoutMode": "auto",
+                "type": "graph",
+                "name": "3aa73c44-2826-4016-9b19-bab6923d7a60",
+                "children": [
+                    {
+                        "type": "finish",
+                        "name": "dba1ff5fc37d05c133da3d3e2ed257",
+                        "children": []
+                    },
+                    {
+                        "componentName": "Logic",
+                        "componentLoop": {
+                            "name": "EchoLogic",
+                            "teamSpace": "Demo"
+                        },
+                        "properties": [
+                            {
+                                "name": "maxIteration",
+                                "value": "-1"
+                            },
+                            {
+                                "name": "isIgnoreChildWarnings",
+                                "value": "false"
+                            },
+                            {
+                                "name": "runOnlyOnFirst",
+                                "value": "false"
+                            },
+                            {
+                                "name": "failFast",
+                                "value": "false"
+                            }
+                        ],
+                        "type": "componentEnvironmentIterator",
+                        "name": "16197d70e51378e41a7af13e74acbe",
+                        "children": [{
+                            "componentLoop": {
+                                "name": "EchoLogic",
+                                "teamSpace": "Demo"
+                            },
+                            "componentName": "Logic",
+                            "status": "Active",
+                            "type": "inventoryVersionDiff",
+                            "name": "b067dfec-2130-4e7a-af28-a10bc2b31c10",
+                            "children": [{
+                                "componentProcessName": "Deploy",
+                                "componentLoop": {
+                                    "name": "EchoLogic",
+                                    "teamSpace": "Demo"
+                                },
+                                "componentName": "Logic",
+                                "allowFailure": false,
+                                "properties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "draftProperties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "type": "componentProcess",
+                                "name": "Install: \"Logic\"",
+                                "children": []
+                            }]
+                        }]
+                    },
+                    {
+                        "componentName": "Echo",
+                        "componentLoop": {
+                            "name": "EchoLogic",
+                            "teamSpace": "Demo"
+                        },
+                        "properties": [
+                            {
+                                "name": "maxIteration",
+                                "value": "-1"
+                            },
+                            {
+                                "name": "isIgnoreChildWarnings",
+                                "value": "false"
+                            },
+                            {
+                                "name": "runOnlyOnFirst",
+                                "value": "false"
+                            },
+                            {
+                                "name": "failFast",
+                                "value": "false"
+                            }
+                        ],
+                        "type": "componentEnvironmentIterator",
+                        "name": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "children": [{
+                            "componentLoop": {
+                                "name": "EchoLogic",
+                                "teamSpace": "Demo"
+                            },
+                            "componentName": "Echo",
+                            "status": "Active",
+                            "type": "inventoryVersionDiff",
+                            "name": "fc984388-0ec2-4ad7-ba02-9b14b98d344d",
+                            "children": [{
+                                "componentProcessName": "Deploy",
+                                "componentLoop": {
+                                    "name": "EchoLogic",
+                                    "teamSpace": "Demo"
+                                },
+                                "componentName": "Echo",
+                                "allowFailure": false,
+                                "properties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "draftProperties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "type": "componentProcess",
+                                "name": "Install: \"Echo\"",
+                                "children": []
+                            }]
+                        }]
+                    }
+                ]
+            },
+            "propDefs": [],
+            "versionPresets": []
+        },
+        {
+            "name": "Deploy with Failed Test",
+            "description": "",
+            "inventoryManagementType": "AUTOMATIC",
+            "offlineAgentHandling": "PRE_EXECUTION_CHECK",
+            "disableSnapshots": false,
+            "rootActivity": {
+                "edges": [
+                    {
+                        "to": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "from": "16197d70e51378e41a7af13e74acbe",
+                        "type": "SUCCESS",
+                        "value": ""
+                    },
+                    {
+                        "to": "16197d70e51378e41a7af13e74acbe",
+                        "type": "ALWAYS",
+                        "value": ""
+                    },
+                    {
+                        "to": "dba1ff5fc37d05c133da3d3e2ed257",
+                        "from": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "type": "SUCCESS",
+                        "value": ""
+                    }
+                ],
+                "offsets": [
+                    {
+                        "name": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "x": -100,
+                        "y": 350,
+                        "h": 70,
+                        "w": 300
+                    },
+                    {
+                        "name": "16197d70e51378e41a7af13e74acbe",
+                        "x": -40,
+                        "y": 180,
+                        "h": 70,
+                        "w": 190
+                    },
+                    {
+                        "name": "dba1ff5fc37d05c133da3d3e2ed257",
+                        "x": -5,
+                        "y": 520,
+                        "h": 80,
+                        "w": 120
+                    }
+                ],
+                "layoutMode": "auto",
+                "type": "graph",
+                "name": "a2e021c6-f731-446f-bf2b-f2b6d31006cc",
+                "children": [
+                    {
+                        "type": "finish",
+                        "name": "dba1ff5fc37d05c133da3d3e2ed257",
+                        "children": []
+                    },
+                    {
+                        "componentName": "Logic",
+                        "componentLoop": {
+                            "name": "EchoLogic",
+                            "teamSpace": "Demo"
+                        },
+                        "properties": [
+                            {
+                                "name": "maxIteration",
+                                "value": "-1"
+                            },
+                            {
+                                "name": "isIgnoreChildWarnings",
+                                "value": "false"
+                            },
+                            {
+                                "name": "runOnlyOnFirst",
+                                "value": "false"
+                            },
+                            {
+                                "name": "failFast",
+                                "value": "false"
+                            }
+                        ],
+                        "type": "componentEnvironmentIterator",
+                        "name": "16197d70e51378e41a7af13e74acbe",
+                        "children": [{
+                            "componentLoop": {
+                                "name": "EchoLogic",
+                                "teamSpace": "Demo"
+                            },
+                            "componentName": "Logic",
+                            "status": "Active",
+                            "type": "inventoryVersionDiff",
+                            "name": "046bc659-25fa-4237-9fca-1f814005f5cb",
+                            "children": [{
+                                "componentProcessName": "Deploy",
+                                "componentLoop": {
+                                    "name": "EchoLogic",
+                                    "teamSpace": "Demo"
+                                },
+                                "componentName": "Logic",
+                                "allowFailure": false,
+                                "properties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "draftProperties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "type": "componentProcess",
+                                "name": "Install: \"Logic\"",
+                                "children": []
+                            }]
+                        }]
+                    },
+                    {
+                        "componentName": "Echo",
+                        "componentLoop": {
+                            "name": "EchoLogic",
+                            "teamSpace": "Demo"
+                        },
+                        "properties": [
+                            {
+                                "name": "maxIteration",
+                                "value": "-1"
+                            },
+                            {
+                                "name": "isIgnoreChildWarnings",
+                                "value": "false"
+                            },
+                            {
+                                "name": "failFast",
+                                "value": "false"
+                            }
+                        ],
+                        "type": "componentEnvironmentIterator",
+                        "name": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "children": [{
+                            "componentLoop": {
+                                "name": "EchoLogic",
+                                "teamSpace": "Demo"
+                            },
+                            "componentName": "Echo",
+                            "status": "Active",
+                            "type": "inventoryVersionDiff",
+                            "name": "55b10a51-dcda-48d3-ac26-c3c9a7c9cd4a",
+                            "children": [{
+                                "componentProcessName": "Deploy with Test Failed",
+                                "componentLoop": {
+                                    "name": "EchoLogic",
+                                    "teamSpace": "Demo"
+                                },
+                                "componentName": "Echo",
+                                "allowFailure": false,
+                                "properties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "draftProperties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "type": "componentProcess",
+                                "name": "Install: \"Echo\"",
+                                "children": []
+                            }]
+                        }]
+                    }
+                ]
+            },
+            "propDefs": [],
+            "versionPresets": []
+        }
+    ],
+    "genericProcesses": [],
+    "teamMappings": [{
+        "resourceTypeId": "20000000000000000000000000000100",
+        "resourceTypeName": "Application",
+        "teamId": "569c0e51-7592-4937-8eda-ebadfb1ca080",
+        "teamLabel": "Demo~EchoLogic"
+    }],
+    "tags": [],
+    "webhooks": []
+}

@@ -1,0 +1,351 @@
+---
+- name: "Deploy with Passed Test"
+  description: ""
+  inventoryManagementType: "AUTOMATIC"
+  offlineAgentHandling: "PRE_EXECUTION_CHECK"
+  disableSnapshots: false
+  rootActivity:
+    edges:
+    - to: "dba1ff5fc37d05c133da3d3e2ed257"
+      from: "5b5de9bc30d25ed5be2201d2a80ecf"
+      type: "SUCCESS"
+      value: ""
+    - to: "16197d70e51378e41a7af13e74acbe"
+      type: "ALWAYS"
+      value: ""
+    - to: "5b5de9bc30d25ed5be2201d2a80ecf"
+      from: "16197d70e51378e41a7af13e74acbe"
+      type: "SUCCESS"
+      value: ""
+    offsets:
+    - name: "16197d70e51378e41a7af13e74acbe"
+      x: -40
+      "y": 180
+      h: 70
+      w: 190
+    - name: "5b5de9bc30d25ed5be2201d2a80ecf"
+      x: -35
+      "y": 350
+      h: 70
+      w: 310
+    - name: "dba1ff5fc37d05c133da3d3e2ed257"
+      x: -5
+      "y": 520
+      h: 80
+      w: 120
+    layoutMode: "auto"
+    type: "graph"
+    name: "ea715f6f-1a7d-4a87-9b00-dc18438de5d1"
+    children:
+    - type: "finish"
+      name: "dba1ff5fc37d05c133da3d3e2ed257"
+      children: []
+    - componentName: "Logic"
+      componentLoop:
+        name: "EcoLogic"
+        teamSpace: "EcoLogic"
+      properties:
+      - name: "maxIteration"
+        value: "-1"
+      - name: "isIgnoreChildWarnings"
+        value: "false"
+      - name: "runOnlyOnFirst"
+        value: "false"
+      - name: "failFast"
+        value: "false"
+      type: "componentEnvironmentIterator"
+      name: "16197d70e51378e41a7af13e74acbe"
+      children:
+      - componentLoop:
+          name: "EcoLogic"
+          teamSpace: "EcoLogic"
+        componentName: "Logic"
+        status: "Active"
+        type: "inventoryVersionDiff"
+        name: "5934cc5f-0e6d-442f-8cc4-fb03dda6b554"
+        children:
+        - componentProcessName: "Deploy"
+          componentLoop:
+            name: "EcoLogic"
+            teamSpace: "EcoLogic"
+          componentName: "Logic"
+          allowFailure: false
+          properties:
+            isIgnoreChildWarnings: "false"
+          draftProperties:
+            isIgnoreChildWarnings: "false"
+          type: "componentProcess"
+          name: "Install: \"Logic\""
+          children: []
+    - componentName: "Echo"
+      componentLoop:
+        name: "EcoLogic"
+        teamSpace: "EcoLogic"
+      properties:
+      - name: "maxIteration"
+        value: "-1"
+      - name: "isIgnoreChildWarnings"
+        value: "false"
+      - name: "failFast"
+        value: "false"
+      type: "componentEnvironmentIterator"
+      name: "5b5de9bc30d25ed5be2201d2a80ecf"
+      children:
+      - componentLoop:
+          name: "EcoLogic"
+          teamSpace: "EcoLogic"
+        componentName: "Echo"
+        status: "Active"
+        type: "inventoryVersionDiff"
+        name: "c28e8267-0475-4b8f-886f-46e3cb962bd3"
+        children:
+        - componentProcessName: "Deploy with Test Passed"
+          componentLoop:
+            name: "EcoLogic"
+            teamSpace: "EcoLogic"
+          componentName: "Echo"
+          allowFailure: false
+          properties:
+            isIgnoreChildWarnings: "false"
+          draftProperties:
+            isIgnoreChildWarnings: "false"
+          type: "componentProcess"
+          name: "Install: \"Echo\""
+          children: []
+  propDefs: []
+  versionPresets: []
+- name: "Deploy with Failed Test"
+  description: ""
+  inventoryManagementType: "AUTOMATIC"
+  offlineAgentHandling: "PRE_EXECUTION_CHECK"
+  disableSnapshots: false
+  rootActivity:
+    edges:
+    - to: "5b5de9bc30d25ed5be2201d2a80ecf"
+      from: "16197d70e51378e41a7af13e74acbe"
+      type: "SUCCESS"
+      value: ""
+    - to: "16197d70e51378e41a7af13e74acbe"
+      type: "ALWAYS"
+      value: ""
+    - to: "dba1ff5fc37d05c133da3d3e2ed257"
+      from: "5b5de9bc30d25ed5be2201d2a80ecf"
+      type: "SUCCESS"
+      value: ""
+    offsets:
+    - name: "dba1ff5fc37d05c133da3d3e2ed257"
+      x: -5
+      "y": 520
+      h: 80
+      w: 120
+    - name: "5b5de9bc30d25ed5be2201d2a80ecf"
+      x: -100
+      "y": 350
+      h: 70
+      w: 300
+    - name: "16197d70e51378e41a7af13e74acbe"
+      x: -40
+      "y": 180
+      h: 70
+      w: 190
+    layoutMode: "auto"
+    type: "graph"
+    name: "737ca825-9f3b-42bd-b8a7-0132b256eec0"
+    children:
+    - type: "finish"
+      name: "dba1ff5fc37d05c133da3d3e2ed257"
+      children: []
+    - componentName: "Logic"
+      componentLoop:
+        name: "EcoLogic"
+        teamSpace: "EcoLogic"
+      properties:
+      - name: "maxIteration"
+        value: "-1"
+      - name: "isIgnoreChildWarnings"
+        value: "false"
+      - name: "runOnlyOnFirst"
+        value: "false"
+      - name: "failFast"
+        value: "false"
+      type: "componentEnvironmentIterator"
+      name: "16197d70e51378e41a7af13e74acbe"
+      children:
+      - componentLoop:
+          name: "EcoLogic"
+          teamSpace: "EcoLogic"
+        componentName: "Logic"
+        status: "Active"
+        type: "inventoryVersionDiff"
+        name: "a8a9e92c-70f7-4515-8e27-da6567f44e2f"
+        children:
+        - componentProcessName: "Deploy"
+          componentLoop:
+            name: "EcoLogic"
+            teamSpace: "EcoLogic"
+          componentName: "Logic"
+          allowFailure: false
+          properties:
+            isIgnoreChildWarnings: "false"
+          draftProperties:
+            isIgnoreChildWarnings: "false"
+          type: "componentProcess"
+          name: "Install: \"Logic\""
+          children: []
+    - componentName: "Echo"
+      componentLoop:
+        name: "EcoLogic"
+        teamSpace: "EcoLogic"
+      properties:
+      - name: "maxIteration"
+        value: "-1"
+      - name: "isIgnoreChildWarnings"
+        value: "false"
+      - name: "failFast"
+        value: "false"
+      type: "componentEnvironmentIterator"
+      name: "5b5de9bc30d25ed5be2201d2a80ecf"
+      children:
+      - componentLoop:
+          name: "EcoLogic"
+          teamSpace: "EcoLogic"
+        componentName: "Echo"
+        status: "Active"
+        type: "inventoryVersionDiff"
+        name: "fb5a345a-a535-4358-b7da-27252e5365a4"
+        children:
+        - componentProcessName: "Deploy with Test Failed"
+          componentLoop:
+            name: "EcoLogic"
+            teamSpace: "EcoLogic"
+          componentName: "Echo"
+          allowFailure: false
+          properties:
+            isIgnoreChildWarnings: "false"
+          draftProperties:
+            isIgnoreChildWarnings: "false"
+          type: "componentProcess"
+          name: "Install: \"Echo\""
+          children: []
+  propDefs: []
+  versionPresets: []
+- name: "Deploy"
+  description: ""
+  inventoryManagementType: "AUTOMATIC"
+  offlineAgentHandling: "PRE_EXECUTION_CHECK"
+  disableSnapshots: false
+  rootActivity:
+    edges:
+    - to: "16197d70e51378e41a7af13e74acbe"
+      type: "ALWAYS"
+      value: ""
+    - to: "dba1ff5fc37d05c133da3d3e2ed257"
+      from: "5b5de9bc30d25ed5be2201d2a80ecf"
+      type: "SUCCESS"
+      value: ""
+    - to: "dba1ff5fc37d05c133da3d3e2ed257"
+      from: "16197d70e51378e41a7af13e74acbe"
+      type: "SUCCESS"
+      value: ""
+    - to: "5b5de9bc30d25ed5be2201d2a80ecf"
+      type: "ALWAYS"
+      value: ""
+    offsets:
+    - name: "16197d70e51378e41a7af13e74acbe"
+      x: -147.5
+      "y": 155
+      h: 70
+      w: 190
+    - name: "dba1ff5fc37d05c133da3d3e2ed257"
+      x: -5
+      "y": 300
+      h: 80
+      w: 120
+    - name: "5b5de9bc30d25ed5be2201d2a80ecf"
+      x: 72.5
+      "y": 155
+      h: 70
+      w: 180
+    layoutMode: "auto"
+    type: "graph"
+    name: "b1194622-5d7a-4191-ad06-aad8a4aaad6d"
+    children:
+    - type: "finish"
+      name: "dba1ff5fc37d05c133da3d3e2ed257"
+      children: []
+    - componentName: "Logic"
+      componentLoop:
+        name: "EcoLogic"
+        teamSpace: "EcoLogic"
+      properties:
+      - name: "maxIteration"
+        value: "-1"
+      - name: "isIgnoreChildWarnings"
+        value: "false"
+      - name: "runOnlyOnFirst"
+        value: "false"
+      - name: "failFast"
+        value: "false"
+      type: "componentEnvironmentIterator"
+      name: "16197d70e51378e41a7af13e74acbe"
+      children:
+      - componentLoop:
+          name: "EcoLogic"
+          teamSpace: "EcoLogic"
+        componentName: "Logic"
+        status: "Active"
+        type: "inventoryVersionDiff"
+        name: "8efa2a5d-52db-4f4c-8756-8959730e5c33"
+        children:
+        - componentProcessName: "Deploy"
+          componentLoop:
+            name: "EcoLogic"
+            teamSpace: "EcoLogic"
+          componentName: "Logic"
+          allowFailure: false
+          properties:
+            isIgnoreChildWarnings: "false"
+          draftProperties:
+            isIgnoreChildWarnings: "false"
+          type: "componentProcess"
+          name: "Install: \"Logic\""
+          children: []
+    - componentName: "Echo"
+      componentLoop:
+        name: "EcoLogic"
+        teamSpace: "EcoLogic"
+      properties:
+      - name: "maxIteration"
+        value: "-1"
+      - name: "isIgnoreChildWarnings"
+        value: "false"
+      - name: "runOnlyOnFirst"
+        value: "false"
+      - name: "failFast"
+        value: "false"
+      type: "componentEnvironmentIterator"
+      name: "5b5de9bc30d25ed5be2201d2a80ecf"
+      children:
+      - componentLoop:
+          name: "EcoLogic"
+          teamSpace: "EcoLogic"
+        componentName: "Echo"
+        status: "Active"
+        type: "inventoryVersionDiff"
+        name: "4e852680-0f3f-460e-ac8d-e21bc72c3c5b"
+        children:
+        - componentProcessName: "Deploy"
+          componentLoop:
+            name: "EcoLogic"
+            teamSpace: "EcoLogic"
+          componentName: "Echo"
+          allowFailure: false
+          properties:
+            isIgnoreChildWarnings: "false"
+          draftProperties:
+            isIgnoreChildWarnings: "false"
+          type: "componentProcess"
+          name: "Install: \"Echo\""
+          children: []
+  propDefs: []
+  versionPresets: []
