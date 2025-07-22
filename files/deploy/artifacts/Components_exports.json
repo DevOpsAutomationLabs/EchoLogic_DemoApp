@@ -1,5 +1,8 @@
 [
-    {
+    {   "loop": {
+            "name": "EchoLogic",
+            "teamSpace": "Demo"
+        },
         "name": "Echo",
         "description": "Component for Echo",
         "created": 1753176545771,
@@ -43,7 +46,7 @@
                         },
                         {
                             "name": "password",
-                            "value": "crypt_v1{AES\/CBC\/PKCS5Padding|aes256keydmrg|Pbb9Q6yXUWmoaLItYd+0MQ==|1gM\/GHuB3AZHASRvXVeoSQ==}",
+                            "value": "",
                             "description": "",
                             "secure": true
                         },
@@ -990,12 +993,7 @@
         ],
         "configTemplates": [],
         "genericProcesses": [],
-        "teamMappings": [{
-            "resourceTypeId": "20000000000000000000000000000101",
-            "resourceTypeName": "Component",
-            "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
-            "teamLabel": "Demo~EchoLogic"
-        }],
+        "teamMappings": [],
         "tags": [{
             "id": "19831771-b195-52a0-22f8-69552a5b680c",
             "name": "EchoLogicComponents",
@@ -1004,7 +1002,10 @@
             "objectType": "Component"
         }]
     },
-    {
+    {   "loop": {
+            "name": "EchoLogic",
+            "teamSpace": "Demo"
+        },
         "name": "Logic",
         "description": "Component for Logic System",
         "created": 1753176607096,
@@ -1040,7 +1041,7 @@
                         },
                         {
                             "name": "password",
-                            "value": "crypt_v1{AES\/CBC\/PKCS5Padding|aes256keydmrg|bHM1canyNMX8t4LFIdmkQA==|kBhphZ6QZZBgyyqooITxyg==}",
+                            "value": "",
                             "description": "",
                             "secure": true
                         },
@@ -1370,12 +1371,7 @@
         }],
         "configTemplates": [],
         "genericProcesses": [],
-        "teamMappings": [{
-            "resourceTypeId": "20000000000000000000000000000101",
-            "resourceTypeName": "Component",
-            "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
-            "teamLabel": "Demo~EchoLogic"
-        }],
+        "teamMappings": [],
         "tags": [{
             "id": "19831771-b195-52a0-22f8-69552a5b680c",
             "name": "EchoLogicComponents",

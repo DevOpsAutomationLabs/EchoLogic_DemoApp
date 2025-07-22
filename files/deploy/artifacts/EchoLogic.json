@@ -15,7 +15,10 @@
         "properties": []
     },
     "components": [
-        {
+        {   "loop": {
+                "name": "EchoLogic",
+                "teamSpace": "Demo"
+            },
             "name": "Echo",
             "description": "Component for Echo",
             "created": 1753176545771,
@@ -1006,12 +1009,7 @@
             ],
             "configTemplates": [],
             "genericProcesses": [],
-            "teamMappings": [{
-                "resourceTypeId": "20000000000000000000000000000101",
-                "resourceTypeName": "Component",
-                "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
-                "teamLabel": "Demo~EchoLogic"
-            }],
+            "teamMappings": [],
             "tags": [{
                 "id": "19831771-b195-52a0-22f8-69552a5b680c",
                 "name": "EchoLogicComponents",
@@ -1020,7 +1018,10 @@
                 "objectType": "Component"
             }]
         },
-        {
+        {   "loop": {
+                "name": "EchoLogic",
+                "teamSpace": "Demo"
+            },
             "name": "Logic",
             "description": "Component for Logic System",
             "created": 1753176607096,
@@ -1386,12 +1387,7 @@
             }],
             "configTemplates": [],
             "genericProcesses": [],
-            "teamMappings": [{
-                "resourceTypeId": "20000000000000000000000000000101",
-                "resourceTypeName": "Component",
-                "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
-                "teamLabel": "Demo~EchoLogic"
-            }],
+            "teamMappings": [],
             "tags": [{
                 "id": "19831771-b195-52a0-22f8-69552a5b680c",
                 "name": "EchoLogicComponents",
@@ -1446,26 +1442,7 @@
                         "properties": []
                     },
                     "tags": [],
-                    "teamMappings": [
-                        {
-                            "resourceTypeId": "20000000000000000000000000000104",
-                            "resourceTypeName": "Resource",
-                            "teamId": "0ae0e85e-a824-4561-ac0b-1488aafa8469",
-                            "teamLabel": "Demo"
-                        },
-                        {
-                            "resourceTypeId": "20000000000000000000000000000104",
-                            "resourceTypeName": "Resource",
-                            "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
-                            "teamLabel": "Platform Commons"
-                        },
-                        {
-                            "resourceTypeId": "20000000000000000000000000000104",
-                            "resourceTypeName": "Resource",
-                            "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
-                            "teamLabel": "Demo~EchoLogic"
-                        }
-                    ],
+                    "teamMappings": [],
                     "impersonationUseSudo": false,
                     "impersonationForce": false,
                     "prototype": false
@@ -1484,26 +1461,7 @@
                         "properties": []
                     },
                     "tags": [],
-                    "teamMappings": [
-                        {
-                            "resourceTypeId": "20000000000000000000000000000104",
-                            "resourceTypeName": "Resource",
-                            "teamId": "0ae0e85e-a824-4561-ac0b-1488aafa8469",
-                            "teamLabel": "Demo"
-                        },
-                        {
-                            "resourceTypeId": "20000000000000000000000000000104",
-                            "resourceTypeName": "Resource",
-                            "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
-                            "teamLabel": "Platform Commons"
-                        },
-                        {
-                            "resourceTypeId": "20000000000000000000000000000104",
-                            "resourceTypeName": "Resource",
-                            "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
-                            "teamLabel": "Demo~EchoLogic"
-                        }
-                    ],
+                    "teamMappings": [],
                     "impersonationUseSudo": false,
                     "impersonationForce": false,
                     "prototype": false,
@@ -1520,26 +1478,7 @@
                             "properties": []
                         },
                         "tags": [],
-                        "teamMappings": [
-                            {
-                                "resourceTypeId": "20000000000000000000000000000104",
-                                "resourceTypeName": "Resource",
-                                "teamId": "0ae0e85e-a824-4561-ac0b-1488aafa8469",
-                                "teamLabel": "Demo"
-                            },
-                            {
-                                "resourceTypeId": "20000000000000000000000000000104",
-                                "resourceTypeName": "Resource",
-                                "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
-                                "teamLabel": "Platform Commons"
-                            },
-                            {
-                                "resourceTypeId": "20000000000000000000000000000104",
-                                "resourceTypeName": "Resource",
-                                "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
-                                "teamLabel": "Demo~EchoLogic"
-                            }
-                        ],
+                        "teamMappings": [],
                         "impersonationUseSudo": false,
                         "impersonationForce": false,
                         "prototype": false,
@@ -1560,26 +1499,7 @@
                                 "properties": []
                             },
                             "tags": [],
-                            "teamMappings": [
-                                {
-                                    "resourceTypeId": "20000000000000000000000000000104",
-                                    "resourceTypeName": "Resource",
-                                    "teamId": "0ae0e85e-a824-4561-ac0b-1488aafa8469",
-                                    "teamLabel": "Demo"
-                                },
-                                {
-                                    "resourceTypeId": "20000000000000000000000000000104",
-                                    "resourceTypeName": "Resource",
-                                    "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
-                                    "teamLabel": "Platform Commons"
-                                },
-                                {
-                                    "resourceTypeId": "20000000000000000000000000000104",
-                                    "resourceTypeName": "Resource",
-                                    "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
-                                    "teamLabel": "Demo~EchoLogic"
-                                }
-                            ],
+                            "teamMappings": [],
                             "impersonationUseSudo": false,
                             "impersonationForce": false,
                             "prototype": false,
@@ -1598,12 +1518,7 @@
                     "componentName": "Demo~EchoLogic:Logic"
                 }
             ],
-            "teamMappings": [{
-                "resourceTypeId": "20000000000000000000000000000103",
-                "resourceTypeName": "Environment",
-                "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
-                "teamLabel": "Demo~EchoLogic"
-            }],
+            "teamMappings": [],
             "deploymentTriggers": []
         },
         {
@@ -1650,26 +1565,7 @@
                         "properties": []
                     },
                     "tags": [],
-                    "teamMappings": [
-                        {
-                            "resourceTypeId": "20000000000000000000000000000104",
-                            "resourceTypeName": "Resource",
-                            "teamId": "0ae0e85e-a824-4561-ac0b-1488aafa8469",
-                            "teamLabel": "Demo"
-                        },
-                        {
-                            "resourceTypeId": "20000000000000000000000000000104",
-                            "resourceTypeName": "Resource",
-                            "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
-                            "teamLabel": "Platform Commons"
-                        },
-                        {
-                            "resourceTypeId": "20000000000000000000000000000104",
-                            "resourceTypeName": "Resource",
-                            "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
-                            "teamLabel": "Demo~EchoLogic"
-                        }
-                    ],
+                    "teamMappings": [],
                     "impersonationUseSudo": false,
                     "impersonationForce": false,
                     "prototype": false
@@ -1688,26 +1584,7 @@
                         "properties": []
                     },
                     "tags": [],
-                    "teamMappings": [
-                        {
-                            "resourceTypeId": "20000000000000000000000000000104",
-                            "resourceTypeName": "Resource",
-                            "teamId": "0ae0e85e-a824-4561-ac0b-1488aafa8469",
-                            "teamLabel": "Demo"
-                        },
-                        {
-                            "resourceTypeId": "20000000000000000000000000000104",
-                            "resourceTypeName": "Resource",
-                            "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
-                            "teamLabel": "Platform Commons"
-                        },
-                        {
-                            "resourceTypeId": "20000000000000000000000000000104",
-                            "resourceTypeName": "Resource",
-                            "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
-                            "teamLabel": "Demo~EchoLogic"
-                        }
-                    ],
+                    "teamMappings": [],
                     "impersonationUseSudo": false,
                     "impersonationForce": false,
                     "prototype": false,
@@ -1724,26 +1601,7 @@
                             "properties": []
                         },
                         "tags": [],
-                        "teamMappings": [
-                            {
-                                "resourceTypeId": "20000000000000000000000000000104",
-                                "resourceTypeName": "Resource",
-                                "teamId": "0ae0e85e-a824-4561-ac0b-1488aafa8469",
-                                "teamLabel": "Demo"
-                            },
-                            {
-                                "resourceTypeId": "20000000000000000000000000000104",
-                                "resourceTypeName": "Resource",
-                                "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
-                                "teamLabel": "Platform Commons"
-                            },
-                            {
-                                "resourceTypeId": "20000000000000000000000000000104",
-                                "resourceTypeName": "Resource",
-                                "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
-                                "teamLabel": "Demo~EchoLogic"
-                            }
-                        ],
+                        "teamMappings": [],
                         "impersonationUseSudo": false,
                         "impersonationForce": false,
                         "prototype": false,
@@ -1764,26 +1622,7 @@
                                 "properties": []
                             },
                             "tags": [],
-                            "teamMappings": [
-                                {
-                                    "resourceTypeId": "20000000000000000000000000000104",
-                                    "resourceTypeName": "Resource",
-                                    "teamId": "0ae0e85e-a824-4561-ac0b-1488aafa8469",
-                                    "teamLabel": "Demo"
-                                },
-                                {
-                                    "resourceTypeId": "20000000000000000000000000000104",
-                                    "resourceTypeName": "Resource",
-                                    "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
-                                    "teamLabel": "Platform Commons"
-                                },
-                                {
-                                    "resourceTypeId": "20000000000000000000000000000104",
-                                    "resourceTypeName": "Resource",
-                                    "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
-                                    "teamLabel": "Demo~EchoLogic"
-                                }
-                            ],
+                            "teamMappings": [],
                             "impersonationUseSudo": false,
                             "impersonationForce": false,
                             "prototype": false,
@@ -1802,12 +1641,7 @@
                     "componentName": "Demo~EchoLogic:Logic"
                 }
             ],
-            "teamMappings": [{
-                "resourceTypeId": "20000000000000000000000000000103",
-                "resourceTypeName": "Environment",
-                "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
-                "teamLabel": "Demo~EchoLogic"
-            }],
+            "teamMappings": [],
             "deploymentTriggers": []
         },
         {
@@ -1854,26 +1688,7 @@
                         "properties": []
                     },
                     "tags": [],
-                    "teamMappings": [
-                        {
-                            "resourceTypeId": "20000000000000000000000000000104",
-                            "resourceTypeName": "Resource",
-                            "teamId": "0ae0e85e-a824-4561-ac0b-1488aafa8469",
-                            "teamLabel": "Demo"
-                        },
-                        {
-                            "resourceTypeId": "20000000000000000000000000000104",
-                            "resourceTypeName": "Resource",
-                            "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
-                            "teamLabel": "Platform Commons"
-                        },
-                        {
-                            "resourceTypeId": "20000000000000000000000000000104",
-                            "resourceTypeName": "Resource",
-                            "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
-                            "teamLabel": "Demo~EchoLogic"
-                        }
-                    ],
+                    "teamMappings": [],
                     "impersonationUseSudo": false,
                     "impersonationForce": false,
                     "prototype": false
@@ -1892,26 +1707,7 @@
                         "properties": []
                     },
                     "tags": [],
-                    "teamMappings": [
-                        {
-                            "resourceTypeId": "20000000000000000000000000000104",
-                            "resourceTypeName": "Resource",
-                            "teamId": "0ae0e85e-a824-4561-ac0b-1488aafa8469",
-                            "teamLabel": "Demo"
-                        },
-                        {
-                            "resourceTypeId": "20000000000000000000000000000104",
-                            "resourceTypeName": "Resource",
-                            "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
-                            "teamLabel": "Platform Commons"
-                        },
-                        {
-                            "resourceTypeId": "20000000000000000000000000000104",
-                            "resourceTypeName": "Resource",
-                            "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
-                            "teamLabel": "Demo~EchoLogic"
-                        }
-                    ],
+                    "teamMappings": [],
                     "impersonationUseSudo": false,
                     "impersonationForce": false,
                     "prototype": false,
@@ -1928,18 +1724,12 @@
                     "componentName": "Demo~EchoLogic:Logic"
                 }
             ],
-            "teamMappings": [{
-                "resourceTypeId": "20000000000000000000000000000103",
-                "resourceTypeName": "Environment",
-                "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
-                "teamLabel": "Demo~EchoLogic"
-            }],
+            "teamMappings": [],
             "deploymentTriggers": []
         }
     ],
     "processes": [
-        {
-            "name": "EchoLogic-process",
+        {           "name": "EchoLogic-process",
             "description": "",
             "inventoryManagementType": "AUTOMATIC",
             "offlineAgentHandling": "PRE_EXECUTION_CHECK",
@@ -2465,12 +2255,7 @@
         }
     ],
     "genericProcesses": [],
-    "teamMappings": [{
-        "resourceTypeId": "20000000000000000000000000000100",
-        "resourceTypeName": "Application",
-        "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
-        "teamLabel": "Demo~EchoLogic"
-    }],
+    "teamMappings": [],
     "tags": [],
     "webhooks": []
 }
