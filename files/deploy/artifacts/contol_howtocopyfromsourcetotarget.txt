@@ -1,0 +1,116 @@
+[sysadmin@bastion ~]$ ls
+Desktop  Documents  Downloads  ocp4  Public  Templates
+[sysadmin@bastion ~]$ cd Documents
+[sysadmin@bastion Documents]$ git clone https://devops.automation.techzone.ibm.com/control/Demo/EchoLogic.git
+Cloning into 'EchoLogic'...
+Username for 'https://devops.automation.techzone.ibm.com': demo-devops.loop
+Password for 'https://demo-devops.loop@devops.automation.techzone.ibm.com': 
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+[sysadmin@bastion Documents]$ ls
+EchoLogic
+[sysadmin@bastion Documents]$ cd EchoLogic/
+[sysadmin@bastion EchoLogic]$ ls
+[sysadmin@bastion EchoLogic]$ cd ..
+[sysadmin@bastion Documents]$ git clone https://github.com/DevOpsAutomationLabs/EchoLogic_DemoApp.git
+Cloning into 'EchoLogic_DemoApp'...
+remote: Enumerating objects: 1474, done.
+remote: Counting objects: 100% (441/441), done.
+remote: Compressing objects: 100% (291/291), done.
+remote: Total 1474 (delta 166), reused 367 (delta 107), pack-reused 1033 (from 1)
+Receiving objects: 100% (1474/1474), 20.52 MiB | 23.59 MiB/s, done.
+Resolving deltas: 100% (516/516), done.
+[sysadmin@bastion Documents]$ ls
+EchoLogic  EchoLogic_DemoApp
+[sysadmin@bastion Documents]$ ls EchoLogic_DemoApp
+base.yml  docs  files  mkdocs.yml  README.md  src
+[sysadmin@bastion Documents]$ cp -r EchoLogic_DemoApp/docs EchoLogic/
+[sysadmin@bastion Documents]$ cp -r EchoLogic_DemoApp/files EchoLogic/
+[sysadmin@bastion Documents]$ cp -r EchoLogic_DemoApp/src EchoLogic/
+[sysadmin@bastion Documents]$ cp -r EchoLogic_DemoApp/README.md EchoLogic/
+[sysadmin@bastion Documents]$ ls EchoLogic
+docs  files  README.md  src
+[sysadmin@bastion Documents]$ 
+
+cd EchoLogic
+[sysadmin@bastion EchoLogic]$ git add .
+[sysadmin@bastion EchoLogic]$ git commit -m "upload"
+[master 7c41e9d] upload
+ Committer: sysadmin <sysadmin@bastion.ocp.ibm.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 46 files changed, 655 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 docs/index.md
+ create mode 100644 docs/python.md
+ create mode 100644 files/README.md
+ create mode 100644 files/plan/EchoLogic.zip
+ create mode 100644 files/plan/Plan_sample_record_data/agile_sample_component.csv
+ create mode 100644 files/plan/Plan_sample_record_data/agile_sample_project.csv
+ create mode 100644 files/plan/Plan_sample_record_data/agile_sample_release.csv
+ create mode 100644 files/plan/Plan_sample_record_data/agile_sample_sprint.csv
+ create mode 100644 files/plan/Plan_sample_record_data/agile_sample_workitem_epic.csv
+ create mode 100644 files/plan/Plan_sample_record_data/agile_sample_workitem_epic_history.csv
+ create mode 100644 files/plan/Plan_sample_record_data/agile_sample_workitem_story.csv
+ create mode 100644 files/plan/Plan_sample_record_data/agile_sample_workitem_story_history.csv
+ create mode 100644 files/plan/Plan_sample_record_data/bom.txt
+ create mode 100644 files/plan/Plan_sample_record_data/substitutions.json
+ create mode 100644 files/plan/README.md
+ create mode 100644 src/README.md
+ create mode 100644 src/java/.classpath
+ create mode 100644 src/java/.factorypath
+ create mode 100644 src/java/.project
+ create mode 100644 src/java/.settings/.jsdtscope
+ create mode 100644 src/java/.settings/com.ibm.etools.references.prefs
+ create mode 100644 src/java/.settings/org.eclipse.jdt.apt.core.prefs
+ create mode 100644 src/java/.settings/org.eclipse.jdt.core.prefs
+ create mode 100644 src/java/.settings/org.eclipse.wst.common.component
+ create mode 100644 src/java/.settings/org.eclipse.wst.common.project.facet.core.xml
+ create mode 100644 src/java/.settings/org.eclipse.wst.jsdt.ui.superType.container
+ create mode 100644 src/java/.settings/org.eclipse.wst.jsdt.ui.superType.name
+ create mode 100644 src/java/.tern-project
+ create mode 100644 src/java/README.md
+ create mode 100644 src/java/WebContent/META-INF/MANIFEST.MF
+ create mode 100644 src/java/WebContent/WEB-INF/classes/com/ibm/servlets/IndexServlet.class
+ create mode 100644 src/java/WebContent/WEB-INF/ibm-web-bnd.xml
+ create mode 100644 src/java/WebContent/WEB-INF/ibm-web-ext.xml
+ create mode 100644 src/java/WebContent/index.html
+ create mode 100644 src/java/WebContent/success.jsp
+ create mode 100644 src/java/src/com/ibm/servlets/IndexServlet.java
+ create mode 100644 src/python/.python-version
+ create mode 100644 src/python/README.md
+ create mode 100644 src/python/app/Dockerfile
+ create mode 100644 src/python/app/app.py
+ create mode 100644 src/python/app/requirements.txt
+ create mode 100644 src/python/app/templates/index.html
+ create mode 100644 src/python/app/templates/success.html
+ create mode 100644 src/python/compose.yaml
+ create mode 100644 src/python/pyproject.toml
+[sysadmin@bastion EchoLogic]$ 
+[sysadmin@bastion EchoLogic]$ git push
+Username for 'https://devops.automation.techzone.ibm.com': demo-devops.loop
+Password for 'https://demo-devops.loop@devops.automation.techzone.ibm.com': 
+Enumerating objects: 70, done.
+Counting objects: 100% (70/70), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (55/55), done.
+Writing objects: 100% (69/69), 20.05 KiB | 4.01 MiB/s, done.
+Total 69 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: . Processing 1 references
+remote: Processed 1 references in total
+To https://devops.automation.techzone.ibm.com/control/Demo/EchoLogic.git
+   0bc9d0b..7c41e9d  master -> master
+
+

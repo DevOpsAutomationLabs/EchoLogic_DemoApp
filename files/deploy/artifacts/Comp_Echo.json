@@ -992,7 +992,12 @@
     ],
     "configTemplates": [],
     "genericProcesses": [],
-    "teamMappings": [],
+    "teamMappings": [{
+        "resourceTypeId": "20000000000000000000000000000101",
+        "resourceTypeName": "Component",
+        "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
+        "teamLabel": "Demo~EchoLogic"
+    }],
     "tags": [{
         "id": "1981835c-89ff-e0db-83b7-3a744f17e227",
         "name": "EchoLogicComponents",

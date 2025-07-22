@@ -1,0 +1,2476 @@
+{
+    "loop": {
+        "name": "EchoLogic",
+        "teamSpace": "Demo"
+    },
+    "name": "EchoLogic",
+    "enforceCompleteSnapshots": false,
+    "onlyChangedVersions": true,
+    "useWizard": false,
+    "propSheet": {
+        "properties": []
+    },
+    "templatePropSheet": {
+        "name": "template",
+        "properties": []
+    },
+    "components": [
+        {
+            "name": "Echo",
+            "description": "Component for Echo",
+            "created": 1753176545771,
+            "componentType": "STANDARD",
+            "ignoreQualifiers": 0,
+            "importAutomatically": false,
+            "useVfs": true,
+            "active": true,
+            "deleted": false,
+            "defaultVersionType": "FULL",
+            "cleanupDaysToKeep": 0,
+            "cleanupCountToKeep": 0,
+            "sourceConfigPluginName": "DevOps Control",
+            "envPropDefs": [],
+            "resPropDefs": [],
+            "versionPropDefs": [],
+            "propSheetGroup": {
+                "propSheets": [
+                    {
+                        "name": "custom",
+                        "properties": []
+                    },
+                    {
+                        "name": "template",
+                        "properties": []
+                    },
+                    {
+                        "name": "DevOpsControlComponentProperties",
+                        "properties": [
+                            {
+                                "name": "branch",
+                                "value": "main",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "username",
+                                "value": "demo@devops.loop",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "password",
+                                "value": "",
+                                "description": "",
+                                "secure": true
+                            },
+                            {
+                                "name": "watchTags",
+                                "value": "false",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "recursive",
+                                "value": "false",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "trustAllCerts",
+                                "value": "false",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "sparse",
+                                "value": "false",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "sparsePaths",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "includes",
+                                "value": "**\/*",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "excludes",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "gitPath",
+                                "value": "git",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "saveFileExecuteBits",
+                                "value": "false",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "extensions",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "repoUrl",
+                                "value": "https:\/\/devops.automation.techzone.ibm.com\/control\/Demo\/EchoLogic.git",
+                                "description": "",
+                                "secure": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            "processes": [
+                {
+                    "name": "Deploy",
+                    "description": "Deploy the Echo Component",
+                    "defaultWorkingDir": "${p:resource\/work.dir}\/${p:component.name}",
+                    "takesVersion": true,
+                    "inventoryActionType": "ADD",
+                    "status": "Active",
+                    "configActionType": "ADD",
+                    "active": true,
+                    "path": "components\/19831771-9ebd-cc7d-a7a5-e36c96af88e6\/processes\/19831771-a322-14d0-2672-f6563fb3d7b0",
+                    "deleted": false,
+                    "propDefs": [],
+                    "rootActivity": {
+                        "edges": [
+                            {
+                                "to": "Remove old content",
+                                "type": "ALWAYS",
+                                "value": ""
+                            },
+                            {
+                                "to": "Prep A Step 1",
+                                "from": "Download Artifacts",
+                                "type": "SUCCESS",
+                                "value": ""
+                            },
+                            {
+                                "to": "80355a6a61cd3b8c0819a461fa0781",
+                                "from": "Prep A Step 1",
+                                "type": "SUCCESS",
+                                "value": ""
+                            },
+                            {
+                                "to": "80355a6a61cd3b8c0819a461fa0781",
+                                "from": "Prep A Step 2",
+                                "type": "SUCCESS",
+                                "value": ""
+                            },
+                            {
+                                "to": "Download Artifacts",
+                                "from": "Remove old content",
+                                "type": "SUCCESS",
+                                "value": ""
+                            },
+                            {
+                                "to": "2192eda4604be71338b26ffa54a6c2",
+                                "from": "80355a6a61cd3b8c0819a461fa0781",
+                                "type": "SUCCESS",
+                                "value": ""
+                            },
+                            {
+                                "to": "Prep A Step 2",
+                                "from": "Download Artifacts",
+                                "type": "SUCCESS",
+                                "value": ""
+                            }
+                        ],
+                        "offsets": [
+                            {
+                                "name": "Remove old content",
+                                "x": -55,
+                                "y": 130,
+                                "h": 70,
+                                "w": 220
+                            },
+                            {
+                                "name": "Prep A Step 2",
+                                "x": 70,
+                                "y": 370,
+                                "h": 70,
+                                "w": 190
+                            },
+                            {
+                                "name": "80355a6a61cd3b8c0819a461fa0781",
+                                "x": -5,
+                                "y": 490,
+                                "h": 50,
+                                "w": 120
+                            },
+                            {
+                                "name": "2192eda4604be71338b26ffa54a6c2",
+                                "x": -5,
+                                "y": 590,
+                                "h": 80,
+                                "w": 120
+                            },
+                            {
+                                "name": "Download Artifacts",
+                                "x": -75,
+                                "y": 250,
+                                "h": 70,
+                                "w": 260
+                            },
+                            {
+                                "name": "Prep A Step 1",
+                                "x": -150,
+                                "y": 370,
+                                "h": 70,
+                                "w": 190
+                            }
+                        ],
+                        "layoutMode": "auto",
+                        "type": "graph",
+                        "name": "f2081e17-68c4-4f11-8134-8c1d9e29effa",
+                        "children": [
+                            {
+                                "type": "finish",
+                                "name": "2192eda4604be71338b26ffa54a6c2",
+                                "children": []
+                            },
+                            {
+                                "allowFailure": false,
+                                "useImpersonation": false,
+                                "showHidden": false,
+                                "impersonationUseSudo": false,
+                                "pluginVersion": 21,
+                                "commandName": "Shell",
+                                "pluginName": "Shell",
+                                "pluginId": "com.urbancode.air.plugin.Shell",
+                                "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                                "properties": {
+                                    "directoryOffset": ".",
+                                    "shellInterpreter": "",
+                                    "scriptBody": "rm -rf *",
+                                    "runAsDaemon": "false",
+                                    "outputFile": "",
+                                    "tempDirectory": "${p?:agent\/temporaryDirectory}"
+                                },
+                                "cachedAuthTokenRestriction": {
+                                    "name": "System Default",
+                                    "description": "Used by default for any plugin steps without a specified token restriction",
+                                    "restrictions": [{
+                                        "verb": "ALL",
+                                        "url": "\/*"
+                                    }]
+                                },
+                                "type": "plugin",
+                                "name": "Remove old content",
+                                "children": []
+                            },
+                            {
+                                "allowFailure": false,
+                                "useImpersonation": false,
+                                "showHidden": false,
+                                "impersonationUseSudo": false,
+                                "pluginVersion": 48,
+                                "commandName": "Download Artifacts",
+                                "pluginName": "UrbanCode Deploy Versioned File Storage",
+                                "pluginId": "com.urbancode.plugin.VFS",
+                                "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                                "properties": {
+                                    "directoryOffset": ".",
+                                    "artifactSetBaseDir": "",
+                                    "fileIncludePatterns": "**\/*",
+                                    "fileExcludePatterns": "",
+                                    "syncMode": "true",
+                                    "handleIncrementalVersions": "false",
+                                    "fullVerification": "true",
+                                    "setFileExecuteBits": "false",
+                                    "verifyFileIntegrity": "false",
+                                    "charset": "",
+                                    "versionId": "${p:version.id}",
+                                    "versionType": "${p:version.type}",
+                                    "serverUrl": "${p:server.url}",
+                                    "compId": "${p:component.id}",
+                                    "resId": "${p:resource.id}",
+                                    "envId": "${p:environment.id}",
+                                    "maxMemory": "1G",
+                                    "label": ""
+                                },
+                                "cachedAuthTokenRestriction": {
+                                    "name": "System Default",
+                                    "description": "Used by default for any plugin steps without a specified token restriction",
+                                    "restrictions": [{
+                                        "verb": "ALL",
+                                        "url": "\/*"
+                                    }]
+                                },
+                                "type": "plugin",
+                                "name": "Download Artifacts",
+                                "children": []
+                            },
+                            {
+                                "allowFailure": false,
+                                "useImpersonation": false,
+                                "showHidden": false,
+                                "impersonationUseSudo": false,
+                                "pluginVersion": 21,
+                                "commandName": "Shell",
+                                "pluginName": "Shell",
+                                "pluginId": "com.urbancode.air.plugin.Shell",
+                                "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                                "properties": {
+                                    "directoryOffset": ".",
+                                    "shellInterpreter": "",
+                                    "scriptBody": "echo \"prep a step 1\"",
+                                    "runAsDaemon": "false",
+                                    "outputFile": "",
+                                    "tempDirectory": "${p?:agent\/temporaryDirectory}"
+                                },
+                                "cachedAuthTokenRestriction": {
+                                    "name": "System Default",
+                                    "description": "Used by default for any plugin steps without a specified token restriction",
+                                    "restrictions": [{
+                                        "verb": "ALL",
+                                        "url": "\/*"
+                                    }]
+                                },
+                                "type": "plugin",
+                                "name": "Prep A Step 1",
+                                "children": []
+                            },
+                            {
+                                "allowFailure": false,
+                                "useImpersonation": false,
+                                "showHidden": false,
+                                "impersonationUseSudo": false,
+                                "pluginVersion": 21,
+                                "commandName": "Shell",
+                                "pluginName": "Shell",
+                                "pluginId": "com.urbancode.air.plugin.Shell",
+                                "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                                "properties": {
+                                    "directoryOffset": ".",
+                                    "shellInterpreter": "",
+                                    "scriptBody": "echo \"Prep a step 2\"",
+                                    "runAsDaemon": "false",
+                                    "outputFile": "",
+                                    "tempDirectory": "${p?:agent\/temporaryDirectory}"
+                                },
+                                "cachedAuthTokenRestriction": {
+                                    "name": "System Default",
+                                    "description": "Used by default for any plugin steps without a specified token restriction",
+                                    "restrictions": [{
+                                        "verb": "ALL",
+                                        "url": "\/*"
+                                    }]
+                                },
+                                "type": "plugin",
+                                "name": "Prep A Step 2",
+                                "children": []
+                            },
+                            {
+                                "type": "join",
+                                "name": "80355a6a61cd3b8c0819a461fa0781",
+                                "children": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Deploy with Test Failed",
+                    "description": "Deploy the Echo Component",
+                    "defaultWorkingDir": "${p:resource\/work.dir}\/${p:component.name}",
+                    "takesVersion": true,
+                    "inventoryActionType": "ADD",
+                    "status": "Active",
+                    "configActionType": "ADD",
+                    "active": true,
+                    "path": "components\/19831771-9ebd-cc7d-a7a5-e36c96af88e6\/processes\/19831771-a381-309c-1a60-2363343b7d9b",
+                    "deleted": false,
+                    "propDefs": [],
+                    "rootActivity": {
+                        "edges": [
+                            {
+                                "to": "80355a6a61cd3b8c0819a461fa0781",
+                                "from": "Prep A Step 2",
+                                "type": "SUCCESS",
+                                "value": ""
+                            },
+                            {
+                                "to": "2192eda4604be71338b26ffa54a6c2",
+                                "from": "3590906af7bcd6600ba52471b51233",
+                                "type": "SUCCESS",
+                                "value": ""
+                            },
+                            {
+                                "to": "Prep A Step 1",
+                                "from": "Download Artifacts",
+                                "type": "SUCCESS",
+                                "value": ""
+                            },
+                            {
+                                "to": "3590906af7bcd6600ba52471b51233",
+                                "from": "Test Failed",
+                                "type": "SUCCESS",
+                                "value": ""
+                            },
+                            {
+                                "to": "Download Artifacts",
+                                "from": "Remove old content",
+                                "type": "SUCCESS",
+                                "value": ""
+                            },
+                            {
+                                "to": "Test Failed",
+                                "from": "80355a6a61cd3b8c0819a461fa0781",
+                                "type": "SUCCESS",
+                                "value": ""
+                            },
+                            {
+                                "to": "Remove old content",
+                                "type": "ALWAYS",
+                                "value": ""
+                            },
+                            {
+                                "to": "80355a6a61cd3b8c0819a461fa0781",
+                                "from": "Prep A Step 1",
+                                "type": "SUCCESS",
+                                "value": ""
+                            },
+                            {
+                                "to": "Prep A Step 2",
+                                "from": "Download Artifacts",
+                                "type": "SUCCESS",
+                                "value": ""
+                            }
+                        ],
+                        "offsets": [
+                            {
+                                "name": "3590906af7bcd6600ba52471b51233",
+                                "x": -35,
+                                "y": 710,
+                                "h": 50,
+                                "w": 210
+                            },
+                            {
+                                "name": "2192eda4604be71338b26ffa54a6c2",
+                                "x": -5,
+                                "y": 810,
+                                "h": 80,
+                                "w": 120
+                            },
+                            {
+                                "name": "Download Artifacts",
+                                "x": -75,
+                                "y": 250,
+                                "h": 70,
+                                "w": 260
+                            },
+                            {
+                                "name": "80355a6a61cd3b8c0819a461fa0781",
+                                "x": -5,
+                                "y": 490,
+                                "h": 50,
+                                "w": 120
+                            },
+                            {
+                                "name": "444a194ac9d34c26bd25d84ce557a9",
+                                "x": 320,
+                                "y": 365,
+                                "h": 80,
+                                "w": 300
+                            },
+                            {
+                                "name": "Test Failed",
+                                "x": -85,
+                                "y": 590,
+                                "h": 70,
+                                "w": 280
+                            },
+                            {
+                                "name": "Prep A Step 1",
+                                "x": -150,
+                                "y": 370,
+                                "h": 70,
+                                "w": 190
+                            },
+                            {
+                                "name": "Prep A Step 2",
+                                "x": 70,
+                                "y": 370,
+                                "h": 70,
+                                "w": 190
+                            },
+                            {
+                                "name": "Remove old content",
+                                "x": -55,
+                                "y": 130,
+                                "h": 70,
+                                "w": 220
+                            }
+                        ],
+                        "layoutMode": "auto",
+                        "type": "graph",
+                        "name": "d84d0c3e-e887-426f-a11d-9e4c6cf77f82",
+                        "children": [
+                            {
+                                "type": "finish",
+                                "name": "2192eda4604be71338b26ffa54a6c2",
+                                "children": []
+                            },
+                            {
+                                "allowFailure": false,
+                                "useImpersonation": false,
+                                "showHidden": false,
+                                "impersonationUseSudo": false,
+                                "pluginVersion": 21,
+                                "commandName": "Shell",
+                                "pluginName": "Shell",
+                                "pluginId": "com.urbancode.air.plugin.Shell",
+                                "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                                "properties": {
+                                    "directoryOffset": ".",
+                                    "shellInterpreter": "",
+                                    "scriptBody": "rm -rf *",
+                                    "runAsDaemon": "false",
+                                    "outputFile": "",
+                                    "tempDirectory": "${p?:agent\/temporaryDirectory}"
+                                },
+                                "cachedAuthTokenRestriction": {
+                                    "name": "System Default",
+                                    "description": "Used by default for any plugin steps without a specified token restriction",
+                                    "restrictions": [{
+                                        "verb": "ALL",
+                                        "url": "\/*"
+                                    }]
+                                },
+                                "type": "plugin",
+                                "name": "Remove old content",
+                                "children": []
+                            },
+                            {
+                                "allowFailure": false,
+                                "useImpersonation": false,
+                                "showHidden": false,
+                                "impersonationUseSudo": false,
+                                "pluginVersion": 48,
+                                "commandName": "Download Artifacts",
+                                "pluginName": "UrbanCode Deploy Versioned File Storage",
+                                "pluginId": "com.urbancode.plugin.VFS",
+                                "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                                "properties": {
+                                    "directoryOffset": ".",
+                                    "artifactSetBaseDir": "",
+                                    "fileIncludePatterns": "**\/*",
+                                    "fileExcludePatterns": "",
+                                    "syncMode": "true",
+                                    "handleIncrementalVersions": "false",
+                                    "fullVerification": "true",
+                                    "setFileExecuteBits": "false",
+                                    "verifyFileIntegrity": "false",
+                                    "charset": "",
+                                    "versionId": "${p:version.id}",
+                                    "versionType": "${p:version.type}",
+                                    "serverUrl": "${p:server.url}",
+                                    "compId": "${p:component.id}",
+                                    "resId": "${p:resource.id}",
+                                    "envId": "${p:environment.id}",
+                                    "maxMemory": "1G",
+                                    "label": ""
+                                },
+                                "cachedAuthTokenRestriction": {
+                                    "name": "System Default",
+                                    "description": "Used by default for any plugin steps without a specified token restriction",
+                                    "restrictions": [{
+                                        "verb": "ALL",
+                                        "url": "\/*"
+                                    }]
+                                },
+                                "type": "plugin",
+                                "name": "Download Artifacts",
+                                "children": []
+                            },
+                            {
+                                "allowFailure": false,
+                                "useImpersonation": false,
+                                "showHidden": false,
+                                "impersonationUseSudo": false,
+                                "pluginVersion": 21,
+                                "commandName": "Shell",
+                                "pluginName": "Shell",
+                                "pluginId": "com.urbancode.air.plugin.Shell",
+                                "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                                "properties": {
+                                    "directoryOffset": ".",
+                                    "shellInterpreter": "",
+                                    "scriptBody": "echo \"prep a step 1\"",
+                                    "runAsDaemon": "false",
+                                    "outputFile": "",
+                                    "tempDirectory": "${p?:agent\/temporaryDirectory}"
+                                },
+                                "cachedAuthTokenRestriction": {
+                                    "name": "System Default",
+                                    "description": "Used by default for any plugin steps without a specified token restriction",
+                                    "restrictions": [{
+                                        "verb": "ALL",
+                                        "url": "\/*"
+                                    }]
+                                },
+                                "type": "plugin",
+                                "name": "Prep A Step 1",
+                                "children": []
+                            },
+                            {
+                                "allowFailure": false,
+                                "useImpersonation": false,
+                                "showHidden": false,
+                                "impersonationUseSudo": false,
+                                "pluginVersion": 21,
+                                "commandName": "Shell",
+                                "pluginName": "Shell",
+                                "pluginId": "com.urbancode.air.plugin.Shell",
+                                "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                                "properties": {
+                                    "directoryOffset": ".",
+                                    "shellInterpreter": "",
+                                    "scriptBody": "echo \"Prep a step 2\"",
+                                    "runAsDaemon": "false",
+                                    "outputFile": "",
+                                    "tempDirectory": "${p?:agent\/temporaryDirectory}"
+                                },
+                                "cachedAuthTokenRestriction": {
+                                    "name": "System Default",
+                                    "description": "Used by default for any plugin steps without a specified token restriction",
+                                    "restrictions": [{
+                                        "verb": "ALL",
+                                        "url": "\/*"
+                                    }]
+                                },
+                                "type": "plugin",
+                                "name": "Prep A Step 2",
+                                "children": []
+                            },
+                            {
+                                "type": "join",
+                                "name": "80355a6a61cd3b8c0819a461fa0781",
+                                "children": []
+                            },
+                            {
+                                "name": "444a194ac9d34c26bd25d84ce557a9",
+                                "text": "Need config for RUN TESTHUB TEST",
+                                "type": "note",
+                                "children": []
+                            },
+                            {
+                                "allowFailure": false,
+                                "useImpersonation": false,
+                                "showHidden": false,
+                                "impersonationUseSudo": false,
+                                "pluginVersion": 76,
+                                "commandName": "Add Status to Version",
+                                "pluginName": "UrbanCode Deploy Versions",
+                                "pluginId": "com.urbancode.air.plugin.uDeployVersion",
+                                "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                                "properties": {
+                                    "status": "Test Failed",
+                                    "versionName": "${p:version.name}",
+                                    "componentName": "${p:component.name}"
+                                },
+                                "cachedAuthTokenRestriction": {
+                                    "name": "System Default",
+                                    "description": "Used by default for any plugin steps without a specified token restriction",
+                                    "restrictions": [{
+                                        "verb": "ALL",
+                                        "url": "\/*"
+                                    }]
+                                },
+                                "type": "plugin",
+                                "name": "Test Failed",
+                                "children": []
+                            },
+                            {
+                                "status": "FAILURE",
+                                "type": "setStatus",
+                                "name": "3590906af7bcd6600ba52471b51233",
+                                "children": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Deploy with Test Passed",
+                    "description": "Deploy the Echo Component",
+                    "defaultWorkingDir": "${p:resource\/work.dir}\/${p:component.name}",
+                    "takesVersion": true,
+                    "inventoryActionType": "ADD",
+                    "status": "Active",
+                    "configActionType": "ADD",
+                    "active": true,
+                    "path": "components\/19831771-9ebd-cc7d-a7a5-e36c96af88e6\/processes\/19831771-a3ea-6e07-8a5c-894d9fccaf21",
+                    "deleted": false,
+                    "propDefs": [],
+                    "rootActivity": {
+                        "edges": [
+                            {
+                                "to": "Remove old content",
+                                "type": "ALWAYS",
+                                "value": ""
+                            },
+                            {
+                                "to": "2192eda4604be71338b26ffa54a6c2",
+                                "from": "Test Passed",
+                                "type": "SUCCESS",
+                                "value": ""
+                            },
+                            {
+                                "to": "Prep A Step 2",
+                                "from": "Download Artifacts",
+                                "type": "SUCCESS",
+                                "value": ""
+                            },
+                            {
+                                "to": "80355a6a61cd3b8c0819a461fa0781",
+                                "from": "Prep A Step 1",
+                                "type": "SUCCESS",
+                                "value": ""
+                            },
+                            {
+                                "to": "Test Passed",
+                                "from": "80355a6a61cd3b8c0819a461fa0781",
+                                "type": "SUCCESS",
+                                "value": ""
+                            },
+                            {
+                                "to": "80355a6a61cd3b8c0819a461fa0781",
+                                "from": "Prep A Step 2",
+                                "type": "SUCCESS",
+                                "value": ""
+                            },
+                            {
+                                "to": "Download Artifacts",
+                                "from": "Remove old content",
+                                "type": "SUCCESS",
+                                "value": ""
+                            },
+                            {
+                                "to": "Prep A Step 1",
+                                "from": "Download Artifacts",
+                                "type": "SUCCESS",
+                                "value": ""
+                            }
+                        ],
+                        "offsets": [
+                            {
+                                "name": "Test Passed",
+                                "x": -85,
+                                "y": 590,
+                                "h": 70,
+                                "w": 280
+                            },
+                            {
+                                "name": "Prep A Step 2",
+                                "x": 70,
+                                "y": 370,
+                                "h": 70,
+                                "w": 190
+                            },
+                            {
+                                "name": "80355a6a61cd3b8c0819a461fa0781",
+                                "x": -5,
+                                "y": 490,
+                                "h": 50,
+                                "w": 120
+                            },
+                            {
+                                "name": "Remove old content",
+                                "x": -55,
+                                "y": 130,
+                                "h": 70,
+                                "w": 220
+                            },
+                            {
+                                "name": "Prep A Step 1",
+                                "x": -150,
+                                "y": 370,
+                                "h": 70,
+                                "w": 190
+                            },
+                            {
+                                "name": "444a194ac9d34c26bd25d84ce557a9",
+                                "x": 320,
+                                "y": 365,
+                                "h": 80,
+                                "w": 300
+                            },
+                            {
+                                "name": "Download Artifacts",
+                                "x": -75,
+                                "y": 250,
+                                "h": 70,
+                                "w": 260
+                            },
+                            {
+                                "name": "2192eda4604be71338b26ffa54a6c2",
+                                "x": -5,
+                                "y": 710,
+                                "h": 80,
+                                "w": 120
+                            }
+                        ],
+                        "layoutMode": "auto",
+                        "type": "graph",
+                        "name": "18c9d434-a0d0-4b2d-ab89-5279dba31637",
+                        "children": [
+                            {
+                                "type": "finish",
+                                "name": "2192eda4604be71338b26ffa54a6c2",
+                                "children": []
+                            },
+                            {
+                                "allowFailure": false,
+                                "useImpersonation": false,
+                                "showHidden": false,
+                                "impersonationUseSudo": false,
+                                "pluginVersion": 21,
+                                "commandName": "Shell",
+                                "pluginName": "Shell",
+                                "pluginId": "com.urbancode.air.plugin.Shell",
+                                "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                                "properties": {
+                                    "directoryOffset": ".",
+                                    "shellInterpreter": "",
+                                    "scriptBody": "rm -rf *",
+                                    "runAsDaemon": "false",
+                                    "outputFile": "",
+                                    "tempDirectory": "${p?:agent\/temporaryDirectory}"
+                                },
+                                "cachedAuthTokenRestriction": {
+                                    "name": "System Default",
+                                    "description": "Used by default for any plugin steps without a specified token restriction",
+                                    "restrictions": [{
+                                        "verb": "ALL",
+                                        "url": "\/*"
+                                    }]
+                                },
+                                "type": "plugin",
+                                "name": "Remove old content",
+                                "children": []
+                            },
+                            {
+                                "allowFailure": false,
+                                "useImpersonation": false,
+                                "showHidden": false,
+                                "impersonationUseSudo": false,
+                                "pluginVersion": 48,
+                                "commandName": "Download Artifacts",
+                                "pluginName": "UrbanCode Deploy Versioned File Storage",
+                                "pluginId": "com.urbancode.plugin.VFS",
+                                "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                                "properties": {
+                                    "directoryOffset": ".",
+                                    "artifactSetBaseDir": "",
+                                    "fileIncludePatterns": "**\/*",
+                                    "fileExcludePatterns": "",
+                                    "syncMode": "true",
+                                    "handleIncrementalVersions": "false",
+                                    "fullVerification": "true",
+                                    "setFileExecuteBits": "false",
+                                    "verifyFileIntegrity": "false",
+                                    "charset": "",
+                                    "versionId": "${p:version.id}",
+                                    "versionType": "${p:version.type}",
+                                    "serverUrl": "${p:server.url}",
+                                    "compId": "${p:component.id}",
+                                    "resId": "${p:resource.id}",
+                                    "envId": "${p:environment.id}",
+                                    "maxMemory": "1G",
+                                    "label": ""
+                                },
+                                "cachedAuthTokenRestriction": {
+                                    "name": "System Default",
+                                    "description": "Used by default for any plugin steps without a specified token restriction",
+                                    "restrictions": [{
+                                        "verb": "ALL",
+                                        "url": "\/*"
+                                    }]
+                                },
+                                "type": "plugin",
+                                "name": "Download Artifacts",
+                                "children": []
+                            },
+                            {
+                                "allowFailure": false,
+                                "useImpersonation": false,
+                                "showHidden": false,
+                                "impersonationUseSudo": false,
+                                "pluginVersion": 21,
+                                "commandName": "Shell",
+                                "pluginName": "Shell",
+                                "pluginId": "com.urbancode.air.plugin.Shell",
+                                "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                                "properties": {
+                                    "directoryOffset": ".",
+                                    "shellInterpreter": "",
+                                    "scriptBody": "echo \"prep a step 1\"",
+                                    "runAsDaemon": "false",
+                                    "outputFile": "",
+                                    "tempDirectory": "${p?:agent\/temporaryDirectory}"
+                                },
+                                "cachedAuthTokenRestriction": {
+                                    "name": "System Default",
+                                    "description": "Used by default for any plugin steps without a specified token restriction",
+                                    "restrictions": [{
+                                        "verb": "ALL",
+                                        "url": "\/*"
+                                    }]
+                                },
+                                "type": "plugin",
+                                "name": "Prep A Step 1",
+                                "children": []
+                            },
+                            {
+                                "allowFailure": false,
+                                "useImpersonation": false,
+                                "showHidden": false,
+                                "impersonationUseSudo": false,
+                                "pluginVersion": 21,
+                                "commandName": "Shell",
+                                "pluginName": "Shell",
+                                "pluginId": "com.urbancode.air.plugin.Shell",
+                                "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                                "properties": {
+                                    "directoryOffset": ".",
+                                    "shellInterpreter": "",
+                                    "scriptBody": "echo \"Prep a step 2\"",
+                                    "runAsDaemon": "false",
+                                    "outputFile": "",
+                                    "tempDirectory": "${p?:agent\/temporaryDirectory}"
+                                },
+                                "cachedAuthTokenRestriction": {
+                                    "name": "System Default",
+                                    "description": "Used by default for any plugin steps without a specified token restriction",
+                                    "restrictions": [{
+                                        "verb": "ALL",
+                                        "url": "\/*"
+                                    }]
+                                },
+                                "type": "plugin",
+                                "name": "Prep A Step 2",
+                                "children": []
+                            },
+                            {
+                                "type": "join",
+                                "name": "80355a6a61cd3b8c0819a461fa0781",
+                                "children": []
+                            },
+                            {
+                                "name": "444a194ac9d34c26bd25d84ce557a9",
+                                "text": "Need config for RUN TESTHUB TEST",
+                                "type": "note",
+                                "children": []
+                            },
+                            {
+                                "allowFailure": false,
+                                "useImpersonation": false,
+                                "showHidden": false,
+                                "impersonationUseSudo": false,
+                                "pluginVersion": 76,
+                                "commandName": "Add Status to Version",
+                                "pluginName": "UrbanCode Deploy Versions",
+                                "pluginId": "com.urbancode.air.plugin.uDeployVersion",
+                                "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                                "properties": {
+                                    "status": "Test Passed",
+                                    "versionName": "${p:version.name}",
+                                    "componentName": "${p:component.name}"
+                                },
+                                "cachedAuthTokenRestriction": {
+                                    "name": "System Default",
+                                    "description": "Used by default for any plugin steps without a specified token restriction",
+                                    "restrictions": [{
+                                        "verb": "ALL",
+                                        "url": "\/*"
+                                    }]
+                                },
+                                "type": "plugin",
+                                "name": "Test Passed",
+                                "children": []
+                            }
+                        ]
+                    }
+                }
+            ],
+            "configTemplates": [],
+            "genericProcesses": [],
+            "teamMappings": [{
+                "resourceTypeId": "20000000000000000000000000000101",
+                "resourceTypeName": "Component",
+                "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
+                "teamLabel": "Demo~EchoLogic"
+            }],
+            "tags": [{
+                "id": "19831771-b195-52a0-22f8-69552a5b680c",
+                "name": "EchoLogicComponents",
+                "color": "#00648D",
+                "description": "",
+                "objectType": "Component"
+            }]
+        },
+        {
+            "name": "Logic",
+            "description": "Component for Logic System",
+            "created": 1753176607096,
+            "componentType": "STANDARD",
+            "ignoreQualifiers": 0,
+            "importAutomatically": false,
+            "useVfs": true,
+            "active": true,
+            "deleted": false,
+            "defaultVersionType": "FULL",
+            "cleanupDaysToKeep": 0,
+            "cleanupCountToKeep": 0,
+            "sourceConfigPluginName": "DevOps Control",
+            "envPropDefs": [],
+            "resPropDefs": [],
+            "versionPropDefs": [],
+            "propSheetGroup": {
+                "propSheets": [
+                    {
+                        "name": "DevOpsControlComponentProperties",
+                        "properties": [
+                            {
+                                "name": "branch",
+                                "value": "main",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "username",
+                                "value": "demo@devops.loop",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "password",
+                                "value": "",
+                                "description": "",
+                                "secure": true
+                            },
+                            {
+                                "name": "watchTags",
+                                "value": "false",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "recursive",
+                                "value": "false",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "trustAllCerts",
+                                "value": "false",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "sparse",
+                                "value": "false",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "sparsePaths",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "includes",
+                                "value": "**\/*",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "excludes",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "gitPath",
+                                "value": "git",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "saveFileExecuteBits",
+                                "value": "false",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "extensions",
+                                "description": "",
+                                "secure": false
+                            },
+                            {
+                                "name": "repoUrl",
+                                "value": "https:\/\/devops.automation.techzone.ibm.com\/control\/Demo\/EchoLogic.git",
+                                "description": "",
+                                "secure": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "template",
+                        "properties": []
+                    },
+                    {
+                        "name": "custom",
+                        "properties": []
+                    }
+                ]
+            },
+            "processes": [{
+                "name": "Deploy",
+                "description": "Deploy the Logic Component",
+                "defaultWorkingDir": "${p:resource\/work.dir}\/${p:component.name}",
+                "takesVersion": true,
+                "inventoryActionType": "ADD",
+                "status": "Active",
+                "configActionType": "ADD",
+                "active": true,
+                "path": "components\/19831780-9789-5854-e9b9-d283154f0098\/processes\/19831780-9a71-1881-d066-5effbedf7238",
+                "deleted": false,
+                "propDefs": [],
+                "rootActivity": {
+                    "edges": [
+                        {
+                            "to": "80355a6a61cd3b8c0819a461fa0781",
+                            "from": "Prep A Step 1",
+                            "type": "SUCCESS",
+                            "value": ""
+                        },
+                        {
+                            "to": "80355a6a61cd3b8c0819a461fa0781",
+                            "from": "Prep A Step 2",
+                            "type": "SUCCESS",
+                            "value": ""
+                        },
+                        {
+                            "to": "Download Artifacts",
+                            "from": "Remove old content",
+                            "type": "SUCCESS",
+                            "value": ""
+                        },
+                        {
+                            "to": "Prep A Step 2",
+                            "from": "Download Artifacts",
+                            "type": "SUCCESS",
+                            "value": ""
+                        },
+                        {
+                            "to": "Prep A Step 1",
+                            "from": "Download Artifacts",
+                            "type": "SUCCESS",
+                            "value": ""
+                        },
+                        {
+                            "to": "Remove old content",
+                            "type": "ALWAYS",
+                            "value": ""
+                        },
+                        {
+                            "to": "2192eda4604be71338b26ffa54a6c2",
+                            "from": "80355a6a61cd3b8c0819a461fa0781",
+                            "type": "SUCCESS",
+                            "value": ""
+                        }
+                    ],
+                    "offsets": [
+                        {
+                            "name": "Prep A Step 2",
+                            "x": 70,
+                            "y": 370,
+                            "h": 70,
+                            "w": 190
+                        },
+                        {
+                            "name": "80355a6a61cd3b8c0819a461fa0781",
+                            "x": -5,
+                            "y": 490,
+                            "h": 50,
+                            "w": 120
+                        },
+                        {
+                            "name": "Download Artifacts",
+                            "x": -75,
+                            "y": 250,
+                            "h": 70,
+                            "w": 260
+                        },
+                        {
+                            "name": "Prep A Step 1",
+                            "x": -150,
+                            "y": 370,
+                            "h": 70,
+                            "w": 190
+                        },
+                        {
+                            "name": "Remove old content",
+                            "x": -55,
+                            "y": 130,
+                            "h": 70,
+                            "w": 220
+                        },
+                        {
+                            "name": "2192eda4604be71338b26ffa54a6c2",
+                            "x": -5,
+                            "y": 590,
+                            "h": 80,
+                            "w": 120
+                        }
+                    ],
+                    "layoutMode": "auto",
+                    "type": "graph",
+                    "name": "615a9a4a-aed4-4a31-9513-6e5b8cbd55fd",
+                    "children": [
+                        {
+                            "type": "finish",
+                            "name": "2192eda4604be71338b26ffa54a6c2",
+                            "children": []
+                        },
+                        {
+                            "allowFailure": false,
+                            "useImpersonation": false,
+                            "showHidden": false,
+                            "impersonationUseSudo": false,
+                            "pluginVersion": 21,
+                            "commandName": "Shell",
+                            "pluginName": "Shell",
+                            "pluginId": "com.urbancode.air.plugin.Shell",
+                            "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                            "properties": {
+                                "directoryOffset": ".",
+                                "shellInterpreter": "",
+                                "scriptBody": "rm -rf *",
+                                "runAsDaemon": "false",
+                                "outputFile": "",
+                                "tempDirectory": "${p?:agent\/temporaryDirectory}"
+                            },
+                            "cachedAuthTokenRestriction": {
+                                "name": "System Default",
+                                "description": "Used by default for any plugin steps without a specified token restriction",
+                                "restrictions": [{
+                                    "verb": "ALL",
+                                    "url": "\/*"
+                                }]
+                            },
+                            "type": "plugin",
+                            "name": "Remove old content",
+                            "children": []
+                        },
+                        {
+                            "allowFailure": false,
+                            "useImpersonation": false,
+                            "showHidden": false,
+                            "impersonationUseSudo": false,
+                            "pluginVersion": 48,
+                            "commandName": "Download Artifacts",
+                            "pluginName": "UrbanCode Deploy Versioned File Storage",
+                            "pluginId": "com.urbancode.plugin.VFS",
+                            "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                            "properties": {
+                                "directoryOffset": ".",
+                                "artifactSetBaseDir": "",
+                                "fileIncludePatterns": "**\/*",
+                                "fileExcludePatterns": "",
+                                "syncMode": "true",
+                                "handleIncrementalVersions": "false",
+                                "fullVerification": "true",
+                                "setFileExecuteBits": "false",
+                                "verifyFileIntegrity": "false",
+                                "charset": "",
+                                "versionId": "${p:version.id}",
+                                "versionType": "${p:version.type}",
+                                "serverUrl": "${p:server.url}",
+                                "compId": "${p:component.id}",
+                                "resId": "${p:resource.id}",
+                                "envId": "${p:environment.id}",
+                                "maxMemory": "1G",
+                                "label": ""
+                            },
+                            "cachedAuthTokenRestriction": {
+                                "name": "System Default",
+                                "description": "Used by default for any plugin steps without a specified token restriction",
+                                "restrictions": [{
+                                    "verb": "ALL",
+                                    "url": "\/*"
+                                }]
+                            },
+                            "type": "plugin",
+                            "name": "Download Artifacts",
+                            "children": []
+                        },
+                        {
+                            "allowFailure": false,
+                            "useImpersonation": false,
+                            "showHidden": false,
+                            "impersonationUseSudo": false,
+                            "pluginVersion": 21,
+                            "commandName": "Shell",
+                            "pluginName": "Shell",
+                            "pluginId": "com.urbancode.air.plugin.Shell",
+                            "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                            "properties": {
+                                "directoryOffset": ".",
+                                "shellInterpreter": "",
+                                "scriptBody": "echo \"prep a step 1\"",
+                                "runAsDaemon": "false",
+                                "outputFile": "",
+                                "tempDirectory": "${p?:agent\/temporaryDirectory}"
+                            },
+                            "cachedAuthTokenRestriction": {
+                                "name": "System Default",
+                                "description": "Used by default for any plugin steps without a specified token restriction",
+                                "restrictions": [{
+                                    "verb": "ALL",
+                                    "url": "\/*"
+                                }]
+                            },
+                            "type": "plugin",
+                            "name": "Prep A Step 1",
+                            "children": []
+                        },
+                        {
+                            "allowFailure": false,
+                            "useImpersonation": false,
+                            "showHidden": false,
+                            "impersonationUseSudo": false,
+                            "pluginVersion": 21,
+                            "commandName": "Shell",
+                            "pluginName": "Shell",
+                            "pluginId": "com.urbancode.air.plugin.Shell",
+                            "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                            "properties": {
+                                "directoryOffset": ".",
+                                "shellInterpreter": "",
+                                "scriptBody": "echo \"Prep a step 2\"",
+                                "runAsDaemon": "false",
+                                "outputFile": "",
+                                "tempDirectory": "${p?:agent\/temporaryDirectory}"
+                            },
+                            "cachedAuthTokenRestriction": {
+                                "name": "System Default",
+                                "description": "Used by default for any plugin steps without a specified token restriction",
+                                "restrictions": [{
+                                    "verb": "ALL",
+                                    "url": "\/*"
+                                }]
+                            },
+                            "type": "plugin",
+                            "name": "Prep A Step 2",
+                            "children": []
+                        },
+                        {
+                            "type": "join",
+                            "name": "80355a6a61cd3b8c0819a461fa0781",
+                            "children": []
+                        }
+                    ]
+                }
+            }],
+            "configTemplates": [],
+            "genericProcesses": [],
+            "teamMappings": [{
+                "resourceTypeId": "20000000000000000000000000000101",
+                "resourceTypeName": "Component",
+                "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
+                "teamLabel": "Demo~EchoLogic"
+            }],
+            "tags": [{
+                "id": "19831771-b195-52a0-22f8-69552a5b680c",
+                "name": "EchoLogicComponents",
+                "color": "#00648D",
+                "description": "",
+                "objectType": "Component"
+            }]
+        }
+    ],
+    "environments": [
+        {
+            "loop": {
+                "name": "EchoLogic",
+                "teamSpace": "Demo"
+            },
+            "name": "ECHOLOGIC-DEV-ENV",
+            "color": "#00B2EF",
+            "requireApprovals": false,
+            "noSelfApprovals": false,
+            "exemptProcesses": [],
+            "lockSnapshots": false,
+            "requireSnapshots": false,
+            "snapshotDaysToKeep": 0,
+            "cleanupDaysToKeep": 0,
+            "cleanupCountToKeep": 0,
+            "enableProcessHistoryCleanup": true,
+            "useSystemDefaultDays": true,
+            "showCompliancyOnLoad": false,
+            "historyCleanupDaysToKeep": 0,
+            "enableProcessLogCleanup": true,
+            "useSystemDefaultLogDays": true,
+            "logDaysToKeep": 0,
+            "order": 0,
+            "active": true,
+            "propSheet": {
+                "properties": []
+            },
+            "templatePropSheet": {
+                "name": "template",
+                "properties": []
+            },
+            "baseResources": [{
+                "basePath": "\/EchoLogic",
+                "tree": {
+                    "name": "DEV",
+                    "path": "\/EchoLogic\/DEV",
+                    "description": "",
+                    "parentName": "EchoLogic",
+                    "inheritTeam": true,
+                    "propSheet": {
+                        "name": "custom",
+                        "properties": []
+                    },
+                    "tags": [],
+                    "teamMappings": [
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "0ae0e85e-a824-4561-ac0b-1488aafa8469",
+                            "teamLabel": "Demo"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
+                            "teamLabel": "Platform Commons"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
+                            "teamLabel": "Demo~EchoLogic"
+                        }
+                    ],
+                    "impersonationUseSudo": false,
+                    "impersonationForce": false,
+                    "prototype": false
+                }
+            }],
+            "baseResourcesFull": [{
+                "basePath": "\/EchoLogic",
+                "tree": {
+                    "name": "DEV",
+                    "path": "\/EchoLogic\/DEV",
+                    "description": "",
+                    "parentName": "EchoLogic",
+                    "inheritTeam": true,
+                    "propSheet": {
+                        "name": "custom",
+                        "properties": []
+                    },
+                    "tags": [],
+                    "teamMappings": [
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "0ae0e85e-a824-4561-ac0b-1488aafa8469",
+                            "teamLabel": "Demo"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
+                            "teamLabel": "Platform Commons"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
+                            "teamLabel": "Demo~EchoLogic"
+                        }
+                    ],
+                    "impersonationUseSudo": false,
+                    "impersonationForce": false,
+                    "prototype": false,
+                    "children": [{
+                        "name": "demo",
+                        "path": "\/EchoLogic\/DEV\/demo",
+                        "description": "",
+                        "parentName": "DEV",
+                        "inheritTeam": true,
+                        "type": "agentPool",
+                        "typeName": "demo",
+                        "propSheet": {
+                            "name": "custom",
+                            "properties": []
+                        },
+                        "tags": [],
+                        "teamMappings": [
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "0ae0e85e-a824-4561-ac0b-1488aafa8469",
+                                "teamLabel": "Demo"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
+                                "teamLabel": "Platform Commons"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
+                                "teamLabel": "Demo~EchoLogic"
+                            }
+                        ],
+                        "impersonationUseSudo": false,
+                        "impersonationForce": false,
+                        "prototype": false,
+                        "children": [{
+                            "name": "EchoLogicComponents",
+                            "componentTag": {
+                                "objectType": "Component",
+                                "name": "EchoLogicComponents",
+                                "description": "",
+                                "color": "#00648D"
+                            },
+                            "path": "\/EchoLogic\/DEV\/demo\/EchoLogicComponents",
+                            "description": "",
+                            "parentName": "demo",
+                            "inheritTeam": true,
+                            "propSheet": {
+                                "name": "custom",
+                                "properties": []
+                            },
+                            "tags": [],
+                            "teamMappings": [
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "0ae0e85e-a824-4561-ac0b-1488aafa8469",
+                                    "teamLabel": "Demo"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
+                                    "teamLabel": "Platform Commons"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
+                                    "teamLabel": "Demo~EchoLogic"
+                                }
+                            ],
+                            "impersonationUseSudo": false,
+                            "impersonationForce": false,
+                            "prototype": false,
+                            "children": []
+                        }]
+                    }]
+                }
+            }],
+            "componentPropSheets": [
+                {
+                    "properties": [],
+                    "componentName": "Demo~EchoLogic:Echo"
+                },
+                {
+                    "properties": [],
+                    "componentName": "Demo~EchoLogic:Logic"
+                }
+            ],
+            "teamMappings": [{
+                "resourceTypeId": "20000000000000000000000000000103",
+                "resourceTypeName": "Environment",
+                "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
+                "teamLabel": "Demo~EchoLogic"
+            }],
+            "deploymentTriggers": []
+        },
+        {
+            "loop": {
+                "name": "EchoLogic",
+                "teamSpace": "Demo"
+            },
+            "name": "ECHOLOGIC-QA-ENV",
+            "color": "#00B2EF",
+            "requireApprovals": false,
+            "noSelfApprovals": false,
+            "exemptProcesses": [],
+            "lockSnapshots": false,
+            "requireSnapshots": false,
+            "snapshotDaysToKeep": 0,
+            "cleanupDaysToKeep": 0,
+            "cleanupCountToKeep": 0,
+            "enableProcessHistoryCleanup": true,
+            "useSystemDefaultDays": true,
+            "showCompliancyOnLoad": false,
+            "historyCleanupDaysToKeep": 0,
+            "enableProcessLogCleanup": true,
+            "useSystemDefaultLogDays": true,
+            "logDaysToKeep": 0,
+            "order": 1,
+            "active": true,
+            "propSheet": {
+                "properties": []
+            },
+            "templatePropSheet": {
+                "name": "template",
+                "properties": []
+            },
+            "baseResources": [{
+                "basePath": "\/EchoLogic",
+                "tree": {
+                    "name": "QA",
+                    "path": "\/EchoLogic\/QA",
+                    "description": "",
+                    "parentName": "EchoLogic",
+                    "inheritTeam": true,
+                    "propSheet": {
+                        "name": "custom",
+                        "properties": []
+                    },
+                    "tags": [],
+                    "teamMappings": [
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "0ae0e85e-a824-4561-ac0b-1488aafa8469",
+                            "teamLabel": "Demo"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
+                            "teamLabel": "Platform Commons"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
+                            "teamLabel": "Demo~EchoLogic"
+                        }
+                    ],
+                    "impersonationUseSudo": false,
+                    "impersonationForce": false,
+                    "prototype": false
+                }
+            }],
+            "baseResourcesFull": [{
+                "basePath": "\/EchoLogic",
+                "tree": {
+                    "name": "QA",
+                    "path": "\/EchoLogic\/QA",
+                    "description": "",
+                    "parentName": "EchoLogic",
+                    "inheritTeam": true,
+                    "propSheet": {
+                        "name": "custom",
+                        "properties": []
+                    },
+                    "tags": [],
+                    "teamMappings": [
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "0ae0e85e-a824-4561-ac0b-1488aafa8469",
+                            "teamLabel": "Demo"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
+                            "teamLabel": "Platform Commons"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
+                            "teamLabel": "Demo~EchoLogic"
+                        }
+                    ],
+                    "impersonationUseSudo": false,
+                    "impersonationForce": false,
+                    "prototype": false,
+                    "children": [{
+                        "name": "demo",
+                        "path": "\/EchoLogic\/QA\/demo",
+                        "description": "",
+                        "parentName": "QA",
+                        "inheritTeam": true,
+                        "type": "agentPool",
+                        "typeName": "demo",
+                        "propSheet": {
+                            "name": "custom",
+                            "properties": []
+                        },
+                        "tags": [],
+                        "teamMappings": [
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "0ae0e85e-a824-4561-ac0b-1488aafa8469",
+                                "teamLabel": "Demo"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
+                                "teamLabel": "Platform Commons"
+                            },
+                            {
+                                "resourceTypeId": "20000000000000000000000000000104",
+                                "resourceTypeName": "Resource",
+                                "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
+                                "teamLabel": "Demo~EchoLogic"
+                            }
+                        ],
+                        "impersonationUseSudo": false,
+                        "impersonationForce": false,
+                        "prototype": false,
+                        "children": [{
+                            "name": "EchoLogicComponents",
+                            "componentTag": {
+                                "objectType": "Component",
+                                "name": "EchoLogicComponents",
+                                "description": "",
+                                "color": "#00648D"
+                            },
+                            "path": "\/EchoLogic\/QA\/demo\/EchoLogicComponents",
+                            "description": "",
+                            "parentName": "demo",
+                            "inheritTeam": true,
+                            "propSheet": {
+                                "name": "custom",
+                                "properties": []
+                            },
+                            "tags": [],
+                            "teamMappings": [
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "0ae0e85e-a824-4561-ac0b-1488aafa8469",
+                                    "teamLabel": "Demo"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
+                                    "teamLabel": "Platform Commons"
+                                },
+                                {
+                                    "resourceTypeId": "20000000000000000000000000000104",
+                                    "resourceTypeName": "Resource",
+                                    "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
+                                    "teamLabel": "Demo~EchoLogic"
+                                }
+                            ],
+                            "impersonationUseSudo": false,
+                            "impersonationForce": false,
+                            "prototype": false,
+                            "children": []
+                        }]
+                    }]
+                }
+            }],
+            "componentPropSheets": [
+                {
+                    "properties": [],
+                    "componentName": "Demo~EchoLogic:Echo"
+                },
+                {
+                    "properties": [],
+                    "componentName": "Demo~EchoLogic:Logic"
+                }
+            ],
+            "teamMappings": [{
+                "resourceTypeId": "20000000000000000000000000000103",
+                "resourceTypeName": "Environment",
+                "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
+                "teamLabel": "Demo~EchoLogic"
+            }],
+            "deploymentTriggers": []
+        },
+        {
+            "loop": {
+                "name": "EchoLogic",
+                "teamSpace": "Demo"
+            },
+            "name": "ECHOLOGIC-PROD-ENV",
+            "color": "#00B2EF",
+            "requireApprovals": false,
+            "noSelfApprovals": false,
+            "exemptProcesses": [],
+            "lockSnapshots": false,
+            "requireSnapshots": false,
+            "snapshotDaysToKeep": 0,
+            "cleanupDaysToKeep": 0,
+            "cleanupCountToKeep": 0,
+            "enableProcessHistoryCleanup": true,
+            "useSystemDefaultDays": true,
+            "showCompliancyOnLoad": false,
+            "historyCleanupDaysToKeep": 0,
+            "enableProcessLogCleanup": true,
+            "useSystemDefaultLogDays": true,
+            "logDaysToKeep": 0,
+            "order": 2,
+            "active": true,
+            "propSheet": {
+                "properties": []
+            },
+            "templatePropSheet": {
+                "name": "template",
+                "properties": []
+            },
+            "baseResources": [{
+                "basePath": "\/EchoLogic",
+                "tree": {
+                    "name": "PROD",
+                    "path": "\/EchoLogic\/PROD",
+                    "description": "",
+                    "parentName": "EchoLogic",
+                    "inheritTeam": true,
+                    "propSheet": {
+                        "name": "custom",
+                        "properties": []
+                    },
+                    "tags": [],
+                    "teamMappings": [
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "0ae0e85e-a824-4561-ac0b-1488aafa8469",
+                            "teamLabel": "Demo"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
+                            "teamLabel": "Platform Commons"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
+                            "teamLabel": "Demo~EchoLogic"
+                        }
+                    ],
+                    "impersonationUseSudo": false,
+                    "impersonationForce": false,
+                    "prototype": false
+                }
+            }],
+            "baseResourcesFull": [{
+                "basePath": "\/EchoLogic",
+                "tree": {
+                    "name": "PROD",
+                    "path": "\/EchoLogic\/PROD",
+                    "description": "",
+                    "parentName": "EchoLogic",
+                    "inheritTeam": true,
+                    "propSheet": {
+                        "name": "custom",
+                        "properties": []
+                    },
+                    "tags": [],
+                    "teamMappings": [
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "0ae0e85e-a824-4561-ac0b-1488aafa8469",
+                            "teamLabel": "Demo"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "157be558-7b2c-4d72-8895-d43f151a3280",
+                            "teamLabel": "Platform Commons"
+                        },
+                        {
+                            "resourceTypeId": "20000000000000000000000000000104",
+                            "resourceTypeName": "Resource",
+                            "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
+                            "teamLabel": "Demo~EchoLogic"
+                        }
+                    ],
+                    "impersonationUseSudo": false,
+                    "impersonationForce": false,
+                    "prototype": false,
+                    "children": []
+                }
+            }],
+            "componentPropSheets": [
+                {
+                    "properties": [],
+                    "componentName": "Demo~EchoLogic:Echo"
+                },
+                {
+                    "properties": [],
+                    "componentName": "Demo~EchoLogic:Logic"
+                }
+            ],
+            "teamMappings": [{
+                "resourceTypeId": "20000000000000000000000000000103",
+                "resourceTypeName": "Environment",
+                "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
+                "teamLabel": "Demo~EchoLogic"
+            }],
+            "deploymentTriggers": []
+        }
+    ],
+    "processes": [
+        {
+            "name": "EchoLogic-process",
+            "description": "",
+            "inventoryManagementType": "AUTOMATIC",
+            "offlineAgentHandling": "PRE_EXECUTION_CHECK",
+            "disableSnapshots": false,
+            "propDefs": [],
+            "versionPresets": []
+        },
+        {
+            "name": "Deploy",
+            "description": "",
+            "inventoryManagementType": "AUTOMATIC",
+            "offlineAgentHandling": "PRE_EXECUTION_CHECK",
+            "disableSnapshots": false,
+            "rootActivity": {
+                "edges": [
+                    {
+                        "to": "16197d70e51378e41a7af13e74acbe",
+                        "type": "ALWAYS",
+                        "value": ""
+                    },
+                    {
+                        "to": "dba1ff5fc37d05c133da3d3e2ed257",
+                        "from": "16197d70e51378e41a7af13e74acbe",
+                        "type": "SUCCESS",
+                        "value": ""
+                    },
+                    {
+                        "to": "dba1ff5fc37d05c133da3d3e2ed257",
+                        "from": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "type": "SUCCESS",
+                        "value": ""
+                    },
+                    {
+                        "to": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "type": "ALWAYS",
+                        "value": ""
+                    }
+                ],
+                "offsets": [
+                    {
+                        "name": "16197d70e51378e41a7af13e74acbe",
+                        "x": -147.5,
+                        "y": 155,
+                        "h": 70,
+                        "w": 190
+                    },
+                    {
+                        "name": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "x": 72.5,
+                        "y": 155,
+                        "h": 70,
+                        "w": 180
+                    },
+                    {
+                        "name": "dba1ff5fc37d05c133da3d3e2ed257",
+                        "x": -5,
+                        "y": 300,
+                        "h": 80,
+                        "w": 120
+                    }
+                ],
+                "layoutMode": "auto",
+                "type": "graph",
+                "name": "c1909ae8-bcb7-4a94-a1ca-442afb8b136d",
+                "children": [
+                    {
+                        "type": "finish",
+                        "name": "dba1ff5fc37d05c133da3d3e2ed257",
+                        "children": []
+                    },
+                    {
+                        "componentName": "Logic",
+                        "componentLoop": {
+                            "name": "EchoLogic",
+                            "teamSpace": "Demo"
+                        },
+                        "properties": [
+                            {
+                                "name": "maxIteration",
+                                "value": "-1"
+                            },
+                            {
+                                "name": "isIgnoreChildWarnings",
+                                "value": "false"
+                            },
+                            {
+                                "name": "runOnlyOnFirst",
+                                "value": "false"
+                            },
+                            {
+                                "name": "failFast",
+                                "value": "false"
+                            }
+                        ],
+                        "type": "componentEnvironmentIterator",
+                        "name": "16197d70e51378e41a7af13e74acbe",
+                        "children": [{
+                            "componentLoop": {
+                                "name": "EchoLogic",
+                                "teamSpace": "Demo"
+                            },
+                            "componentName": "Logic",
+                            "status": "Active",
+                            "type": "inventoryVersionDiff",
+                            "name": "2760baa7-fd1d-4fe9-9597-1a6ebda31821",
+                            "children": [{
+                                "componentProcessName": "Deploy",
+                                "componentLoop": {
+                                    "name": "EchoLogic",
+                                    "teamSpace": "Demo"
+                                },
+                                "componentName": "Logic",
+                                "allowFailure": false,
+                                "properties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "draftProperties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "type": "componentProcess",
+                                "name": "Install: \"Logic\"",
+                                "children": []
+                            }]
+                        }]
+                    },
+                    {
+                        "componentName": "Echo",
+                        "componentLoop": {
+                            "name": "EchoLogic",
+                            "teamSpace": "Demo"
+                        },
+                        "properties": [
+                            {
+                                "name": "maxIteration",
+                                "value": "-1"
+                            },
+                            {
+                                "name": "isIgnoreChildWarnings",
+                                "value": "false"
+                            },
+                            {
+                                "name": "runOnlyOnFirst",
+                                "value": "false"
+                            },
+                            {
+                                "name": "failFast",
+                                "value": "false"
+                            }
+                        ],
+                        "type": "componentEnvironmentIterator",
+                        "name": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "children": [{
+                            "componentLoop": {
+                                "name": "EchoLogic",
+                                "teamSpace": "Demo"
+                            },
+                            "componentName": "Echo",
+                            "status": "Active",
+                            "type": "inventoryVersionDiff",
+                            "name": "4606ab1f-bc7a-40be-8853-e3348c53f937",
+                            "children": [{
+                                "componentProcessName": "Deploy",
+                                "componentLoop": {
+                                    "name": "EchoLogic",
+                                    "teamSpace": "Demo"
+                                },
+                                "componentName": "Echo",
+                                "allowFailure": false,
+                                "properties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "draftProperties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "type": "componentProcess",
+                                "name": "Install: \"Echo\"",
+                                "children": []
+                            }]
+                        }]
+                    }
+                ]
+            },
+            "propDefs": [],
+            "versionPresets": []
+        },
+        {
+            "name": "Deploy with Failed Test",
+            "description": "",
+            "inventoryManagementType": "AUTOMATIC",
+            "offlineAgentHandling": "PRE_EXECUTION_CHECK",
+            "disableSnapshots": false,
+            "rootActivity": {
+                "edges": [
+                    {
+                        "to": "16197d70e51378e41a7af13e74acbe",
+                        "type": "ALWAYS",
+                        "value": ""
+                    },
+                    {
+                        "to": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "from": "16197d70e51378e41a7af13e74acbe",
+                        "type": "SUCCESS",
+                        "value": ""
+                    },
+                    {
+                        "to": "dba1ff5fc37d05c133da3d3e2ed257",
+                        "from": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "type": "SUCCESS",
+                        "value": ""
+                    }
+                ],
+                "offsets": [
+                    {
+                        "name": "dba1ff5fc37d05c133da3d3e2ed257",
+                        "x": -5,
+                        "y": 520,
+                        "h": 80,
+                        "w": 120
+                    },
+                    {
+                        "name": "16197d70e51378e41a7af13e74acbe",
+                        "x": -40,
+                        "y": 180,
+                        "h": 70,
+                        "w": 190
+                    },
+                    {
+                        "name": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "x": -100,
+                        "y": 350,
+                        "h": 70,
+                        "w": 300
+                    }
+                ],
+                "layoutMode": "auto",
+                "type": "graph",
+                "name": "234e5e7b-e07f-46f1-992d-936e3902c13d",
+                "children": [
+                    {
+                        "type": "finish",
+                        "name": "dba1ff5fc37d05c133da3d3e2ed257",
+                        "children": []
+                    },
+                    {
+                        "componentName": "Logic",
+                        "componentLoop": {
+                            "name": "EchoLogic",
+                            "teamSpace": "Demo"
+                        },
+                        "properties": [
+                            {
+                                "name": "maxIteration",
+                                "value": "-1"
+                            },
+                            {
+                                "name": "isIgnoreChildWarnings",
+                                "value": "false"
+                            },
+                            {
+                                "name": "runOnlyOnFirst",
+                                "value": "false"
+                            },
+                            {
+                                "name": "failFast",
+                                "value": "false"
+                            }
+                        ],
+                        "type": "componentEnvironmentIterator",
+                        "name": "16197d70e51378e41a7af13e74acbe",
+                        "children": [{
+                            "componentLoop": {
+                                "name": "EchoLogic",
+                                "teamSpace": "Demo"
+                            },
+                            "componentName": "Logic",
+                            "status": "Active",
+                            "type": "inventoryVersionDiff",
+                            "name": "a38d3930-c056-4a85-ac76-1a69428fae33",
+                            "children": [{
+                                "componentProcessName": "Deploy",
+                                "componentLoop": {
+                                    "name": "EchoLogic",
+                                    "teamSpace": "Demo"
+                                },
+                                "componentName": "Logic",
+                                "allowFailure": false,
+                                "properties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "draftProperties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "type": "componentProcess",
+                                "name": "Install: \"Logic\"",
+                                "children": []
+                            }]
+                        }]
+                    },
+                    {
+                        "componentName": "Echo",
+                        "componentLoop": {
+                            "name": "EchoLogic",
+                            "teamSpace": "Demo"
+                        },
+                        "properties": [
+                            {
+                                "name": "maxIteration",
+                                "value": "-1"
+                            },
+                            {
+                                "name": "isIgnoreChildWarnings",
+                                "value": "false"
+                            },
+                            {
+                                "name": "failFast",
+                                "value": "false"
+                            }
+                        ],
+                        "type": "componentEnvironmentIterator",
+                        "name": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "children": [{
+                            "componentLoop": {
+                                "name": "EchoLogic",
+                                "teamSpace": "Demo"
+                            },
+                            "componentName": "Echo",
+                            "status": "Active",
+                            "type": "inventoryVersionDiff",
+                            "name": "3392babd-993f-419f-b187-60b0ca838b49",
+                            "children": [{
+                                "componentProcessName": "Deploy with Test Failed",
+                                "componentLoop": {
+                                    "name": "EchoLogic",
+                                    "teamSpace": "Demo"
+                                },
+                                "componentName": "Echo",
+                                "allowFailure": false,
+                                "properties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "draftProperties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "type": "componentProcess",
+                                "name": "Install: \"Echo\"",
+                                "children": []
+                            }]
+                        }]
+                    }
+                ]
+            },
+            "propDefs": [],
+            "versionPresets": []
+        },
+        {
+            "name": "Deploy with Passed Test",
+            "description": "",
+            "inventoryManagementType": "AUTOMATIC",
+            "offlineAgentHandling": "PRE_EXECUTION_CHECK",
+            "disableSnapshots": false,
+            "rootActivity": {
+                "edges": [
+                    {
+                        "to": "16197d70e51378e41a7af13e74acbe",
+                        "type": "ALWAYS",
+                        "value": ""
+                    },
+                    {
+                        "to": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "from": "16197d70e51378e41a7af13e74acbe",
+                        "type": "SUCCESS",
+                        "value": ""
+                    },
+                    {
+                        "to": "dba1ff5fc37d05c133da3d3e2ed257",
+                        "from": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "type": "SUCCESS",
+                        "value": ""
+                    }
+                ],
+                "offsets": [
+                    {
+                        "name": "16197d70e51378e41a7af13e74acbe",
+                        "x": -40,
+                        "y": 180,
+                        "h": 70,
+                        "w": 190
+                    },
+                    {
+                        "name": "dba1ff5fc37d05c133da3d3e2ed257",
+                        "x": -5,
+                        "y": 520,
+                        "h": 80,
+                        "w": 120
+                    },
+                    {
+                        "name": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "x": -35,
+                        "y": 350,
+                        "h": 70,
+                        "w": 310
+                    }
+                ],
+                "layoutMode": "auto",
+                "type": "graph",
+                "name": "ac2370fb-af43-4d62-a2e1-324eede72056",
+                "children": [
+                    {
+                        "type": "finish",
+                        "name": "dba1ff5fc37d05c133da3d3e2ed257",
+                        "children": []
+                    },
+                    {
+                        "componentName": "Logic",
+                        "componentLoop": {
+                            "name": "EchoLogic",
+                            "teamSpace": "Demo"
+                        },
+                        "properties": [
+                            {
+                                "name": "maxIteration",
+                                "value": "-1"
+                            },
+                            {
+                                "name": "isIgnoreChildWarnings",
+                                "value": "false"
+                            },
+                            {
+                                "name": "runOnlyOnFirst",
+                                "value": "false"
+                            },
+                            {
+                                "name": "failFast",
+                                "value": "false"
+                            }
+                        ],
+                        "type": "componentEnvironmentIterator",
+                        "name": "16197d70e51378e41a7af13e74acbe",
+                        "children": [{
+                            "componentLoop": {
+                                "name": "EchoLogic",
+                                "teamSpace": "Demo"
+                            },
+                            "componentName": "Logic",
+                            "status": "Active",
+                            "type": "inventoryVersionDiff",
+                            "name": "ce751779-5ea7-4279-a531-cf640373287d",
+                            "children": [{
+                                "componentProcessName": "Deploy",
+                                "componentLoop": {
+                                    "name": "EchoLogic",
+                                    "teamSpace": "Demo"
+                                },
+                                "componentName": "Logic",
+                                "allowFailure": false,
+                                "properties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "draftProperties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "type": "componentProcess",
+                                "name": "Install: \"Logic\"",
+                                "children": []
+                            }]
+                        }]
+                    },
+                    {
+                        "componentName": "Echo",
+                        "componentLoop": {
+                            "name": "EchoLogic",
+                            "teamSpace": "Demo"
+                        },
+                        "properties": [
+                            {
+                                "name": "maxIteration",
+                                "value": "-1"
+                            },
+                            {
+                                "name": "isIgnoreChildWarnings",
+                                "value": "false"
+                            },
+                            {
+                                "name": "failFast",
+                                "value": "false"
+                            }
+                        ],
+                        "type": "componentEnvironmentIterator",
+                        "name": "5b5de9bc30d25ed5be2201d2a80ecf",
+                        "children": [{
+                            "componentLoop": {
+                                "name": "EchoLogic",
+                                "teamSpace": "Demo"
+                            },
+                            "componentName": "Echo",
+                            "status": "Active",
+                            "type": "inventoryVersionDiff",
+                            "name": "6ea6f60f-5a22-4d9e-90b2-fbe51ad7bb8f",
+                            "children": [{
+                                "componentProcessName": "Deploy with Test Passed",
+                                "componentLoop": {
+                                    "name": "EchoLogic",
+                                    "teamSpace": "Demo"
+                                },
+                                "componentName": "Echo",
+                                "allowFailure": false,
+                                "properties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "draftProperties": {
+                                    "isIgnoreChildWarnings": "false"
+                                },
+                                "type": "componentProcess",
+                                "name": "Install: \"Echo\"",
+                                "children": []
+                            }]
+                        }]
+                    }
+                ]
+            },
+            "propDefs": [],
+            "versionPresets": []
+        }
+    ],
+    "genericProcesses": [],
+    "teamMappings": [{
+        "resourceTypeId": "20000000000000000000000000000100",
+        "resourceTypeName": "Application",
+        "teamId": "740ca056-9a0f-4f66-bcd9-9f391e5fa372",
+        "teamLabel": "Demo~EchoLogic"
+    }],
+    "tags": [],
+    "webhooks": []
+}
