@@ -1,0 +1,65 @@
+note: Generated from recorded traffic using firefox 141.0
+configuration:
+  profile: firefox
+  vars:
+    APP_EcholonTest_URL: https://devopsautomationlabs.github.io/End2End/demoflow/
+steps:
+  - open:
+      note: Open EcholonTest
+      url: '${APP_EcholonTest_URL}'
+  - with:
+      note: Demo Flow - DevOps Loop End to End Demo
+      steps:
+        - verify:
+            shot: Demo Flow - DevOps Loop End to End Demo_e3lskz.dti.jpeg#1110
+            object: html.a
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //h2[@id='loop']/a
+            properties:
+              - content:
+                  - val: Loop
+        - click:
+            shot: Demo Flow - DevOps Loop End to End Demo_zckni5.dti.jpeg#1133
+            object: html.td
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Showing data from Plan - Ratio of Issues created versus
+                          closed
+        - click:
+            shot: Demo Flow - DevOps Loop End to End Demo_cwdu6b.dti.jpeg#2076
+            object: html.span
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Test
+  - with:
+      note: Demo Flow - DevOps Loop End to End Demo
+      steps:
+        - click:
+            shot: Demo Flow - DevOps Loop End to End Demo_evmlbo.dti.jpeg#3798
+            object: html.td
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Generate test data
+        - click:
+            shot: Demo Flow - DevOps Loop End to End Demo_sebggt.dti.jpeg#4069
+            object: html.span
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Genie
+  - with:
+      note: Demo Flow - DevOps Loop End to End Demo
+      steps:
+        - click:
+            shot: Demo Flow - DevOps Loop End to End Demo_xk6n3v.dti.jpeg#5897
+            object: html.td
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Open Loop Genie by clicking on its Icon on the right
+                          side of the Dashboard

@@ -1,0 +1,143 @@
+{
+  "name" : "Orders",
+  "description" : "",
+  "fields" : [ {
+    "name" : "OrderID",
+    "repositoryUrl" : "",
+    "filePath" : "",
+    "generatorValues" : {
+      "name" : "UUID",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : null
+      } ]
+    }
+  }, {
+    "name" : "Product",
+    "repositoryUrl" : "",
+    "filePath" : "",
+    "generatorValues" : {
+      "name" : "Enumerator",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "duplicatesAllowed" : "true",
+        "randomDistribution" : "false",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "list" : [ {
+            "value" : "Book",
+            "distribution" : 20
+          }, {
+            "value" : "DVD/Bluray",
+            "distribution" : 30
+          }, {
+            "value" : "Toothbrush",
+            "distribution" : 50
+          }, {
+            "name" : "",
+            "distribution" : 0,
+            "value" : "Bread"
+          } ],
+          "random" : true
+        }
+      } ]
+    }
+  }, {
+    "name" : "CustomerID",
+    "repositoryUrl" : "",
+    "filePath" : "",
+    "generatorValues" : {
+      "name" : "UUID",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : null
+      } ]
+    }
+  }, {
+    "name" : "DeliveryAddress",
+    "repositoryUrl" : "",
+    "filePath" : "",
+    "generatorValues" : {
+      "name" : "Address",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "firstLine" : "true",
+          "secondLine" : "true",
+          "city" : "true",
+          "zipCode" : "true",
+          "country" : "true"
+        }
+      } ]
+    }
+  }, {
+    "name" : "OrderDate",
+    "repositoryUrl" : "",
+    "filePath" : "",
+    "generatorValues" : {
+      "name" : "DateTime",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "pattern" : "MM/dd/yyyy",
+          "limitDates" : {
+            "from" : 1753355392,
+            "to" : 1784891392,
+            "exclude" : [ ],
+            "specificDatesToExclude" : ""
+          },
+          "limitTimes" : {
+            "from" : "12:00:00 am",
+            "to" : "11:59:59 pm"
+          },
+          "offset" : {
+            "from" : null,
+            "by" : "",
+            "value" : null,
+            "unit" : ""
+          }
+        }
+      } ]
+    }
+  } ]
+}
