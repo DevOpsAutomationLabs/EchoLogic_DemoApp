@@ -25,7 +25,7 @@
                 "properties": [
                     {
                         "name": "branch",
-                        "value": "main",
+                        "value": "master",
                         "description": "",
                         "secure": false
                     },
