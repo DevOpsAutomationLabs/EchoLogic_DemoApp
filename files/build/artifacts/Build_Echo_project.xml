@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<export date="07/25/2025 07:59:24" user="demo@devops.loop" version="7.1.0-1178647">
+	<!--exported by https://devops.automation.techzone.ibm.com:80/build-->
+	<agent class="com.urbancode.ubuild.domain.agent.Agent" id="1" version="1">
+		<endpoint>BvUTVtykwWwQDsfrwHKs</endpoint>
+	</agent>
+	<agent class="com.urbancode.ubuild.domain.agent.Agent" id="31" version="1">
+		<endpoint>xTWqMZcXgYuer28rsTN8</endpoint>
+	</agent>
+	<agent class="com.urbancode.ubuild.domain.agent.Agent" id="11" version="1">
+		<endpoint>IAb3pWpmZo3or4jxicb2</endpoint>
+	</agent>
+	<agent-pool class="com.urbancode.ubuild.domain.agentpool.FixedAgentPool" id="1" version="1">
+		<name>All Build Agents</name>
+		<description>Default agent pool for all build agents.</description>
+	</agent-pool>
+	<template class="com.urbancode.ubuild.domain.project.template.ProjectTemplate" id="14" version="5">
+		<name>Echo_Project</name>
+		<description/>
+		<project-properties/>
+		<pre-process-config class="com.urbancode.ubuild.domain.project.template.PreProcessConfig" version="3">
+			<should-cleanup>false</should-cleanup>
+			<agent-filter class="com.urbancode.ubuild.domain.agentfilter.agentpool.AgentPoolFilter" version="2">
+				<name>All Build Agents</name>
+				<agent-pool class="com.urbancode.ubuild.domain.agentpool.FixedAgentPool" id="1"/>
+			</agent-filter>
+			<agent-property/>
+			<stamp-values/>
+			<label-values/>
+			<merge-period-time>0</merge-period-time>
+			<quiet-period-time>0</quiet-period-time>
+			<timeout>300</timeout>
+		</pre-process-config>
+	</template>
+	<repository class="com.urbancode.ubuild.domain.repository.Repository" id="33" version="1">
+		<name>Control_Echo</name>
+		<description/>
+		<plugin-id>com.urbancode.air.plugin.control</plugin-id>
+		<properties class="com.urbancode.ubuild.domain.prop_sheet.PropSheet" id="f5c6573d-186e-415e-92fc-fb5451a55989">
+			<name>Control_Echo</name>
+			<pluginId>com.urbancode.air.plugin.control</pluginId>
+			<propSheetDefName>Repository</propSheetDefName>
+			<property>
+				<name>password</name>
+				<value></value>
+			</property>
+			<property>
+				<name>repoBaseUrl</name>
+				<value>https://devops.automation.techzone.ibm.com/control/Demo/EchoLogic</value>
+			</property>
+			<property>
+				<name>disableBuildOnDraft</name>
+				<value>false</value>
+			</property>
+			<property>
+				<name>useCommitterEmail</name>
+				<value>false</value>
+			</property>
+			<property>
+				<name>username</name>
+				<value>demo@devops.loop</value>
+			</property>
+		</properties>
+	</repository>
+	<work-dir-script class="com.urbancode.ubuild.domain.workdir.WorkDirScript" id="-1" version="2">
+		<name>Default Workflow Directory</name>
+		<description>{agent}/var/work/project/{project}/{workflow}</description>
+		<script>${env/AGENT_HOME}/var/work/project/${gvy:PathHelper.makeSafe(ProjectLookup.current.name)}/${gvy:PathHelper.makeSafe(WorkflowLookup.current.name)}</script>
+	</work-dir-script>
+	<template class="com.urbancode.ubuild.domain.source.template.SourceConfigTemplate" id="14" version="1">
+		<name>Echo_Control</name>
+		<description/>
+		<plugin-id>com.urbancode.air.plugin.control</plugin-id>
+		<properties/>
+		<source-config class="com.urbancode.ubuild.domain.source.SourceConfig" id="27" version="1">
+			<name>Echo_Control</name>
+			<description/>
+			<build-profile/>
+			<plugin-id>com.urbancode.air.plugin.control</plugin-id>
+			<work-dir-script class="com.urbancode.ubuild.domain.workdir.WorkDirScript" id="-1"/>
+			<properties class="com.urbancode.ubuild.domain.prop_sheet.PropSheet" id="cb18c6d3-3c47-4a00-aa2f-6b5dfc44397a">
+				<name>Echo_Control</name>
+				<pluginId>com.urbancode.air.plugin.control</pluginId>
+				<propSheetDefName>Source</propSheetDefName>
+				<property>
+					<name>fileFilters</name>
+					<value/>
+				</property>
+				<property>
+					<name>dirOffset</name>
+					<value>.</value>
+				</property>
+				<property>
+					<name>remoteUrl</name>
+					<value>Echo</value>
+				</property>
+				<property>
+					<name>excludeUsers</name>
+					<value/>
+				</property>
+				<property>
+					<name>tagName</name>
+					<value/>
+				</property>
+				<property>
+					<name>branch</name>
+					<value>main</value>
+				</property>
+				<property>
+					<name>remoteName</name>
+					<value/>
+				</property>
+			</properties>
+		</source-config>
+	</template>
+	<artifact-set class="com.urbancode.ubuild.domain.artifacts.ArtifactSet" id="-1" version="1">
+		<name>artifacts</name>
+		<description/>
+	</artifact-set>
+	<step-pre-condition-script class="com.urbancode.ubuild.domain.script.step.StepPreConditionScript" id="1" version="1">
+		<name>All Prior Success</name>
+		<description>All prior steps are successful</description>
+		<language>javascript</language>
+		<script>stepStatus.allPriorIn(SUCCESS, SUCCESS_WARN);</script>
+	</step-pre-condition-script>
+	<properties class="com.urbancode.ubuild.domain.prop_sheet.PropSheet" id="90322f8d-eb71-4ea9-876a-c80cfbf937dd">
+		<name>Oreste_Deploy</name>
+		<pluginId>com.urbancode.air.plugin.uDeploy</pluginId>
+		<propSheetDefName>Automation</propSheetDefName>
+		<property>
+			<name>password</name>
+			<value></value>
+		</property>
+		<property>
+			<name>passScript</name>
+			<value/>
+		</property>
+		<property>
+			<name>authToken</name>
+			<value>crypt_v1{AES/CBC/PKCS5Padding|aes128keyimkp|pzAcE4lKhelJM9aKapOqqA==|qjivMBBI5xeikLBzm7k+if55PfnHorOJ6m0oK4U1rVrIv+89qoiHqkkGmvlhuZ0M}</value>
+		</property>
+		<property>
+			<name>user</name>
+			<value/>
+		</property>
+		<property>
+			<name>url</name>
+			<value>https://devops.automation.techzone.ibm.com/deploy</value>
+		</property>
+		<property>
+			<name>ucdVersionSelection</name>
+			<value>7.1.1.2</value>
+		</property>
+	</properties>
+	<status class="com.urbancode.ubuild.domain.status.Status" id="-1" version="1">
+		<name>Success</name>
+		<description>Build was a success</description>
+		<color>#90EE90</color>
+		<seq>1</seq>
+	</status>
+	<step-pre-condition-script class="com.urbancode.ubuild.domain.script.step.StepPreConditionScript" id="3" version="1">
+		<name>Any Prior Failure</name>
+		<description>Any prior step was a failure</description>
+		<language>javascript</language>
+		<script>stepStatus.anyPriorIn(FAILED);</script>
+	</step-pre-condition-script>
+	<status class="com.urbancode.ubuild.domain.status.Status" id="-2" version="1">
+		<name>Failure</name>
+		<description>Build was a failure</description>
+		<color>#FFB6C1</color>
+		<seq>2</seq>
+	</status>
+	<job-config class="com.urbancode.ubuild.domain.jobconfig.JobConfig" id="32" version="1">
+		<name>Echo_Build</name>
+		<description>Build Echo</description>
+		<step-configs>
+			<step-config class="com.urbancode.ubuild.domain.stamp.StampStepConfig" id="72" version="3">
+				<name>CreateStamp</name>
+				<description/>
+				<pre-condition-script class="com.urbancode.ubuild.domain.script.step.StepPreConditionScript" id="1"/>
+				<timeout>0</timeout>
+				<ignore-failures>false</ignore-failures>
+				<is-active>true</is-active>
+				<run-in-preflight>true</run-in-preflight>
+				<run-in-preflight-only>false</run-in-preflight-only>
+				<run-in-parallel>false</run-in-parallel>
+				<post-process-script/>
+				<raw-value>${p:buildlife/id}</raw-value>
+			</step-config>
+			<step-config class="com.urbancode.ubuild.domain.source.plugin.CleanupSourcePluginMetaStepConfig" id="82" version="3">
+				<name>Delete Workspace</name>
+				<description/>
+				<pre-condition-script class="com.urbancode.ubuild.domain.script.step.StepPreConditionScript" id="1"/>
+				<timeout>0</timeout>
+				<ignore-failures>false</ignore-failures>
+				<is-active>true</is-active>
+				<run-in-preflight>true</run-in-preflight>
+				<run-in-preflight-only>false</run-in-preflight-only>
+				<run-in-parallel>false</run-in-parallel>
+				<post-process-script/>
+			</step-config>
+			<step-config class="com.urbancode.ubuild.domain.source.plugin.PopulateWorkspaceSourcePluginMetaStepConfig" id="92" version="3">
+				<name>Clone_Control</name>
+				<description/>
+				<pre-condition-script class="com.urbancode.ubuild.domain.script.step.StepPreConditionScript" id="1"/>
+				<timeout>0</timeout>
+				<ignore-failures>false</ignore-failures>
+				<is-active>true</is-active>
+				<run-in-preflight>true</run-in-preflight>
+				<run-in-preflight-only>false</run-in-preflight-only>
+				<run-in-parallel>false</run-in-parallel>
+				<post-process-script/>
+				<workspace-script>${bsh:WorkspaceDate.get()}</workspace-script>
+				<release-prior-locks>false</release-prior-locks>
+			</step-config>
+			<step-config class="com.urbancode.ubuild.domain.plugin.PluginCommandStepConfig" id="114" version="3">
+				<name>Build_CreateVersion</name>
+				<description/>
+				<pre-condition-script class="com.urbancode.ubuild.domain.script.step.StepPreConditionScript" id="1"/>
+				<timeout>0</timeout>
+				<ignore-failures>false</ignore-failures>
+				<is-active>true</is-active>
+				<run-in-preflight>true</run-in-preflight>
+				<run-in-preflight-only>false</run-in-preflight-only>
+				<run-in-parallel>false</run-in-parallel>
+				<post-process-script/>
+				<work-dir-offset/>
+				<plugin-command command-name="Create Component Version" plugin-id="com.urbancode.air.plugin.uDeploy"/>
+				<env-vars/>
+				<properties class="com.urbancode.ubuild.domain.prop_sheet.PropSheet" id="5ba0cb9d-95c0-41db-9132-30104301c739">
+					<name>Build_CreateVersion</name>
+					<pluginId>com.urbancode.air.plugin.uDeploy</pluginId>
+					<propSheetDefName/>
+					<property>
+						<name>versionDesc</name>
+						<value/>
+					</property>
+					<property>
+						<name>excludes</name>
+						<value/>
+					</property>
+					<property>
+						<name>artifactsBaseDir</name>
+						<value/>
+					</property>
+					<property>
+						<name>includes</name>
+						<value/>
+					</property>
+					<property>
+						<name>workItem</name>
+						<value>false</value>
+					</property>
+					<property>
+						<name>versionName</name>
+						<value>${p:buildlife/latestStamp}</value>
+					</property>
+					<property>
+						<name>sourceChange</name>
+						<value>false</value>
+					</property>
+					<property>
+						<name>publishFiles</name>
+						<value>true</value>
+					</property>
+					<property>
+						<name>linkName</name>
+						<value>DevOps Build</value>
+					</property>
+					<property>
+						<name>automation</name>
+						<reference>90322f8d-eb71-4ea9-876a-c80cfbf937dd</reference>
+					</property>
+					<property>
+						<name>codeAnalytics</name>
+						<value>false</value>
+					</property>
+					<property>
+						<name>testPercentage</name>
+						<value>false</value>
+					</property>
+					<property>
+						<name>codeCoverage</name>
+						<value>false</value>
+					</property>
+					<property>
+						<name>createVersionLink</name>
+						<value>true</value>
+					</property>
+					<property>
+						<name>componentName</name>
+						<value>EcoLogic~EcoLogic:Echo</value>
+					</property>
+					<property>
+						<name>status</name>
+						<value/>
+					</property>
+					<property>
+						<name>propertiesTextArea</name>
+						<value/>
+					</property>
+				</properties>
+			</step-config>
+			<step-config class="com.urbancode.ubuild.domain.status.AssignStatusStepConfig" id="123" version="3">
+				<name>Build_Success</name>
+				<description/>
+				<pre-condition-script class="com.urbancode.ubuild.domain.script.step.StepPreConditionScript" id="1"/>
+				<timeout>0</timeout>
+				<ignore-failures>false</ignore-failures>
+				<is-active>true</is-active>
+				<run-in-preflight>true</run-in-preflight>
+				<run-in-preflight-only>false</run-in-preflight-only>
+				<run-in-parallel>false</run-in-parallel>
+				<post-process-script/>
+				<status class="com.urbancode.ubuild.domain.status.Status" id="-1" name="Success"/>
+			</step-config>
+			<step-config class="com.urbancode.ubuild.domain.status.AssignStatusStepConfig" id="124" version="3">
+				<name>Build_Failed</name>
+				<description/>
+				<pre-condition-script class="com.urbancode.ubuild.domain.script.step.StepPreConditionScript" id="3"/>
+				<timeout>0</timeout>
+				<ignore-failures>false</ignore-failures>
+				<is-active>true</is-active>
+				<run-in-preflight>true</run-in-preflight>
+				<run-in-preflight-only>false</run-in-preflight-only>
+				<run-in-parallel>false</run-in-parallel>
+				<post-process-script/>
+				<status class="com.urbancode.ubuild.domain.status.Status" id="-2" name="Failure"/>
+			</step-config>
+		</step-configs>
+	</job-config>
+	<pre-condition class="com.urbancode.ubuild.domain.script.job.JobPreConditionScript" id="-2" version="2">
+		<name>All Ancestor Jobs Success</name>
+		<description>Run if all ancestor jobs were successful or if there are no ancestor jobs.</description>
+		<language>javascript</language>
+		<script>jobStatus.allAncestorsIn(SUCCESS)</script>
+	</pre-condition>
+	<workflow-def class="com.urbancode.ubuild.domain.workflow.WorkflowDefinition" id="103" version="4">
+		<name>Process_PizzaAPP</name>
+		<description/>
+		<workflow-definition-job-configs>
+			<workflow-definition-job-config class="com.urbancode.ubuild.domain.workflow.WorkflowDefinitionJobConfig" id="8" version="1">
+				<job-config class="com.urbancode.ubuild.domain.jobconfig.JobConfig" id="32"/>
+				<pre-condition class="com.urbancode.ubuild.domain.script.job.JobPreConditionScript" id="-2"/>
+				<agent-filter class="com.urbancode.ubuild.domain.agentfilter.agentpool.AgentPoolFilter" version="2">
+					<name>All Build Agents</name>
+					<agent-pool class="com.urbancode.ubuild.domain.agentpool.FixedAgentPool" id="1"/>
+				</agent-filter>
+				<lock-for-workflow>false</lock-for-workflow>
+				<use-parent-work-dir>false</use-parent-work-dir>
+				<use-source-work-dir>true</use-source-work-dir>
+				<inactive>false</inactive>
+			</workflow-definition-job-config>
+		</workflow-definition-job-configs>
+		<arcs/>
+	</workflow-def>
+	<template class="com.urbancode.ubuild.domain.workflow.template.WorkflowTemplate" id="23" version="4">
+		<name>Echo_Process</name>
+		<description/>
+		<originating>true</originating>
+		<properties/>
+		<lock-res-refs/>
+		<artifact-configs>
+			<artifact-config class="com.urbancode.ubuild.domain.workflow.ArtifactDeliverPatterns" id="22" version="2">
+				<artifact-set class="com.urbancode.ubuild.domain.artifacts.ArtifactSet" id="-1"/>
+				<base-dir>.</base-dir>
+				<artifact-patterns>*</artifact-patterns>
+				<artifact-exclude/>
+			</artifact-config>
+		</artifact-configs>
+		<workflow-def class="com.urbancode.ubuild.domain.workflow.WorkflowDefinition" id="103"/>
+	</template>
+	<priority-script class="com.urbancode.ubuild.domain.script.priority.WorkflowPriorityScript" id="-2" version="1">
+		<name>Normal Priority</name>
+		<description>Assigns a Normal Priority for the Workflow</description>
+		<language>beanshell</language>
+		<script>return WorkflowPriorityEnum.NORMAL;</script>
+	</priority-script>
+	<project class="com.urbancode.ubuild.domain.project.Project" id="33" version="5">
+		<name>Build_Echo_project</name>
+		<description/>
+		<tags/>
+		<template class="com.urbancode.ubuild.domain.project.template.ProjectTemplate" id="14"/>
+		<workflows>
+			<workflow class="com.urbancode.ubuild.domain.workflow.Workflow" id="63" version="5">
+				<name>Echo_Process</name>
+				<description/>
+				<skip-quiet-period>false</skip-quiet-period>
+				<profile class="com.urbancode.ubuild.domain.profile.BuildProfile" id="23" version="3">
+					<name>Echo_Process</name>
+					<description/>
+					<conflict-strategy>Fail</conflict-strategy>
+					<isTriggerOnlyDependencies>false</isTriggerOnlyDependencies>
+					<source-config class="com.urbancode.ubuild.domain.source.template.TemplatedSourceConfig" id="29" version="1">
+						<name>Echo_Control</name>
+						<description/>
+						<build-profile class="com.urbancode.ubuild.domain.profile.BuildProfile" id="23"/>
+						<template class="com.urbancode.ubuild.domain.source.template.SourceConfigTemplate" id="14"/>
+						<plugin-id>com.urbancode.air.plugin.control</plugin-id>
+						<properties/>
+						<repository class="com.urbancode.ubuild.domain.repository.Repository" id="33"/>
+						<sourceTemplate class="com.urbancode.ubuild.domain.source.template.SourceConfigTemplate" id="14"/>
+					</source-config>
+					<build-configurations>
+						<build-configuration class="com.urbancode.ubuild.domain.buildconfiguration.BuildConfiguration" id="1" version="1">
+							<name>Echo_config</name>
+							<description/>
+							<properties/>
+							<build-profile class="com.urbancode.ubuild.domain.profile.BuildProfile" id="23"/>
+						</build-configuration>
+					</build-configurations>
+					<workflow class="com.urbancode.ubuild.domain.workflow.Workflow" id="63"/>
+					<project class="com.urbancode.ubuild.domain.project.Project" id="33"/>
+				</profile>
+				<success-report-time-type>ALL_HISTORY</success-report-time-type>
+				<success-report-time-num>1</success-report-time-num>
+				<properties/>
+				<process-properties/>
+				<project class="com.urbancode.ubuild.domain.project.Project" id="33"/>
+				<processTemplate class="com.urbancode.ubuild.domain.workflow.template.WorkflowTemplate" id="23"/>
+				<triggers/>
+				<priority-script class="com.urbancode.ubuild.domain.script.priority.WorkflowPriorityScript" id="-2"/>
+				<template class="com.urbancode.ubuild.domain.workflow.template.WorkflowTemplate" id="23"/>
+			</workflow>
+		</workflows>
+		<project-properties/>
+	</project>
+</export>
