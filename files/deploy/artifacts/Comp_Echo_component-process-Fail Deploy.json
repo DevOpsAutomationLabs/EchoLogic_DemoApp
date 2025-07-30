@@ -1,0 +1,249 @@
+{
+    "name": "Fail Deploy",
+    "description": "Deploy the Echo Component with failing step",
+    "defaultWorkingDir": "${p:resource\/work.dir}\/${p:component.name}",
+    "takesVersion": true,
+    "inventoryActionType": "ADD",
+    "status": "Active",
+    "configActionType": "ADD",
+    "active": true,
+    "path": "components\/19831b42-d32f-432c-2c9d-c6f29e5f443b\/processes\/1985a237-13e7-fb3c-7c5c-b6c3d00d79fd",
+    "deleted": false,
+    "propDefs": [],
+    "rootActivity": {
+        "edges": [
+            {
+                "to": "80355a6a61cd3b8c0819a461fa0781",
+                "from": "Prep A Step 2",
+                "type": "SUCCESS",
+                "value": ""
+            },
+            {
+                "to": "Remove old content",
+                "type": "ALWAYS",
+                "value": ""
+            },
+            {
+                "to": "80355a6a61cd3b8c0819a461fa0781",
+                "from": "Prep A Step 1",
+                "type": "SUCCESS",
+                "value": ""
+            },
+            {
+                "to": "Download Artifacts",
+                "from": "Remove old content",
+                "type": "SUCCESS",
+                "value": ""
+            },
+            {
+                "to": "Prep A Step 2",
+                "from": "Download Artifacts",
+                "type": "SUCCESS",
+                "value": ""
+            },
+            {
+                "to": "2192eda4604be71338b26ffa54a6c2",
+                "from": "80355a6a61cd3b8c0819a461fa0781",
+                "type": "SUCCESS",
+                "value": ""
+            },
+            {
+                "to": "Prep A Step 1",
+                "from": "Download Artifacts",
+                "type": "SUCCESS",
+                "value": ""
+            }
+        ],
+        "offsets": [
+            {
+                "name": "80355a6a61cd3b8c0819a461fa0781",
+                "x": -5,
+                "y": 490,
+                "h": 50,
+                "w": 120
+            },
+            {
+                "name": "2192eda4604be71338b26ffa54a6c2",
+                "x": -5,
+                "y": 590,
+                "h": 80,
+                "w": 120
+            },
+            {
+                "name": "Prep A Step 2",
+                "x": 70,
+                "y": 370,
+                "h": 70,
+                "w": 190
+            },
+            {
+                "name": "Remove old content",
+                "x": -55,
+                "y": 130,
+                "h": 70,
+                "w": 220
+            },
+            {
+                "name": "Prep A Step 1",
+                "x": -150,
+                "y": 370,
+                "h": 70,
+                "w": 190
+            },
+            {
+                "name": "Download Artifacts",
+                "x": -75,
+                "y": 250,
+                "h": 70,
+                "w": 260
+            }
+        ],
+        "layoutMode": "auto",
+        "type": "graph",
+        "name": "3546ce14-ac0a-4323-b454-643a658c0602",
+        "children": [
+            {
+                "type": "finish",
+                "name": "2192eda4604be71338b26ffa54a6c2",
+                "children": []
+            },
+            {
+                "allowFailure": false,
+                "useImpersonation": false,
+                "showHidden": false,
+                "impersonationUseSudo": false,
+                "pluginVersion": 21,
+                "commandName": "Shell",
+                "pluginName": "Shell",
+                "pluginId": "com.urbancode.air.plugin.Shell",
+                "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                "properties": {
+                    "directoryOffset": ".",
+                    "shellInterpreter": "",
+                    "scriptBody": "rm -rf *",
+                    "runAsDaemon": "false",
+                    "outputFile": "",
+                    "tempDirectory": "${p?:agent\/temporaryDirectory}"
+                },
+                "cachedAuthTokenRestriction": {
+                    "name": "System Default",
+                    "description": "Used by default for any plugin steps without a specified token restriction",
+                    "restrictions": [{
+                        "verb": "ALL",
+                        "url": "\/*"
+                    }]
+                },
+                "type": "plugin",
+                "name": "Remove old content",
+                "children": []
+            },
+            {
+                "allowFailure": false,
+                "useImpersonation": false,
+                "showHidden": false,
+                "impersonationUseSudo": false,
+                "pluginVersion": 48,
+                "commandName": "Download Artifacts",
+                "pluginName": "UrbanCode Deploy Versioned File Storage",
+                "pluginId": "com.urbancode.plugin.VFS",
+                "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                "properties": {
+                    "directoryOffset": ".",
+                    "artifactSetBaseDir": "",
+                    "fileIncludePatterns": "**\/*",
+                    "fileExcludePatterns": "",
+                    "syncMode": "true",
+                    "handleIncrementalVersions": "false",
+                    "fullVerification": "true",
+                    "setFileExecuteBits": "false",
+                    "verifyFileIntegrity": "false",
+                    "charset": "",
+                    "versionId": "${p:version.id}",
+                    "versionType": "${p:version.type}",
+                    "serverUrl": "${p:server.url}",
+                    "compId": "${p:component.id}",
+                    "resId": "${p:resource.id}",
+                    "envId": "${p:environment.id}",
+                    "maxMemory": "1G",
+                    "label": ""
+                },
+                "cachedAuthTokenRestriction": {
+                    "name": "System Default",
+                    "description": "Used by default for any plugin steps without a specified token restriction",
+                    "restrictions": [{
+                        "verb": "ALL",
+                        "url": "\/*"
+                    }]
+                },
+                "type": "plugin",
+                "name": "Download Artifacts",
+                "children": []
+            },
+            {
+                "allowFailure": false,
+                "useImpersonation": false,
+                "showHidden": false,
+                "impersonationUseSudo": false,
+                "pluginVersion": 21,
+                "commandName": "Shell",
+                "pluginName": "Shell",
+                "pluginId": "com.urbancode.air.plugin.Shell",
+                "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                "properties": {
+                    "directoryOffset": ".",
+                    "shellInterpreter": "",
+                    "scriptBody": "echo \"prep a step 1\"\necho \"Now this step will fail as command cannot be found\"\nls-al -fail -step",
+                    "runAsDaemon": "false",
+                    "outputFile": "",
+                    "tempDirectory": "${p?:agent\/temporaryDirectory}"
+                },
+                "cachedAuthTokenRestriction": {
+                    "name": "System Default",
+                    "description": "Used by default for any plugin steps without a specified token restriction",
+                    "restrictions": [{
+                        "verb": "ALL",
+                        "url": "\/*"
+                    }]
+                },
+                "type": "plugin",
+                "name": "Prep A Step 1",
+                "children": []
+            },
+            {
+                "allowFailure": false,
+                "useImpersonation": false,
+                "showHidden": false,
+                "impersonationUseSudo": false,
+                "pluginVersion": 21,
+                "commandName": "Shell",
+                "pluginName": "Shell",
+                "pluginId": "com.urbancode.air.plugin.Shell",
+                "authTokenRestriction": "20000001-0001-0001-0001-000000000000",
+                "properties": {
+                    "directoryOffset": ".",
+                    "shellInterpreter": "",
+                    "scriptBody": "echo \"Prep a step 2\"",
+                    "runAsDaemon": "false",
+                    "outputFile": "",
+                    "tempDirectory": "${p?:agent\/temporaryDirectory}"
+                },
+                "cachedAuthTokenRestriction": {
+                    "name": "System Default",
+                    "description": "Used by default for any plugin steps without a specified token restriction",
+                    "restrictions": [{
+                        "verb": "ALL",
+                        "url": "\/*"
+                    }]
+                },
+                "type": "plugin",
+                "name": "Prep A Step 2",
+                "children": []
+            },
+            {
+                "type": "join",
+                "name": "80355a6a61cd3b8c0819a461fa0781",
+                "children": []
+            }
+        ]
+    }
+}

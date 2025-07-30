@@ -1,0 +1,174 @@
+{
+    "name": "Failing Deployment",
+    "description": "Deployment with failing step",
+    "inventoryManagementType": "AUTOMATIC",
+    "offlineAgentHandling": "PRE_EXECUTION_CHECK",
+    "disableSnapshots": false,
+    "rootActivity": {
+        "edges": [
+            {
+                "to": "dba1ff5fc37d05c133da3d3e2ed257",
+                "from": "16197d70e51378e41a7af13e74acbe",
+                "type": "SUCCESS",
+                "value": ""
+            },
+            {
+                "to": "16197d70e51378e41a7af13e74acbe",
+                "type": "ALWAYS",
+                "value": ""
+            },
+            {
+                "to": "5b5de9bc30d25ed5be2201d2a80ecf",
+                "type": "ALWAYS",
+                "value": ""
+            },
+            {
+                "to": "dba1ff5fc37d05c133da3d3e2ed257",
+                "from": "5b5de9bc30d25ed5be2201d2a80ecf",
+                "type": "SUCCESS",
+                "value": ""
+            }
+        ],
+        "offsets": [
+            {
+                "name": "16197d70e51378e41a7af13e74acbe",
+                "x": 92.5,
+                "y": 155,
+                "h": 70,
+                "w": 190
+            },
+            {
+                "name": "dba1ff5fc37d05c133da3d3e2ed257",
+                "x": -5,
+                "y": 300,
+                "h": 80,
+                "w": 120
+            },
+            {
+                "name": "5b5de9bc30d25ed5be2201d2a80ecf",
+                "x": -217.5,
+                "y": 155,
+                "h": 70,
+                "w": 280
+            }
+        ],
+        "layoutMode": "auto",
+        "type": "graph",
+        "name": "8199d018-f0c7-4f58-9828-ae9c9463f356",
+        "children": [
+            {
+                "type": "finish",
+                "name": "dba1ff5fc37d05c133da3d3e2ed257",
+                "children": []
+            },
+            {
+                "componentName": "Logic",
+                "componentLoop": {
+                    "name": "EchoLogic",
+                    "teamSpace": "Demo"
+                },
+                "properties": [
+                    {
+                        "name": "maxIteration",
+                        "value": "-1"
+                    },
+                    {
+                        "name": "isIgnoreChildWarnings",
+                        "value": "false"
+                    },
+                    {
+                        "name": "runOnlyOnFirst",
+                        "value": "false"
+                    },
+                    {
+                        "name": "failFast",
+                        "value": "false"
+                    }
+                ],
+                "type": "componentEnvironmentIterator",
+                "name": "16197d70e51378e41a7af13e74acbe",
+                "children": [{
+                    "componentLoop": {
+                        "name": "EchoLogic",
+                        "teamSpace": "Demo"
+                    },
+                    "componentName": "Logic",
+                    "status": "Active",
+                    "type": "inventoryVersionDiff",
+                    "name": "49fc559f-7cfb-4ac8-baef-1cb9d67d1a65",
+                    "children": [{
+                        "componentProcessName": "Deploy",
+                        "componentLoop": {
+                            "name": "EchoLogic",
+                            "teamSpace": "Demo"
+                        },
+                        "componentName": "Logic",
+                        "allowFailure": false,
+                        "properties": {
+                            "isIgnoreChildWarnings": "false"
+                        },
+                        "draftProperties": {
+                            "isIgnoreChildWarnings": "false"
+                        },
+                        "type": "componentProcess",
+                        "name": "Install: \"Logic\"",
+                        "children": []
+                    }]
+                }]
+            },
+            {
+                "componentName": "Echo",
+                "componentLoop": {
+                    "name": "EchoLogic",
+                    "teamSpace": "Demo"
+                },
+                "properties": [
+                    {
+                        "name": "maxIteration",
+                        "value": "-1"
+                    },
+                    {
+                        "name": "isIgnoreChildWarnings",
+                        "value": "false"
+                    },
+                    {
+                        "name": "failFast",
+                        "value": "false"
+                    }
+                ],
+                "type": "componentEnvironmentIterator",
+                "name": "5b5de9bc30d25ed5be2201d2a80ecf",
+                "children": [{
+                    "componentLoop": {
+                        "name": "EchoLogic",
+                        "teamSpace": "Demo"
+                    },
+                    "componentName": "Echo",
+                    "status": "Active",
+                    "type": "inventoryVersionDiff",
+                    "name": "87b44257-5b28-407e-a116-1884dc576ad6",
+                    "children": [{
+                        "componentProcessName": "Fail Deploy",
+                        "componentLoop": {
+                            "name": "EchoLogic",
+                            "teamSpace": "Demo"
+                        },
+                        "componentName": "Echo",
+                        "allowFailure": false,
+                        "properties": {
+                            "isIgnoreChildWarnings": "false"
+                        },
+                        "draftProperties": {
+                            "isIgnoreChildWarnings": "false"
+                        },
+                        "type": "componentProcess",
+                        "name": "Install: \"Echo\" with failing step",
+                        "children": []
+                    }]
+                }]
+            }
+        ]
+    },
+    "propDefs": [],
+    "versionPresets": []
+}
