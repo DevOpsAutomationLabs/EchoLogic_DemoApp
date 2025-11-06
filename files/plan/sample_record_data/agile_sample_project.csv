@@ -1,5 +1,5 @@
 Name,Description,ResolutionList,SeverityList,PriorityList,StoryPointsList,ReleaseTypeList,WITypeList,TagList,Releases,Sprints,Components
-EchoLogic,Lightningly fast Echo and Logic Service.,"Fixed
+Echolon,Lightningly fast Echo and Logic Service.,"Fixed
 Fixed indirectly
 Done
 Cancelled
@@ -34,4 +34,4 @@ Process
 Security
 Serviceability
 Tooling
-Usability","EchoLogic 1.0,EchoLogic 2.0 beta","Sprint 1,Sprint 2,Sprint 3,Sprint 4,Sprint 5,Sprint 6,Sprint 7,Sprint 8,Sprint 9","Echo Core,Echo UI,EchoLogic Core,EchoLogic UI,Logic Core,Logic UI,EchoLogic Backend,Echo Backend"
+Usability","Echolon 1.0,Echolon 2.0 beta","Sprint 1,Sprint 2,Sprint 3,Sprint 4,Sprint 5,Sprint 6,Sprint 7,Sprint 8,Sprint 9","Echo Core,Echo UI,Echolon Core,Echolon UI,Logic Core,Logic UI,Echolon Backend,Echo Backend"
